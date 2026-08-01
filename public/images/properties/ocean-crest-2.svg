@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs><linearGradient id="g7" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0b3d2e"/><stop offset="100%" stop-color="#c0563b" stop-opacity="0.3"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g7)"/>
+  <g opacity="0.6" stroke="#c9a227" stroke-width="1.5"><path d="M0 450Q200 420 400 450T800 450"/></g>
+  <rect x="30" y="520" width="150" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="105" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">BEACH ACCESS</text>
+</svg>

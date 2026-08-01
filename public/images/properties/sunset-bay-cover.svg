@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="vbg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="40%" stop-color="#13674A"/>
+      <stop offset="100%" stop-color="#C0563B" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#vbg)"/>
+  <!-- Villa silhouette -->
+  <g opacity="0.15" fill="#06281E">
+    <rect x="200" y="250" width="280" height="200" rx="2"/>
+    <path d="M180 250 L340 180 L500 250Z" fill="#06281E"/>
+    <rect x="220" y="300" width="40" height="60" rx="20"/>
+    <rect x="300" y="300" width="40" height="60" rx="20"/>
+    <rect x="400" y="300" width="40" height="60" rx="20"/>
+    <rect x="500" y="300" width="80" height="150" rx="2"/>
+    <circle cx="540" cy="350" r="15"/>
+  </g>
+  <!-- Pool -->
+  <ellipse cx="500" cy="480" rx="120" ry="30" fill="#2E6E7E" opacity="0.3"/>
+  <!-- Palm -->
+  <g opacity="0.12" fill="#C9A227">
+    <ellipse cx="120" cy="350" rx="3" ry="130"/>
+    <path d="M120 220l-50 60 50-10 40 50 10-30-30-10 40-60h-10l-20 40-10-40Z"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="200" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="130" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">LUXURY VILLA</text>
+</svg>

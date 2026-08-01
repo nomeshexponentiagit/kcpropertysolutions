@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1440" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E6E7E"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#06281E"/>
+    </linearGradient>
+    <radialGradient id="sun2" cx="0.8" cy="0.2" r="0.4">
+      <stop offset="0%" stop-color="#DAB940" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#DAB940" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="800" fill="url(#bg2)"/>
+  <circle cx="1150" cy="160" r="320" fill="url(#sun2)"/>
+  <!-- Wave pattern (ocean) -->
+  <g opacity="0.06" stroke="#DAB940" stroke-width="2" fill="none">
+    <path d="M0 550Q200 520 400 550T800 550T1200 550T1440 550"/>
+    <path d="M0 580Q200 550 400 580T800 580T1200 580T1440 580"/>
+    <path d="M0 610Q200 580 400 610T800 610T1200 610T1440 610"/>
+  </g>
+  <!-- Resort-like arches -->
+  <g opacity="0.1" fill="none" stroke="#C9A227" stroke-width="1.5">
+    <path d="M600 450V300a40 40 0 0 1 80 0v150"/>
+    <path d="M720 450V300a40 40 0 0 1 80 0v150"/>
+    <path d="M840 450V300a40 40 0 0 1 80 0v150"/>
+    <rect x="600" y="450" width="320" height="5" rx="2"/>
+  </g>
+  <rect width="1440" height="400" y="400" fill="#06281E" opacity="0.85"/>
+</svg>

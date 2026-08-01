@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs><linearGradient id="g6" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2e6e7e"/><stop offset="100%" stop-color="#0b3d2e"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g6)"/>
+  <g opacity="0.08" fill="#06281e"><rect x="200" y="200" width="300" height="250"/></g>
+  <rect x="30" y="520" width="140" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="100" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">DINING AREA</text>
+</svg>

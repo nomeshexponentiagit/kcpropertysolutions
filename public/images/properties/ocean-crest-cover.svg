@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="obg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E6E7E"/>
+      <stop offset="40%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#06281E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#obg)"/>
+  <!-- Waves -->
+  <g opacity="0.08" stroke="#C9A227" stroke-width="2" fill="none">
+    <path d="M0 400Q100 380 200 400T400 400T600 400T800 400"/>
+    <path d="M0 420Q100 400 200 420T400 420T600 420T800 420"/>
+    <path d="M0 440Q100 420 200 440T400 440T600 440T800 440"/>
+  </g>
+  <!-- Guest house building -->
+  <g opacity="0.15" fill="#0B3D2E">
+    <rect x="250" y="220" width="300" height="230"/>
+    <rect x="270" y="240" width="30" height="25" rx="13"/>
+    <rect x="330" y="240" width="30" height="25" rx="13"/>
+    <rect x="390" y="240" width="30" height="25" rx="13"/>
+    <rect x="450" y="240" width="30" height="25" rx="13"/>
+    <rect x="510" y="240" width="30" height="25" rx="13"/>
+    <rect x="270" y="310" width="30" height="25" rx="13"/>
+    <rect x="330" y="310" width="30" height="25" rx="13"/>
+    <rect x="390" y="310" width="30" height="25" rx="13"/>
+    <rect x="450" y="310" width="30" height="25" rx="13"/>
+    <rect x="510" y="310" width="30" height="25" rx="13"/>
+  </g>
+  <!-- Door -->
+  <rect x="360" y="380" width="60" height="70" rx="30" fill="#C9A227" opacity="0.2"/>
+  <!-- Label -->
+  <rect x="30" y="520" width="220" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="140" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">GUEST HOUSE</text>
+</svg>

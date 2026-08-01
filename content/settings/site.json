@@ -20,21 +20,21 @@
   },
   "heroSlides": [
     {
-      "image": "/images/hero-villa.jpg",
+      "image": "/images/hero-villa.svg",
       "heading": "Discover Your Dream Property in Goa",
       "subheading": "Premium villas, plots, and apartments across North & South Goa",
       "ctaText": "Explore Properties",
       "ctaUrl": "/projects"
     },
     {
-      "image": "/images/hero-resort.jpg",
+      "image": "/images/hero-resort.svg",
       "heading": "Luxury Resorts & Hotels",
       "subheading": "Prime investment opportunities in Goa's thriving hospitality sector",
       "ctaText": "View Listings",
       "ctaUrl": "/projects?category=resorts"
     },
     {
-      "image": "/images/hero-plot.jpg",
+      "image": "/images/hero-plot.svg",
       "heading": "Your Land, Your Legacy",
       "subheading": "Handpicked plots in Goa's most sought-after locations",
       "ctaText": "Find Land",
@@ -68,6 +68,6 @@
   "seo": {
     "defaultTitle": "KC Property Solutions | Plots, Villas, Guest Houses & More in Goa",
     "defaultDescription": "KC Property Solutions — North Goa's trusted real estate consultancy. Buy, sell, and lease premium plots, villas, guest houses, apartments, hotels, and resorts across North & South Goa.",
-    "ogImage": "/images/og-cover.jpg"
+    "ogImage": "/images/og-cover.svg"
   }
 }

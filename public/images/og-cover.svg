@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="ogbg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06281E"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#0F523C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogbg)"/>
+  <!-- Golden arch -->
+  <path d="M480 380V240a120 120 0 0 1 240 0v140" stroke="#C9A227" stroke-width="3" fill="none" opacity="0.5"/>
+  <!-- KC -->
+  <text x="600" y="350" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="64" fill="#C9A227">KC</text>
+  <!-- Wordmark -->
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="20" fill="#DAB940" letter-spacing="8">PROPERTY SOLUTIONS</text>
+  <!-- Tagline -->
+  <text x="600" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#EFE9DE" opacity="0.6">Goa's Finest Homes &amp; Investments</text>
+  <!-- Decorative palm -->
+  <path d="M290 330l-30 40 30-5 25 35 5-20-20-5 25-40h-8l-12 25-5-30Z" fill="#C9A227" opacity="0.2"/>
+</svg>

@@ -2,7 +2,7 @@
 title: "5 Things to Check Before Buying a Plot in North Goa"
 date: 2026-07-25
 excerpt: "Zoning regulations, title verification, access roads, and more — a comprehensive guide for anyone looking to invest in Goa's booming land market."
-coverImage: "/images/news/plot-guide.jpg"
+coverImage: "/images/news/plot-guide.svg"
 tags: ["buying-guide", "plots", "investment"]
 featured: true
 author: "KC Property Solutions"

@@ -2,7 +2,7 @@
 title: "Why Assagao is North Goa's Most Sought-After Village"
 date: 2026-07-18
 excerpt: "From boutique cafes to luxury villas, discover what makes this charming Goan village the top choice for homebuyers and investors alike."
-coverImage: "/images/news/assagao-guide.jpg"
+coverImage: "/images/news/assagao-guide.svg"
 tags: ["area-guide", "villas", "north-goa"]
 featured: false
 author: "KC Property Solutions"

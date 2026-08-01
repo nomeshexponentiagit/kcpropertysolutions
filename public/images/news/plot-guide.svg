@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <defs><linearGradient id="n1" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0b3d2e"/><stop offset="100%" stop-color="#239063"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#n1)"/>
+  <g opacity="0.06" fill="none" stroke="#c9a227" stroke-width="1.5"><rect x="100" y="80" width="600" height="320"/><line x1="100" y1="180" x2="700" y2="180"/></g>
+  <rect x="30" y="360" width="220" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="140" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">PROPERTY GUIDE</text>
+</svg>

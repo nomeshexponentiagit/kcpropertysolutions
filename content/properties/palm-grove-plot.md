@@ -20,10 +20,10 @@ highlights:
   - "15 mins to Beaches"
   - "Residential Zone"
   - "Ready for Construction"
-featuredImage: "/images/properties/palm-grove-cover.jpg"
+featuredImage: "/images/properties/palm-grove-cover.svg"
 gallery:
-  - "/images/properties/palm-grove-1.jpg"
-  - "/images/properties/palm-grove-2.jpg"
+  - "/images/properties/palm-grove-1.svg"
+  - "/images/properties/palm-grove-2.svg"
 locationUrl: "https://maps.google.com/?q=Siolim+Goa"
 contactAgent: "Priya Sharma"
 contactPhone: "+91 98221 12345"

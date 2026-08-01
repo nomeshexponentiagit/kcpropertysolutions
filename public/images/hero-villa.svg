@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" fill="none">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1440" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06281E"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#0F523C"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C9A227" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C0563B" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1440" height="800" fill="url(#bg1)"/>
+  <!-- Sun glow -->
+  <circle cx="1100" cy="200" r="300" fill="url(#sun)"/>
+  <circle cx="1100" cy="200" r="150" fill="#C9A227" opacity="0.05"/>
+  <!-- Palm tree silhouettes -->
+  <g opacity="0.15" fill="#C9A227">
+    <ellipse cx="200" cy="400" rx="4" ry="180"/>
+    <path d="M200 220c-60 30-100 80-120 120 20-40 60-70 120-70"/>
+    <path d="M200 220c40 20 80 60 100 100-20-30-50-60-100-70"/>
+    <path d="M200 220c-20 50-40 100-40 150 10-40 20-80 40-100"/>
+    <path d="M200 220c20 40 40 90 30 140 0-40-10-80-30-120"/>
+  </g>
+  <!-- Arch windows pattern -->
+  <g opacity="0.08" stroke="#DAB940" stroke-width="1.5" fill="none">
+    <path d="M800 350V200a50 50 0 0 1 100 0v150h10M930 350V200a50 50 0 0 1 100 0v150h10M1060 350V200a50 50 0 0 1 100 0v150h10"/>
+    <line x1="800" y1="350" x2="1190" y2="350"/>
+  </g>
+  <!-- Portuguese tile pattern -->
+  <g opacity="0.04">
+    <pattern id="tile" x="0" y="500" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="none"/>
+      <path d="M60 0L120 60L60 120L0 60Z" fill="#C9A227"/>
+    </pattern>
+    <rect width="1440" height="300" y="500" fill="url(#tile)"/>
+  </g>
+  <!-- Bottom gradient overlay -->
+  <rect width="1440" height="400" y="400" fill="url(#pagemask)"/>
+  <defs>
+    <linearGradient id="pagemask" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06281E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#06281E" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+</svg>

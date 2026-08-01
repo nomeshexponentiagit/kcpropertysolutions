@@ -22,10 +22,10 @@ highlights:
   - "Beach Road Location"
   - "6 En-suite Rooms"
   - "Fully Furnished"
-featuredImage: "/images/properties/ocean-crest-cover.jpg"
+featuredImage: "/images/properties/ocean-crest-cover.svg"
 gallery:
-  - "/images/properties/ocean-crest-1.jpg"
-  - "/images/properties/ocean-crest-2.jpg"
+  - "/images/properties/ocean-crest-1.svg"
+  - "/images/properties/ocean-crest-2.svg"
 locationUrl: "https://maps.google.com/?q=Candolim+Goa"
 contactAgent: "Rohan Naik"
 contactPhone: "+91 98221 12345"
