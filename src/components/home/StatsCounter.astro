@@ -1,0 +1,55 @@
+---
+import { site } from '../../lib/site';
+---
+
+<section class="py-16 bg-palm-900">
+  <div class="container-wide">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+      {site.stats.map((stat) => (
+        <div class="text-center">
+          <div class="font-serif text-3xl md:text-5xl font-bold text-brass-400 tracking-tight">
+            <span class="stat-counter" data-target={parseInt(stat.value.replace(/,/g, ''))}>0</span>
+            {stat.suffix && <span class="text-2xl md:text-3xl">{stat.suffix}</span>}
+          </div>
+          <p class="text-xs md:text-sm text-sand-200/60 mt-2 tracking-wide font-sans">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  function animateCounters() {
+    const counters = document.querySelectorAll<HTMLElement>('.stat-counter');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          const target = parseInt(el.dataset.target || '0');
+          const duration = 2000;
+          const start = performance.now();
+
+          function update(now: number) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.floor(eased * target);
+            el.textContent = current.toLocaleString('en-IN');
+            if (progress < 1) {
+              requestAnimationFrame(update);
+            } else {
+              el.textContent = target.toLocaleString('en-IN');
+            }
+          }
+          requestAnimationFrame(update);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach((c) => observer.observe(c));
+  }
+
+  animateCounters();
+</script>

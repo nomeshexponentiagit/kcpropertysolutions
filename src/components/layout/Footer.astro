@@ -1,0 +1,111 @@
+---
+import Logo from '../brand/Logo.astro';
+import { site } from '../../lib/site';
+
+const quickLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'News & Articles', href: '/news' },
+  { label: 'Contact Us', href: '/contact' },
+];
+
+const categories = [
+  { label: 'Villas', href: '/projects?category=villas' },
+  { label: 'Plots', href: '/projects?category=plots' },
+  { label: 'Guest Houses', href: '/projects?category=guest-houses' },
+  { label: 'Apartments', href: '/projects?category=apartments' },
+  { label: 'Hotels & Resorts', href: '/projects?category=resorts' },
+];
+
+const socialIcons = {
+  facebook: 'M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z',
+  instagram: 'M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm5-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z',
+  linkedin: 'M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z',
+  youtube: 'M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 1.96C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z',
+};
+---
+
+<footer class="bg-palm-950 text-sand-200">
+  <div class="container-wide py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <Logo variant="light" class="mb-4" />
+        <p class="text-sm text-sand-300/70 leading-relaxed mt-4">
+          North Goa's trusted real estate consultancy. Specialising in premium plots, villas, guest houses, and hospitality properties across Goa.
+        </p>
+        <!-- Social -->
+        <div class="flex gap-3 mt-5">
+          {Object.entries(socialIcons).map(([key, path]) => {
+            const url = site.social[key as keyof typeof site.social];
+            if (!url) return null;
+            return (
+              <a href={url} target="_blank" rel="noopener noreferrer"
+                class="w-9 h-9 flex items-center justify-center rounded-full border border-sand-300/20 text-sand-300/60 hover:text-brass-400 hover:border-brass-400/40 transition-colors"
+                aria-label={key}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d={path} />
+                </svg>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-serif text-base font-semibold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2.5">
+          {quickLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-sand-300/70 hover:text-brass-400 transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <h4 class="font-serif text-base font-semibold text-white mb-4">Properties</h4>
+        <ul class="space-y-2.5">
+          {categories.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-sand-300/70 hover:text-brass-400 transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-serif text-base font-semibold text-white mb-4">Contact</h4>
+        {site.addresses.map((addr) => (
+          <div class="mb-4">
+            <p class="text-sm font-medium text-white/80">{addr.name}</p>
+            <p class="text-sm text-sand-300/70 mt-1 leading-relaxed">{addr.address}</p>
+            <a href={`tel:${addr.phone.replace(/\s/g, '')}`} class="text-sm text-brass-400 hover:text-brass-300 transition-colors mt-1 inline-block">
+              {addr.phone}
+            </a>
+          </div>
+        ))}
+        <a href={`mailto:${site.email}`} class="text-sm text-brass-400 hover:text-brass-300 transition-colors">
+          {site.email}
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-sand-300/10 mt-12 pt-6 flex flex-col md:flex-row gap-2 justify-between items-center text-xs text-sand-300/50">
+      <p>&copy; {new Date().getFullYear()} KC Property Solutions. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="/privacy" class="hover:text-sand-300/80 transition-colors">Privacy Policy</a>
+        <a href="/terms" class="hover:text-sand-300/80 transition-colors">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>

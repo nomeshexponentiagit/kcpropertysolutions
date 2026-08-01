@@ -1,0 +1,111 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/kc-property-solutions
+  branch: main
+
+local_backend: true
+media_folder: "public/images"
+public_folder: "/images"
+publish_mode: editorial_workflow
+site_url: https://kcpropertysolutions.in
+display_url: https://kcpropertysolutions.in
+logo_url: /favicon.svg
+
+collections:
+  - name: properties
+    label: "Properties"
+    label_singular: "Property"
+    folder: "content/properties"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/projects/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options:
+          [{ label: "Plots", value: "plots" }, { label: "Villas", value: "villas" },
+           { label: "Guest Houses", value: "guest-houses" }, { label: "Apartments", value: "apartments" },
+           { label: "Hotels", value: "hotels" }, { label: "Resorts", value: "resorts" },
+           { label: "Commercial", value: "commercial" }] }
+      - { label: "Listing Type", name: "listingType", widget: "select", options: ["sale", "lease", "both"] }
+      - { label: "Status", name: "status", widget: "select", options: ["available", "sold", "under-construction"] }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Price", name: "price", widget: "string", hint: "e.g. ₹4.5 Cr or ₹85,000/mo" }
+      - { label: "Price Note", name: "priceNote", widget: "string", required: false, hint: "e.g. Onwards, Negotiable" }
+      - { label: "Location", name: "location", widget: "string", hint: "e.g. Assagao, North Goa" }
+      - { label: "Zone", name: "zone", widget: "select", options: [{ label: "North Goa", value: "north-goa" }, { label: "South Goa", value: "south-goa" }] }
+      - { label: "Area", name: "area", widget: "string", hint: "e.g. 3,200 sq.ft." }
+      - { label: "Bedrooms", name: "beds", widget: "number", required: false, value_type: "int" }
+      - { label: "Bathrooms", name: "baths", widget: "number", required: false, value_type: "int" }
+      - { label: "Plot Size", name: "plotSize", widget: "string", required: false }
+      - { label: "Amenities", name: "amenities", widget: "list", field: { label: "Amenity", name: "amenity", widget: "string" } }
+      - { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "highlight", widget: "string" } }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Gallery", name: "gallery", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+      - { label: "Google Maps URL", name: "locationUrl", widget: "string", required: false }
+      - { label: "Contact Agent", name: "contactAgent", widget: "string", required: false }
+      - { label: "Contact Phone", name: "contactPhone", widget: "string", required: false }
+      - { label: "Publish Date", name: "published", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Description", name: "body", widget: "markdown" }
+
+  - name: posts
+    label: "News & Articles"
+    label_singular: "Article"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/news/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Cover Image", name: "coverImage", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Author", name: "author", widget: "string", default: "KC Property Solutions" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: settings
+    label: "Site Settings"
+    files:
+      - name: site
+        label: "Global Settings"
+        file: "content/settings/site.json"
+        fields:
+          - { label: "Site Name", name: "siteName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string", hint: "e.g. 919822112345" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Addresses", name: "addresses", widget: "list", fields:
+              [{ label: "Office Name", name: "name", widget: "string" },
+               { label: "Address", name: "address", widget: "string" },
+               { label: "Phone", name: "phone", widget: "string" },
+               { label: "Map URL", name: "mapUrl", widget: "string", required: false }] }
+          - { label: "Social Links", name: "social", widget: "object", fields:
+              [{ label: "Facebook", name: "facebook", widget: "string", required: false },
+               { label: "Instagram", name: "instagram", widget: "string", required: false },
+               { label: "LinkedIn", name: "linkedin", widget: "string", required: false },
+               { label: "YouTube", name: "youtube", widget: "string", required: false }] }
+          - { label: "Hero Slides", name: "heroSlides", widget: "list", fields:
+              [{ label: "Image", name: "image", widget: "image" },
+               { label: "Heading", name: "heading", widget: "string" },
+               { label: "Subheading", name: "subheading", widget: "string" },
+               { label: "CTA Text", name: "ctaText", widget: "string" },
+               { label: "CTA URL", name: "ctaUrl", widget: "string" }] }
+          - { label: "Stats", name: "stats", widget: "list", fields:
+              [{ label: "Value", name: "value", widget: "string" },
+               { label: "Suffix", name: "suffix", widget: "string", required: false },
+               { label: "Label", name: "label", widget: "string" }] }
+          - { label: "Home About Section", name: "homeAbout", widget: "object", fields:
+              [{ label: "Heading", name: "heading", widget: "string" },
+               { label: "Body", name: "body", widget: "text" },
+               { label: "CTA Text", name: "ctaText", widget: "string" },
+               { label: "CTA URL", name: "ctaUrl", widget: "string" }] }
+          - { label: "Awards", name: "awards", widget: "list", fields:
+              [{ label: "Title", name: "title", widget: "string" },
+               { label: "Organization", name: "org", widget: "string" },
+               { label: "Year", name: "year", widget: "string" }] }
+          - { label: "SEO Defaults", name: "seo", widget: "object", fields:
+              [{ label: "Default Title", name: "defaultTitle", widget: "string" },
+               { label: "Default Description", name: "defaultDescription", widget: "text" },
+               { label: "OG Image", name: "ogImage", widget: "image" }] }

@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { formatDate } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((p) => ({ params: { slug: p.id } }));
+}
+
+const { slug } = Astro.params;
+const allPosts = await getCollection('posts');
+const post = allPosts.find((p) => p.id === slug);
+
+if (!post) {
+  return Astro.redirect('/404');
+}
+
+const { data } = post;
+const { Content } = await render(post);
+---
+
+<BaseLayout
+  title={`${data.title} | KC Property Solutions`}
+  description={data.excerpt}
+>
+  <article class="section-padding bg-sand-50">
+    <div class="container-wide max-w-3xl">
+      <!-- Breadcrumb -->
+      <nav class="text-xs text-ink-light/50 font-sans tracking-wide mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-palm-900 transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/news" class="hover:text-palm-900 transition-colors">News</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink-light/70">{data.title}</span>
+      </nav>
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        {data.tags.map((tag) => (
+          <a
+            href={`/news?tag=${tag}`}
+            class="text-[10px] px-2 py-0.5 rounded-sm bg-palm-900/10 text-palm-900 font-sans font-semibold tracking-wider uppercase hover:bg-palm-900/20 transition-colors"
+          >
+            {tag.replace(/-/g, ' ')}
+          </a>
+        ))}
+      </div>
+
+      <!-- Title -->
+      <h1 class="font-serif text-2xl md:text-3xl font-bold text-palm-900 leading-tight">
+        {data.title}
+      </h1>
+
+      <!-- Meta -->
+      <div class="flex items-center gap-4 mt-4 text-xs text-ink-light/50 font-sans tracking-wide">
+        <span>{formatDate(data.date)}</span>
+        <span>·</span>
+        <span>{data.author}</span>
+      </div>
+
+      <!-- Featured image placeholder -->
+      <div class="aspect-[16/9] bg-sand-100 rounded-sm mt-6 overflow-hidden border border-sand-200">
+        <div class="w-full h-full bg-gradient-to-br from-palm-900/20 via-palm-900/5 to-laterite-500/10 flex items-center justify-center">
+          <span class="text-ink-light/20 text-sm tracking-[0.3em] uppercase font-sans">KC Property Solutions</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-sm md:prose-base max-w-none mt-8 text-ink-light/80 leading-relaxed">
+        <Content />
+      </div>
+
+      <!-- Back link -->
+      <div class="mt-12 pt-8 border-t border-sand-200">
+        <a
+          href="/news"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-palm-900 hover:text-palm-600 transition-colors group"
+        >
+          <span class="group-hover:-translate-x-1 transition-transform" aria-hidden="true">←</span>
+          Back to News
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

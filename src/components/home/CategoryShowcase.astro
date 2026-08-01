@@ -1,0 +1,40 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { CATEGORIES } from '../../lib/properties';
+
+const categoryEntries = Object.entries(CATEGORIES).filter(([key]) => key !== 'all');
+const icons: Record<string, string> = {
+  plots: '🏡',
+  villas: '🏰',
+  'guest-houses': '🏨',
+  apartments: '🏢',
+  hotels: '🏩',
+  resorts: '🌴',
+  commercial: '🏬',
+};
+---
+
+<section class="section-padding bg-sand-100">
+  <div class="container-wide">
+    <SectionHeading
+      eyebrow="What We Offer"
+      title="Find Your Perfect Property"
+      accent="brass"
+    />
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mt-10">
+      {categoryEntries.map(([key, cat]) => (
+        <a
+          href={`/projects?category=${cat.slug}`}
+          class="group bg-white border border-sand-200 rounded-sm p-6 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+        >
+          <span class="text-3xl" aria-hidden="true">{icons[key] || '🏠'}</span>
+          <h3 class="font-serif text-base font-bold text-palm-900 mt-3 group-hover:text-palm-700 transition-colors">
+            {cat.label}
+          </h3>
+          <span class="text-xs text-ink-light/50 mt-1 block font-sans tracking-wide">View Listings →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

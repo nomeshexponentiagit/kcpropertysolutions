@@ -1,0 +1,66 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Badge from '../ui/Badge.astro';
+import { CATEGORIES } from '../../lib/properties';
+
+const { property } = Astro.props as { property: CollectionEntry<'properties'> };
+const categoryLabel = CATEGORIES[property.data.category as keyof typeof CATEGORIES]?.label || property.data.category;
+---
+
+<a
+  href={`/projects/${property.id}`}
+  class="group bg-white border border-sand-200 rounded-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+>
+  <!-- Image -->
+  <div class="aspect-[4/3] bg-sand-100 relative overflow-hidden">
+    <div class={`absolute inset-0 bg-gradient-to-br ${
+      property.data.category === 'villas' ? 'from-palm-800/20 via-palm-900/5 to-laterite-500/10' :
+      property.data.category === 'plots' ? 'from-ocean-500/20 via-palm-900/5 to-brass-500/10' :
+      property.data.category === 'guest-houses' || property.data.category === 'hotels' || property.data.category === 'resorts' ? 'from-laterite-500/20 via-palm-900/5 to-ocean-500/10' :
+      'from-palm-900/20 via-palm-900/5 to-ocean-500/10'
+    }`} />
+    <div class="absolute top-3 left-3 flex gap-2">
+      <Badge variant={property.data.featured ? 'brass' : 'palm'} size="sm">
+        {categoryLabel}
+      </Badge>
+      {property.data.status === 'sold' && <Badge variant="sold" size="sm">Sold</Badge>}
+      {property.data.status === 'under-construction' && <Badge variant="laterite" size="sm">U/C</Badge>}
+    </div>
+    {property.data.featured && (
+      <div class="absolute top-3 right-3">
+        <span class="text-[10px] px-2 py-0.5 rounded-sm bg-brass-500 text-white font-sans font-semibold tracking-wider uppercase">Featured</span>
+      </div>
+    )}
+    <div class="absolute bottom-3 left-3">
+      <Badge variant="palm" size="sm">
+        {property.data.listingType === 'sale' ? 'For Sale' : property.data.listingType === 'lease' ? 'For Lease' : 'Sale / Lease'}
+      </Badge>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="p-5">
+    <h3 class="font-serif text-lg font-bold text-palm-900 group-hover:text-palm-700 transition-colors">
+      {property.data.title}
+    </h3>
+    <p class="text-xs text-ink-light/60 mt-1 tracking-wide">
+      {property.data.location} · {property.data.area}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-3">
+      {property.data.highlights.slice(0, 3).map((h) => (
+        <span class="text-[11px] px-2 py-0.5 bg-sand-100 text-ink-light/60 rounded-sm font-sans">{h}</span>
+      ))}
+    </div>
+
+    <div class="flex items-center justify-between mt-4 pt-4 border-t border-sand-100">
+      <span class="font-sans text-sm font-bold text-brass-500">
+        {property.data.price}
+        {property.data.priceNote && (
+          <span class="text-xs font-normal text-ink-light/50 ml-1">{property.data.priceNote}</span>
+        )}
+      </span>
+      <span class="text-xs text-ink-light/50 font-medium">Know More →</span>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,20 @@
+---
+export interface Props {
+  eyebrow: string;
+  title: string;
+  accent?: 'brass' | 'laterite';
+}
+
+const { eyebrow, title, accent = 'brass' } = Astro.props;
+const ruleColor = accent === 'laterite' ? 'bg-laterite-500' : 'bg-brass-500';
+---
+
+<div class="flex flex-col items-start gap-3">
+  <span class="text-xs font-sans font-semibold tracking-[0.2em] uppercase text-ink-light/60">
+    {eyebrow}
+  </span>
+  <h2 class="font-serif text-2xl md:text-3xl font-bold text-palm-900 leading-tight">
+    {title}
+  </h2>
+  <span class={`block w-10 h-[3px] rounded-full ${ruleColor}`} aria-hidden="true"></span>
+</div>

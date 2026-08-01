@@ -1,0 +1,27 @@
+---
+export interface Props {
+  variant?: 'brass' | 'laterite' | 'palm' | 'sold';
+  size?: 'sm' | 'md';
+  class?: string;
+}
+
+const { variant = 'brass', size = 'md', class: className = '' } = Astro.props;
+
+const variants = {
+  brass: 'bg-brass-500/15 text-brass-500 border-brass-500/30',
+  laterite: 'bg-laterite-500/15 text-laterite-500 border-laterite-500/30',
+  palm: 'bg-palm-600/15 text-palm-600 border-palm-600/30',
+  sold: 'bg-ink/10 text-ink-light border-ink/20',
+};
+
+const sizes = {
+  sm: 'text-[10px] px-2 py-0.5 tracking-wider',
+  md: 'text-xs px-3 py-1 tracking-wider',
+};
+---
+
+<span
+  class={`inline-block font-sans font-semibold uppercase border rounded-sm ${variants[variant]} ${sizes[size]} ${className}`}
+>
+  <slot />
+</span>

@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found | KC Property Solutions">
+  <section class="section-padding bg-sand-50 min-h-[60vh] flex items-center">
+    <div class="container-wide text-center">
+      <span class="font-serif text-8xl font-bold text-palm-900/10">404</span>
+      <h1 class="font-serif text-2xl md:text-3xl font-bold text-palm-900 mt-4">
+        Page Not Found
+      </h1>
+      <p class="text-ink-light/60 text-sm md:text-base mt-3 max-w-md mx-auto leading-relaxed">
+        The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 bg-palm-900 text-white px-8 py-4 rounded-sm font-sans text-sm font-semibold tracking-wide hover:bg-palm-700 transition-all"
+        >
+          Go Home
+        </a>
+        <a
+          href="/projects"
+          class="inline-flex items-center gap-2 border border-palm-900/20 text-palm-900 px-8 py-4 rounded-sm font-sans text-sm font-semibold tracking-wide hover:bg-palm-900/5 transition-all"
+        >
+          Browse Properties
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

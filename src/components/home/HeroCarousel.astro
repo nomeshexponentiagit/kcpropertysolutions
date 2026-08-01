@@ -1,0 +1,128 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { site } from '../../lib/site';
+---
+
+<section class="relative h-[85vh] min-h-[600px] flex items-end overflow-hidden bg-palm-950">
+  <!-- Slides container -->
+  <div id="hero-slides" class="absolute inset-0">
+    {site.heroSlides.map((slide, i) => (
+      <div
+        class={`hero-slide absolute inset-0 transition-opacity duration-1000 ${i === 0 ? 'opacity-100' : 'opacity-0'}`}
+        data-index={i}
+      >
+        <!-- Placeholder gradient instead of image -->
+        <div class={`absolute inset-0 bg-gradient-to-br ${
+          i === 0 ? 'from-palm-900 via-palm-800 to-palm-950' :
+          i === 1 ? 'from-ocean-500 via-palm-900 to-palm-950' :
+          'from-laterite-500/40 via-palm-900 to-palm-950'
+        }`} />
+        <!-- Dark scrim -->
+        <div class="absolute inset-0 bg-gradient-to-t from-palm-950/90 via-palm-950/40 to-transparent" />
+      </div>
+    ))}
+  </div>
+
+  <!-- Content overlay -->
+  <div class="container-wide relative z-10 pb-20 md:pb-28">
+    <div id="hero-content" class="max-w-2xl">
+      <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 transition-all duration-700">
+        {site.heroSlides[0].heading}
+      </h1>
+      <p class="text-sm md:text-base text-sand-200/80 leading-relaxed mb-8 max-w-lg transition-all duration-700">
+        {site.heroSlides[0].subheading}
+      </p>
+      <a
+        href={site.heroSlides[0].ctaUrl}
+        id="hero-cta"
+        class="inline-flex items-center gap-2 bg-brass-500 text-white px-8 py-4 rounded-sm font-sans text-sm font-semibold tracking-wide hover:bg-brass-400 transition-all duration-300"
+      >
+        {site.heroSlides[0].ctaText}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <!-- Slide indicators -->
+    <div class="flex gap-2 mt-8">
+      {site.heroSlides.map((_, i) => (
+        <button
+          class={`hero-dot w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+            i === 0 ? 'bg-brass-500 w-8' : 'bg-white/30 hover:bg-white/60'
+          }`}
+          data-index={i}
+          aria-label={`Slide ${i + 1}`}
+        />
+      ))}
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/40 text-xs tracking-wider">
+    <span>SCROLL</span>
+    <span class="block w-px h-8 bg-white/20 animate-pulse" />
+  </div>
+</section>
+
+<script>
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const heading = document.querySelector('#hero-content h1');
+  const para = document.querySelector('#hero-content p');
+  const cta = document.querySelector('#hero-cta');
+  const slideData = [
+    { heading: 'Discover Your Dream Property in Goa', subheading: 'Premium villas, plots, and apartments across North & South Goa', ctaText: 'Explore Properties', ctaUrl: '/projects' },
+    { heading: 'Luxury Resorts & Hotels', subheading: 'Prime investment opportunities in Goa\'s thriving hospitality sector', ctaText: 'View Listings', ctaUrl: '/projects?category=resorts' },
+    { heading: 'Your Land, Your Legacy', subheading: 'Handpicked plots in Goa\'s most sought-after locations', ctaText: 'Find Land', ctaUrl: '/projects?category=plots' },
+  ];
+
+  let current = 0;
+  let interval: ReturnType<typeof setInterval>;
+
+  function goTo(index: number) {
+    slides.forEach((s, i) => { (s as HTMLElement).style.opacity = i === index ? '1' : '0'; });
+    dots.forEach((d, i) => {
+      d.className = `hero-dot w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === index ? 'bg-brass-500 w-8' : 'bg-white/30 hover:bg-white/60'}`;
+    });
+    if (heading) {
+      heading.style.opacity = '0';
+      heading.style.transform = 'translateY(10px)';
+      setTimeout(() => {
+        if (heading) {
+          heading.textContent = slideData[index].heading;
+          heading.style.opacity = '1';
+          heading.style.transform = 'translateY(0)';
+        }
+      }, 300);
+    }
+    if (para) {
+      para.style.opacity = '0';
+      setTimeout(() => {
+        if (para) {
+          para.textContent = slideData[index].subheading;
+          para.style.opacity = '1';
+        }
+      }, 300);
+    }
+    if (cta) {
+      cta.setAttribute('href', slideData[index].ctaUrl);
+      const span = cta.querySelector('span');
+      cta.childNodes[0].textContent = slideData[index].ctaText + ' ';
+    }
+    current = index;
+  }
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt(dot.getAttribute('data-index') || '0');
+      goTo(idx);
+      clearInterval(interval);
+      interval = setInterval(next, 5000);
+    });
+  });
+
+  function next() {
+    goTo((current + 1) % slideData.length);
+  }
+
+  interval = setInterval(next, 5000);
+</script>

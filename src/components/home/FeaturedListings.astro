@@ -1,0 +1,91 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import Badge from '../ui/Badge.astro';
+import { getCollection } from 'astro:content';
+import { whatsappLink, formatDate } from '../../lib/format';
+import { site } from '../../lib/site';
+
+const allProperties = await getCollection('properties');
+const featured = allProperties
+  .filter((p) => p.data.featured && p.data.status === 'available')
+  .slice(0, 6);
+---
+
+{featured.length > 0 && (
+  <section class="section-padding bg-sand-50">
+    <div class="container-wide">
+      <SectionHeading
+        eyebrow="Featured Properties"
+        title="Handpicked For You"
+        accent="laterite"
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        {featured.map((property) => (
+          <a
+            href={`/projects/${property.id}`}
+            class="group bg-white border border-sand-200 rounded-sm overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+          >
+            <!-- Image -->
+            <div class="aspect-[4/3] overflow-hidden bg-sand-100 relative">
+              <div class={`absolute inset-0 bg-gradient-to-br ${
+                property.data.category === 'villas' ? 'from-palm-800/20 via-palm-900/5 to-laterite-500/10' :
+                property.data.category === 'plots' ? 'from-ocean-500/20 via-palm-900/5 to-brass-500/10' :
+                'from-palm-900/20 via-palm-900/5 to-ocean-500/10'
+              }`} />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <Badge variant={property.data.category === 'villas' ? 'brass' : property.data.category === 'plots' ? 'palm' : 'laterite'} size="sm">
+                  {property.data.category.replace('-', ' ')}
+                </Badge>
+                {property.data.status !== 'available' && (
+                  <Badge variant="sold" size="sm">
+                    {property.data.status === 'sold' ? 'Sold' : 'U/C'}
+                  </Badge>
+                )}
+              </div>
+              <div class="absolute bottom-3 right-3">
+                <Badge variant="palm" size="sm">
+                  {property.data.listingType === 'sale' ? 'For Sale' : property.data.listingType === 'lease' ? 'For Lease' : 'Sale / Lease'}
+                </Badge>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-5">
+              <h3 class="font-serif text-lg font-bold text-palm-900 group-hover:text-palm-700 transition-colors">
+                {property.data.title}
+              </h3>
+              <p class="text-xs text-ink-light/60 mt-1 tracking-wide">{property.data.location}</p>
+
+              <div class="flex items-center justify-between mt-4 pt-4 border-t border-sand-100">
+                <span class="font-sans text-sm font-bold text-brass-500">
+                  {property.data.price}
+                  {property.data.priceNote && (
+                    <span class="text-xs font-normal text-ink-light/50 ml-1">{property.data.priceNote}</span>
+                  )}
+                </span>
+                {(property.data.beds || property.data.baths) && (
+                  <span class="text-xs text-ink-light/50">
+                    {property.data.beds && `${property.data.beds} Beds`}
+                    {property.data.beds && property.data.baths && ' • '}
+                    {property.data.baths && `${property.data.baths} Baths`}
+                  </span>
+                )}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-10">
+        <a
+          href="/projects"
+          class="inline-flex items-center gap-2 font-sans text-sm font-semibold text-palm-900 hover:text-palm-600 transition-colors group"
+        >
+          View All Properties
+          <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+)}

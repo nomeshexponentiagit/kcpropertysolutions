@@ -1,0 +1,188 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Badge from '../../components/ui/Badge.astro';
+import EnquiryForm from '../../components/properties/EnquiryForm.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { formatDate, whatsappLink, telLink } from '../../lib/format';
+import { site } from '../../lib/site';
+import { LISTING_TYPES, STATUS_LABELS } from '../../lib/properties';
+
+export async function getStaticPaths() {
+  const properties = await getCollection('properties');
+  return properties.map((p) => ({ params: { slug: p.id } }));
+}
+
+const { slug } = Astro.params;
+const allProperties = await getCollection('properties');
+const property = allProperties.find((p) => p.id === slug);
+
+if (!property) {
+  return Astro.redirect('/404');
+}
+
+const { data } = property;
+const { Content } = await render(property);
+---
+
+<BaseLayout
+  title={`${data.title} | KC Property Solutions`}
+  description={`${data.title} — ${data.location}. ${data.area}, ${data.price}. ${data.highlights.join(', ')}.`}
+>
+  <article>
+    <!-- Hero gallery -->
+    <section class="relative bg-palm-950">
+      <div class="aspect-[21/9] md:aspect-[21/7] bg-gradient-to-br from-palm-900 to-palm-950 flex items-center justify-center">
+        <div class="text-center">
+          <p class="text-sand-300/30 text-xs tracking-[0.3em] uppercase font-sans">KC Property Solutions</p>
+          <h1 class="font-serif text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 max-w-2xl px-4 leading-tight">
+            {data.title}
+          </h1>
+          <p class="text-sand-200/60 text-sm mt-3">{data.location}</p>
+        </div>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="container-wide py-3">
+        <nav class="text-xs text-sand-300/60 font-sans tracking-wide" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-white transition-colors">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/projects" class="hover:text-white transition-colors">Properties</a>
+          <span class="mx-2">/</span>
+          <span class="text-white/70">{data.title}</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section-padding bg-sand-50">
+      <div class="container-wide">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <!-- Main content -->
+          <div class="lg:col-span-2 space-y-8">
+            <!-- Specs -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div class="bg-white border border-sand-200 rounded-sm p-4 text-center">
+                <span class="block text-[10px] font-sans font-semibold tracking-wider uppercase text-ink-light/50">Price</span>
+                <span class="block font-sans text-lg font-bold text-brass-500 mt-1">{data.price}</span>
+                {data.priceNote && <span class="text-xs text-ink-light/40">{data.priceNote}</span>}
+              </div>
+              <div class="bg-white border border-sand-200 rounded-sm p-4 text-center">
+                <span class="block text-[10px] font-sans font-semibold tracking-wider uppercase text-ink-light/50">Area</span>
+                <span class="block font-serif text-lg font-bold text-palm-900 mt-1">{data.area}</span>
+                {data.plotSize && <span class="text-xs text-ink-light/40">Plot: {data.plotSize}</span>}
+              </div>
+              {data.beds && (
+                <div class="bg-white border border-sand-200 rounded-sm p-4 text-center">
+                  <span class="block text-[10px] font-sans font-semibold tracking-wider uppercase text-ink-light/50">Bedrooms</span>
+                  <span class="block font-serif text-lg font-bold text-palm-900 mt-1">{data.beds}</span>
+                </div>
+              )}
+              {data.baths && (
+                <div class="bg-white border border-sand-200 rounded-sm p-4 text-center">
+                  <span class="block text-[10px] font-sans font-semibold tracking-wider uppercase text-ink-light/50">Bathrooms</span>
+                  <span class="block font-serif text-lg font-bold text-palm-900 mt-1">{data.baths}</span>
+                </div>
+              )}
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2">
+              <Badge variant={data.featured ? 'brass' : 'palm'}>{data.category.replace('-', ' ')}</Badge>
+              <Badge variant="palm">{LISTING_TYPES[data.listingType]}</Badge>
+              <Badge variant={data.status === 'available' ? 'palm' : data.status === 'sold' ? 'sold' : 'laterite'}>
+                {STATUS_LABELS[data.status]}
+              </Badge>
+            </div>
+
+            <!-- Highlights -->
+            {data.highlights.length > 0 && (
+              <div>
+                <h3 class="font-serif text-lg font-bold text-palm-900 mb-3">Highlights</h3>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {data.highlights.map((h) => (
+                    <li class="flex items-center gap-2 text-sm text-ink-light/80">
+                      <span class="w-1.5 h-1.5 rounded-full bg-brass-500 flex-shrink-0" aria-hidden="true" />
+                      {h}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <!-- Amenities -->
+            {data.amenities.length > 0 && (
+              <div>
+                <h3 class="font-serif text-lg font-bold text-palm-900 mb-3">Amenities</h3>
+                <div class="flex flex-wrap gap-2">
+                  {data.amenities.map((a) => (
+                    <span class="text-xs px-3 py-1.5 bg-white border border-sand-200 rounded-sm text-ink-light/70 font-sans">
+                      {a}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <!-- Description -->
+            <div class="prose prose-sm max-w-none text-ink-light/80 leading-relaxed">
+              <h3 class="font-serif text-lg font-bold text-palm-900 !mb-3">Description</h3>
+              <Content />
+            </div>
+
+            <!-- Agent info -->
+            {data.contactAgent && (
+              <div class="bg-white border border-sand-200 rounded-sm p-5 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-palm-900/10 flex items-center justify-center text-palm-900 font-serif font-bold text-lg">
+                  {data.contactAgent.charAt(0)}
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-palm-900">{data.contactAgent}</p>
+                  <p class="text-xs text-ink-light/50">Contact Agent</p>
+                </div>
+                {data.contactPhone && (
+                  <a
+                    href={telLink(data.contactPhone)}
+                    class="ml-auto text-sm font-semibold text-palm-700 hover:text-palm-600 transition-colors"
+                  >
+                    {data.contactPhone}
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+
+          <!-- Sidebar - Enquiry Form -->
+          <div class="lg:col-span-1">
+            <div class="sticky top-24">
+              <EnquiryForm propertyTitle={data.title} propertySlug={slug} />
+
+              {/* WhatsApp CTA */}
+              <div class="mt-4 p-5 bg-[#25D366]/10 border border-[#25D366]/20 rounded-sm text-center">
+                <p class="text-sm font-medium text-palm-900">Prefer a quick chat?</p>
+                <a
+                  href={whatsappLink(site.whatsapp, `Hi, I'm interested in ${data.title} at ${data.location}. Can you share more details?`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-[#25D366] font-semibold text-sm mt-2 hover:underline"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884z"/></svg>
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'RealEstateListing',
+      name: data.title,
+      description: `${data.title} — ${data.location}. ${data.area}, ${data.price}.`,
+      url: Astro.url.href,
+      datePosted: data.published.toISOString(),
+    })} />
+  </article>
+</BaseLayout>

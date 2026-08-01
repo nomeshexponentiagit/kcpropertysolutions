@@ -1,0 +1,67 @@
+---
+export interface Props {
+  hiddenFields?: Record<string, string>;
+}
+
+const { hiddenFields = {} } = Astro.props;
+const web3formsKey = 'YOUR_WEB3FORMS_ACCESS_KEY'; // Replace with your actual key from https://web3forms.com
+---
+
+<form
+  action={`https://api.web3forms.com/submit`}
+  method="POST"
+  class="space-y-5"
+>
+  <input type="hidden" name="access_key" value={web3formsKey} />
+  <input type="hidden" name="subject" value="New Enquiry - KC Property Solutions" />
+  {Object.entries(hiddenFields).map(([key, value]) => (
+    <input type="hidden" name={key} value={value} />
+  ))}
+  <!-- Honeypot -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <div>
+      <label for="name" class="block text-xs font-sans font-semibold tracking-wide text-ink-light mb-1.5">Full Name *</label>
+      <input
+        type="text" id="name" name="name" required
+        class="w-full px-4 py-3 bg-white border border-sand-200 rounded-sm text-sm text-ink placeholder:text-ink-light/40 focus:outline-none focus:border-palm-600 transition-colors"
+        placeholder="Your name"
+      />
+    </div>
+    <div>
+      <label for="email" class="block text-xs font-sans font-semibold tracking-wide text-ink-light mb-1.5">Email Address *</label>
+      <input
+        type="email" id="email" name="email" required
+        class="w-full px-4 py-3 bg-white border border-sand-200 rounded-sm text-sm text-ink placeholder:text-ink-light/40 focus:outline-none focus:border-palm-600 transition-colors"
+        placeholder="you@example.com"
+      />
+    </div>
+  </div>
+
+  <div>
+    <label for="phone" class="block text-xs font-sans font-semibold tracking-wide text-ink-light mb-1.5">Phone Number *</label>
+    <input
+      type="tel" id="phone" name="phone" required
+      class="w-full px-4 py-3 bg-white border border-sand-200 rounded-sm text-sm text-ink placeholder:text-ink-light/40 focus:outline-none focus:border-palm-600 transition-colors"
+      placeholder="+91 98XXX XXXXX"
+    />
+  </div>
+
+  <div>
+    <label for="message" class="block text-xs font-sans font-semibold tracking-wide text-ink-light mb-1.5">Message *</label>
+    <textarea
+      id="message" name="message" rows="4" required
+      class="w-full px-4 py-3 bg-white border border-sand-200 rounded-sm text-sm text-ink placeholder:text-ink-light/40 focus:outline-none focus:border-palm-600 transition-colors resize-none"
+      placeholder="I'm interested in..."
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-palm-900 text-white px-8 py-4 rounded-sm font-sans text-sm font-semibold tracking-wide hover:bg-palm-700 transition-all duration-300"
+  >
+    Send Enquiry
+    <span aria-hidden="true">→</span>
+  </button>
+</form>

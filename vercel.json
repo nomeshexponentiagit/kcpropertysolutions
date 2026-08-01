@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro",
+  "redirects": [
+    { "source": "/projects/", "destination": "/projects", "permanent": true },
+    { "source": "/news/", "destination": "/news", "permanent": true }
+  ]
+}

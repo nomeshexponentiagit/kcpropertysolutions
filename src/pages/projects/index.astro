@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import PropertyCard from '../../components/properties/PropertyCard.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES } from '../../lib/properties';
+
+const allProperties = await getCollection('properties');
+const url = new URL(Astro.request.url);
+const activeCategory = url.searchParams.get('category') || 'all';
+
+const categoryEntries = Object.entries(CATEGORIES);
+---
+
+<BaseLayout
+  title="Properties | KC Property Solutions"
+  description="Browse our portfolio of premium plots, villas, guest houses, apartments, hotels, and resorts across North & South Goa."
+>
+  <section class="section-padding bg-sand-50">
+    <div class="container-wide">
+      <SectionHeading
+        eyebrow="Our Portfolio"
+        title="Properties in Goa"
+        accent="brass"
+      />
+
+      <!-- Category filter tabs -->
+      <div class="flex flex-wrap gap-2 mt-8 pb-2 overflow-x-auto" id="category-tabs">
+        {categoryEntries.map(([key, cat]) => (
+          <a
+            href={key === 'all' ? '/projects' : `/projects?category=${cat.slug}`}
+            class={`category-tab whitespace-nowrap text-xs font-sans font-semibold tracking-wider uppercase px-4 py-2.5 rounded-sm border transition-all duration-200 ${
+              activeCategory === cat.slug || (activeCategory === 'all' && key === 'all')
+                ? 'bg-palm-900 text-white border-palm-900'
+                : 'bg-white text-ink-light border-sand-200 hover:border-palm-600 hover:text-palm-900'
+            }`}
+          >
+            {cat.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Property grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        {allProperties
+          .filter((p) => activeCategory === 'all' || p.data.category === activeCategory)
+          .map((property) => (
+            <PropertyCard property={property} />
+          ))
+        }
+      </div>
+
+      <!-- Empty state -->
+      {allProperties.filter((p) => activeCategory === 'all' || p.data.category === activeCategory).length === 0 && (
+        <div class="text-center py-16">
+          <p class="text-ink-light/50 text-sm">No properties found in this category yet.</p>
+          <a href="/projects" class="text-palm-700 font-semibold text-sm mt-2 inline-block hover:underline">
+            View all properties →
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,50 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { site } from '../../lib/site';
+---
+
+<section class="section-padding bg-sand-50">
+  <div class="container-wide">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Text -->
+      <div class="order-2 lg:order-1">
+        <SectionHeading
+          eyebrow="Our Story"
+          title={site.homeAbout.heading}
+          accent="brass"
+        />
+        <p class="text-ink-light/80 leading-relaxed mt-6 text-sm md:text-base">
+          {site.homeAbout.body.split('\n').map((line) => line.trim()).filter(Boolean).map((line, i) => (
+            <span>{i > 0 && <span class="block mt-3" />}{line}</span>
+          ))}
+        </p>
+        {site.homeAbout.ctaUrl && site.homeAbout.ctaText && (
+          <a
+            href={site.homeAbout.ctaUrl}
+            class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-palm-900 hover:text-palm-600 transition-colors group"
+          >
+            {site.homeAbout.ctaText}
+            <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+          </a>
+        )}
+      </div>
+
+      <!-- Image placeholder -->
+      <div class="order-1 lg:order-2">
+        <div class="relative aspect-[4/3] rounded-sm overflow-hidden bg-sand-100 border border-sand-200">
+          <div class="absolute inset-0 bg-gradient-to-br from-palm-900/10 via-transparent to-laterite-500/10 flex items-center justify-center">
+            <!-- Decorative element representing Goa architecture -->
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" class="text-palm-900/15">
+              <path d="M16 56V24a24 24 0 0 1 48 0v32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M16 56h48" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 40h32M32 28h16" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="absolute bottom-3 left-3 right-3 text-center">
+            <span class="text-[10px] tracking-[0.3em] uppercase text-palm-900/30 font-sans font-semibold">Goa, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

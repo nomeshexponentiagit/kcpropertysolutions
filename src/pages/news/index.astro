@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeading from '../../components/ui/SectionHeading.astro';
+import NewsCard from '../../components/news/NewsCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const sortedPosts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// Extract unique tags
+const allTags = [...new Set(sortedPosts.flatMap((p) => p.data.tags))].sort();
+const url = new URL(Astro.request.url);
+const activeTag = url.searchParams.get('tag') || '';
+---
+
+<BaseLayout
+  title="News & Articles | KC Property Solutions"
+  description="Real estate insights, Goa property guides, and market updates from KC Property Solutions."
+>
+  <section class="section-padding bg-sand-50">
+    <div class="container-wide">
+      <SectionHeading
+        eyebrow="Insights"
+        title="News & Articles"
+        accent="brass"
+      />
+
+      <!-- Tag filters -->
+      {allTags.length > 0 && (
+        <div class="flex flex-wrap gap-2 mt-6">
+          <a
+            href="/news"
+            class={`text-xs font-sans font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm border transition-all duration-200 ${
+              !activeTag
+                ? 'bg-palm-900 text-white border-palm-900'
+                : 'bg-white text-ink-light border-sand-200 hover:border-palm-600'
+            }`}
+          >
+            All
+          </a>
+          {allTags.map((tag) => (
+            <a
+              href={`/news?tag=${tag}`}
+              class={`text-xs font-sans font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm border transition-all duration-200 ${
+                activeTag === tag
+                  ? 'bg-palm-900 text-white border-palm-900'
+                  : 'bg-white text-ink-light border-sand-200 hover:border-palm-600'
+              }`}
+            >
+              {tag.replace(/-/g, ' ')}
+            </a>
+          ))}
+        </div>
+      )}
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        {sortedPosts
+          .filter((p) => !activeTag || p.data.tags.includes(activeTag))
+          .map((post) => (
+            <NewsCard post={post} />
+          ))
+        }
+      </div>
+
+      {sortedPosts.filter((p) => !activeTag || p.data.tags.includes(activeTag)).length === 0 && (
+        <div class="text-center py-16">
+          <p class="text-ink-light/50">No articles with this tag yet.</p>
+          <a href="/news" class="text-palm-700 font-semibold text-sm mt-2 inline-block hover:underline">
+            View all articles →
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

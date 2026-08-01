@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import { site } from '../lib/site';
+---
+
+<BaseLayout
+  title="About Us | KC Property Solutions"
+  description="Learn about Goa's trusted property consultancy. With 12+ years of experience, we specialise in premium real estate across North & South Goa."
+>
+  <!-- Hero -->
+  <section class="relative bg-palm-950 py-20 md:py-28">
+    <div class="container-wide text-center relative z-10">
+      <span class="text-xs font-sans font-semibold tracking-[0.2em] uppercase text-brass-400/80">About Us</span>
+      <h1 class="font-serif text-3xl md:text-5xl font-bold text-white mt-3 leading-tight">
+        Goa's Trusted Property Partner
+      </h1>
+    </div>
+    <div class="absolute inset-0 opacity-20 bg-gradient-to-br from-palm-900 via-palm-800 to-palm-950" />
+  </section>
+
+  <!-- Our Story -->
+  <section class="section-padding bg-sand-50">
+    <div class="container-wide max-w-4xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <SectionHeading eyebrow="Our Story" title="Building Trust, One Property at a Time" accent="brass" />
+          <div class="mt-6 space-y-4 text-sm md:text-base text-ink-light/80 leading-relaxed">
+            <p>
+              KC Property Solutions was founded with a simple belief: buying or leasing property in Goa should be as enjoyable as living here. With over 12 years of experience in Goa's real estate market, we've helped hundreds of families and investors find their perfect property.
+            </p>
+            <p>
+              Our deep roots in North Goa give us unparalleled knowledge of local markets, regulations, and opportunities. From the serene villages of Assagao and Siolim to the bustling coastal stretches of Candolim and Calangute, we know every lane and every by-law.
+            </p>
+            <p>
+              We don't just match buyers with properties — we guide you through the entire journey. Title verification, legal due diligence, registration, and post-sale support — our team is with you at every step.
+            </p>
+          </div>
+        </div>
+        <div class="aspect-[3/4] bg-sand-100 rounded-sm border border-sand-200 flex items-center justify-center">
+          <div class="text-center p-8">
+            <div class="w-20 h-20 mx-auto rounded-full bg-palm-900/10 flex items-center justify-center">
+              <svg width="36" height="36" viewBox="0 0 48 48" fill="none" class="text-palm-900">
+                <path d="M8 38V16a16 16 0 0 1 32 0v22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M8 38h32" stroke="currentColor" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <p class="font-serif text-2xl font-bold text-palm-900 mt-4">KC</p>
+            <p class="text-xs tracking-[0.3em] uppercase text-ink-light/40 mt-1">Property Solutions</p>
+            <p class="text-sm text-ink-light/50 mt-4">Est. 2014</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="section-padding bg-sand-100">
+    <div class="container-wide max-w-4xl">
+      <SectionHeading eyebrow="Our Philosophy" title="Transparency, Integrity, Results" accent="laterite" />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div class="bg-white border border-sand-200 rounded-sm p-6 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brass-500/10 flex items-center justify-center">
+            <span class="text-xl" aria-hidden="true">🔍</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-palm-900 mt-4">Deep Local Knowledge</h3>
+          <p class="text-sm text-ink-light/60 mt-2 leading-relaxed">
+            Every village, every zone, every regulation — our team knows Goa's property landscape inside out.
+          </p>
+        </div>
+        <div class="bg-white border border-sand-200 rounded-sm p-6 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brass-500/10 flex items-center justify-center">
+            <span class="text-xl" aria-hidden="true">🤝</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-palm-900 mt-4">Client-First Approach</h3>
+          <p class="text-sm text-ink-light/60 mt-2 leading-relaxed">
+            We listen first, recommend second. Every property we show is matched to your specific needs and aspirations.
+          </p>
+        </div>
+        <div class="bg-white border border-sand-200 rounded-sm p-6 text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brass-500/10 flex items-center justify-center">
+            <span class="text-xl" aria-hidden="true">📋</span>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-palm-900 mt-4">Complete Due Diligence</h3>
+          <p class="text-sm text-ink-light/60 mt-2 leading-relaxed">
+            Title verification, encumbrance checks, zoning compliance — we handle the paperwork so you don't have to.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  {site.awards.length > 0 && (
+    <section class="section-padding bg-sand-50">
+      <div class="container-wide max-w-4xl">
+        <SectionHeading eyebrow="Recognition" title="Awards & Accolades" accent="brass" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+          {site.awards.map((award) => (
+            <div class="bg-white border border-sand-200 rounded-sm p-6 flex gap-4 items-start">
+              <div class="w-12 h-12 rounded-full bg-brass-500/10 flex-shrink-0 flex items-center justify-center">
+                <span class="text-brass-500 text-lg" aria-hidden="true">★</span>
+              </div>
+              <div>
+                <h3 class="font-serif text-base font-bold text-palm-900">{award.title}</h3>
+                <p class="text-sm text-ink-light/60 mt-1">{award.org}</p>
+                <span class="text-xs text-brass-500 font-semibold tracking-wider mt-2 inline-block">{award.year}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>
