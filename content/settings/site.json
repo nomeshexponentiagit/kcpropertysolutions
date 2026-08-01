@@ -1,42 +1,42 @@
 {
-  "siteName": "KC Property Solutions",
-  "tagline": "Your Gateway to Exceptional Real Estate",
-  "phone": "+91 9049708271",
-  "whatsapp": "919049708271",
-  "email": "kcpropertysolutions@gmail.com",
+  "siteName": "KC Property Solution Goa",
+  "tagline": "Where Vision Meets Value",
+  "phone": "+91 9011436002",
+  "whatsapp": "919011436002",
+  "email": "support@kcprsolution.com",
   "addresses": [
     {
       "name": "Head Office",
-      "address": "Near Panchayat, Assagao, North Goa – 403 507",
-      "phone": "+91 9049708271",
-      "mapUrl": "https://maps.google.com/?q=Assagao+Goa"
+      "address": "Near Domino's Pizza Mapusa, 5th Floor Office No 5, Mapusa, North Goa – 403 507",
+      "phone": "+91 9011436002",
+      "mapUrl": "https://maps.google.com/?q=Mapusa+Goa"
     }
   ],
   "social": {
-    "facebook": "https://facebook.com/",
-    "instagram": "https://instagram.com/",
-    "linkedin": "https://linkedin.com/",
-    "youtube": "https://youtube.com/"
+    "facebook": "https://facebook.com/kcpropertysolution",
+    "instagram": "https://instagram.com/kcpropertysolution",
+    "linkedin": "https://linkedin.com/company/kcpropertysolution",
+    "youtube": ""
   },
   "heroSlides": [
     {
       "image": "/images/hero-villa.svg",
-      "heading": "Discover Your Dream Property in Goa",
-      "subheading": "Premium villas, plots, and apartments across North & South Goa",
+      "heading": "Discover Luxury Living in Goa",
+      "subheading": "Premium villas, resorts, plots & commercial spaces across North & South Goa",
       "ctaText": "Explore Properties",
       "ctaUrl": "/projects"
     },
     {
       "image": "/images/hero-resort.svg",
-      "heading": "Luxury Resorts & Hotels",
-      "subheading": "Prime investment opportunities in Goa's thriving hospitality sector",
+      "heading": "Boutique Resorts & Hospitality Investments",
+      "subheading": "Capitalize on Goa's thriving tourism economy",
       "ctaText": "View Listings",
       "ctaUrl": "/projects?category=resorts"
     },
     {
       "image": "/images/hero-plot.svg",
-      "heading": "Your Land, Your Legacy",
-      "subheading": "Handpicked plots in Goa's most sought-after locations",
+      "heading": "Premium Plots & Lands",
+      "subheading": "Curated land parcels in Goa's most sought-after locations",
       "ctaText": "Find Land",
       "ctaUrl": "/projects?category=plots"
     }
@@ -48,26 +48,26 @@
     { "value": "100", "suffix": "K+", "label": "Sq.Ft. Area Transacted" }
   ],
   "homeAbout": {
-    "heading": "North Goa's Trusted Property Partner",
-    "body": "KC Property Solutions brings over a decade of expertise in Goa's premium real estate market. From beachside villas in Assagao to investment plots in South Goa, we connect discerning buyers with exceptional properties. Our deep local knowledge, transparent dealings, and commitment to client satisfaction have made us one of North Goa's most recommended property consultancies.",
+    "heading": "A Luxury Real Estate Consultant in Goa",
+    "body": "KC Property Solution is more than real estate — it's an integrated lifestyle ecosystem that combines brand prestige, experiential excellence, and financial performance. Every asset is carefully positioned to optimise profitability while creating lasting value for both clients and investors. We specialise in Luxury Villas, Hotels & Resorts, Premium Plots, and Grade-A Commercial Spaces across Goa's most prestigious addresses.",
     "ctaText": "Our Story",
     "ctaUrl": "/about"
   },
   "awards": [
     {
-      "title": "Best Property Consultant – North Goa 2025",
-      "org": "Goa Real Estate Excellence Awards",
-      "year": "2025"
+      "title": "RERA Registered Agent",
+      "org": "Goa Real Estate Regulatory Authority",
+      "year": "AGGO10252013"
     },
     {
-      "title": "Top Brokerage – Luxury Homes Goa",
-      "org": "Times Property Icons",
-      "year": "2024"
+      "title": "Curated Luxury Real Estate",
+      "org": "North Goa's Premium Property Consultant",
+      "year": "Since 2014"
     }
   ],
   "seo": {
-    "defaultTitle": "KC Property Solutions | Plots, Villas, Guest Houses & More in Goa",
-    "defaultDescription": "KC Property Solutions — North Goa's trusted real estate consultancy. Buy, sell, and lease premium plots, villas, guest houses, apartments, hotels, and resorts across North & South Goa.",
+    "defaultTitle": "KC Property Solution Goa | Luxury Villas, Resorts, Plots & Commercial Spaces",
+    "defaultDescription": "KC Property Solution Goa — Goa's premium luxury real estate consultant. Curating bespoke residences, boutique hospitality assets, plots, and commercial spaces in North & South Goa. RERA registered: AGGO10252013.",
     "ogImage": "/images/og-cover.svg"
   }
 }

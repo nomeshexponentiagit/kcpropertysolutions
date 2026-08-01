@@ -28,7 +28,7 @@ gallery:
   - "/images/properties/riverside-land-parcel-2.svg"
 locationUrl: "https://maps.google.com/?q=Aldona+Goa"
 contactAgent: "Priya Sharma"
-contactPhone: "+91 9049708271"
+contactPhone: "+91 9011436002"
 published: 2026-08-01
 ---
 

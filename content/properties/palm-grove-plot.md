@@ -26,7 +26,7 @@ gallery:
   - "/images/properties/palm-grove-2.svg"
 locationUrl: "https://maps.google.com/?q=Siolim+Goa"
 contactAgent: "Priya Sharma"
-contactPhone: "+91 9049708271"
+contactPhone: "+91 9011436002"
 published: 2026-07-20
 ---
 

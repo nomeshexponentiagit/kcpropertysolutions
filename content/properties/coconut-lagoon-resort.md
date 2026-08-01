@@ -29,7 +29,7 @@ gallery:
   - "/images/properties/coconut-lagoon-resort-2.svg"
 locationUrl: "https://maps.google.com/?q=Ashwem+Goa"
 contactAgent: "Rohan Naik"
-contactPhone: "+91 9049708271"
+contactPhone: "+91 9011436002"
 published: 2026-08-01
 ---
 
