@@ -28,11 +28,12 @@ const featured = allProperties
           >
             <!-- Image -->
             <div class="aspect-[4/3] overflow-hidden bg-sand-100 relative">
-              <div class={`absolute inset-0 bg-gradient-to-br ${
-                property.data.category === 'villas' ? 'from-palm-800/20 via-palm-900/5 to-laterite-500/10' :
-                property.data.category === 'plots' ? 'from-ocean-500/20 via-palm-900/5 to-brass-500/10' :
-                'from-palm-900/20 via-palm-900/5 to-ocean-500/10'
-              }`} />
+              <img
+                src={property.data.featuredImage}
+                alt={property.data.title}
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
               <div class="absolute top-3 left-3 flex gap-2">
                 <Badge variant={property.data.category === 'villas' ? 'brass' : property.data.category === 'plots' ? 'palm' : 'laterite'} size="sm">
                   {property.data.category.replace('-', ' ')}

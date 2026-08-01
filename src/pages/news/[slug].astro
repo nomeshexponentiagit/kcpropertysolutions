@@ -59,11 +59,13 @@ const { Content } = await render(post);
         <span>{data.author}</span>
       </div>
 
-      <!-- Featured image placeholder -->
+      <!-- Featured image -->
       <div class="aspect-[16/9] bg-sand-100 rounded-sm mt-6 overflow-hidden border border-sand-200">
-        <div class="w-full h-full bg-gradient-to-br from-palm-900/20 via-palm-900/5 to-laterite-500/10 flex items-center justify-center">
-          <span class="text-ink-light/20 text-sm tracking-[0.3em] uppercase font-sans">KC Property Solutions</span>
-        </div>
+        <img
+          src={data.coverImage}
+          alt={data.title}
+          class="w-full h-full object-cover"
+        />
       </div>
 
       <!-- Content -->

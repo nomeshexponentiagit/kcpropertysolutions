@@ -13,12 +13,12 @@ const categoryLabel = CATEGORIES[property.data.category as keyof typeof CATEGORI
 >
   <!-- Image -->
   <div class="aspect-[4/3] bg-sand-100 relative overflow-hidden">
-    <div class={`absolute inset-0 bg-gradient-to-br ${
-      property.data.category === 'villas' ? 'from-palm-800/20 via-palm-900/5 to-laterite-500/10' :
-      property.data.category === 'plots' ? 'from-ocean-500/20 via-palm-900/5 to-brass-500/10' :
-      property.data.category === 'guest-houses' || property.data.category === 'hotels' || property.data.category === 'resorts' ? 'from-laterite-500/20 via-palm-900/5 to-ocean-500/10' :
-      'from-palm-900/20 via-palm-900/5 to-ocean-500/10'
-    }`} />
+    <img
+      src={property.data.featuredImage}
+      alt={property.data.title}
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
     <div class="absolute top-3 left-3 flex gap-2">
       <Badge variant={property.data.featured ? 'brass' : 'palm'} size="sm">
         {categoryLabel}

@@ -10,7 +10,12 @@ const { post } = Astro.props as { post: CollectionEntry<'posts'> };
   class="group block bg-white border border-sand-200 rounded-sm overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300"
 >
   <div class="aspect-[16/9] bg-sand-100 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-palm-900/20 via-palm-900/5 to-laterite-500/10" />
+    <img
+      src={post.data.coverImage}
+      alt={post.data.title}
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
     <div class="absolute top-3 left-3 flex flex-wrap gap-1">
       {post.data.tags.slice(0, 2).map((tag) => (
         <span class="text-[10px] px-2 py-0.5 rounded-sm bg-white/90 text-palm-900 font-sans font-semibold tracking-wide uppercase">
