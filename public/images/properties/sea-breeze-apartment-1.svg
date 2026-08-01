@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="sbi1bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="55%" stop-color="#125C45"/>
+      <stop offset="100%" stop-color="#1B7A63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sbi1bg)"/>
+  <!-- Wall + floor -->
+  <rect x="0" y="0" width="800" height="430" fill="#103F31" opacity="0.55"/>
+  <rect x="0" y="430" width="800" height="170" fill="#06281E" opacity="0.9"/>
+  <line x1="0" y1="430" x2="800" y2="430" stroke="#C9A227" stroke-width="2" opacity="0.5"/>
+  <!-- Sea view window -->
+  <rect x="430" y="90" width="300" height="270" rx="2" fill="#0E4E63"/>
+  <rect x="438" y="98" width="284" height="254" rx="1" fill="#7FD1C8" opacity="0.18"/>
+  <path d="M450 240 Q500 226 550 240 T650 240 T750 240" stroke="#7FD1C8" stroke-width="2" opacity="0.5" fill="none"/>
+  <path d="M450 280 Q520 264 590 280 T730 280" stroke="#7FD1C8" stroke-width="2" opacity="0.35" fill="none"/>
+  <circle cx="650" cy="150" r="26" fill="#E3C565" opacity="0.5"/>
+  <line x1="580" y1="90" x2="580" y2="360" stroke="#06281E" stroke-width="4" opacity="0.6"/>
+  <line x1="430" y1="225" x2="730" y2="225" stroke="#06281E" stroke-width="4" opacity="0.6"/>
+  <rect x="430" y="90" width="300" height="270" rx="2" fill="none" stroke="#C9A227" stroke-width="3"/>
+  <!-- Curtains -->
+  <rect x="426" y="82" width="26" height="286" fill="#0A3527" opacity="0.85"/>
+  <rect x="708" y="82" width="26" height="286" fill="#0A3527" opacity="0.85"/>
+  <!-- Sofa -->
+  <g>
+    <rect x="80" y="330" width="300" height="70" rx="10" fill="#13674A"/>
+    <rect x="80" y="300" width="300" height="40" rx="10" fill="#1E8A5F"/>
+    <rect x="88" y="268" width="60" height="62" rx="10" fill="#13674A"/>
+    <rect x="312" y="268" width="60" height="62" rx="10" fill="#13674A"/>
+    <rect x="100" y="310" width="52" height="26" rx="6" fill="#C9A227" opacity="0.9"/>
+    <rect x="166" y="310" width="52" height="26" rx="6" fill="#C9A227" opacity="0.7"/>
+    <rect x="232" y="310" width="52" height="26" rx="6" fill="#C9A227" opacity="0.9"/>
+  </g>
+  <!-- Coffee table -->
+  <rect x="170" y="408" width="120" height="22" rx="4" fill="#C9A227" opacity="0.85"/>
+  <rect x="178" y="430" width="10" height="14" fill="#0A3527"/>
+  <rect x="272" y="430" width="10" height="14" fill="#0A3527"/>
+  <!-- Floor lamp -->
+  <line x1="60" y1="340" x2="60" y2="240" stroke="#C9A227" stroke-width="4"/>
+  <path d="M40 240 L80 240 L72 216 L48 216 Z" fill="#C9A227" opacity="0.9"/>
+  <!-- Plant -->
+  <rect x="380" y="380" width="34" height="50" rx="4" fill="#8B5A2B"/>
+  <g fill="#13674A">
+    <path d="M397 380 C388 348 376 336 360 348 C376 352 386 364 392 378 Z"/>
+    <path d="M397 380 C410 350 424 340 440 350 C424 356 412 366 404 380 Z"/>
+    <path d="M397 380 C398 348 396 336 400 320 C406 340 408 358 404 380 Z"/>
+  </g>
+  <!-- Pendant light -->
+  <line x1="240" y1="0" x2="240" y2="80" stroke="#C9A227" stroke-width="3"/>
+  <path d="M214 80 L266 80 L258 104 L222 104 Z" fill="#E3C565" opacity="0.85"/>
+  <!-- Rug -->
+  <ellipse cx="230" cy="452" rx="150" ry="22" fill="#C9A227" opacity="0.22"/>
+  <!-- Wall art -->
+  <rect x="150" y="160" width="70" height="52" rx="2" fill="#06281E" stroke="#C9A227" stroke-width="2"/>
+  <path d="M162 196 L180 178 L192 190 L200 182 L212 196" stroke="#C9A227" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- INTERIOR label -->
+  <rect x="30" y="520" width="180" height="50" rx="4" fill="#C9A227" opacity="0.9"/>
+  <text x="120" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">INTERIOR</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="brWall" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#F3E9D6"/>
+      <stop offset="100%" stop-color="#EAD9B8"/>
+    </linearGradient>
+    <linearGradient id="brNight" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0A2E4E"/>
+      <stop offset="100%" stop-color="#155E8A"/>
+    </linearGradient>
+    <linearGradient id="brGold" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#E8C766"/>
+      <stop offset="55%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#8F6F14"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#brWall)"/>
+  <!-- Wainscot -->
+  <rect x="0" y="390" width="800" height="80" fill="#EAD9B8"/>
+  <rect x="0" y="388" width="800" height="4" fill="#C9A227"/>
+  <rect x="0" y="470" width="800" height="10" fill="#D9BE8E"/>
+  <!-- Wood floor -->
+  <rect x="0" y="480" width="800" height="120" fill="#C79A6B"/>
+  <g stroke="#A87B4A" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="512" x2="800" y2="512"/>
+    <line x1="0" y1="548" x2="800" y2="548"/>
+    <line x1="0" y1="584" x2="800" y2="584"/>
+  </g>
+  <!-- Rug -->
+  <ellipse cx="260" cy="530" rx="210" ry="42" fill="#2E6E8E" opacity="0.7"/>
+  <ellipse cx="260" cy="530" rx="210" ry="42" fill="none" stroke="#C9A227" stroke-width="3"/>
+  <!-- Window with ocean view -->
+  <rect x="480" y="50" width="280" height="380" fill="#F5EBD8" stroke="#C9A227" stroke-width="7"/>
+  <rect x="492" y="62" width="256" height="356" fill="url(#brNight)"/>
+  <circle cx="640" cy="130" r="26" fill="#F7D97E"/>
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="520" cy="90" r="1.8"/><circle cx="545" cy="120" r="1.5"/><circle cx="570" cy="80" r="2"/>
+    <circle cx="610" cy="100" r="1.6"/><circle cx="680" cy="90" r="1.8"/><circle cx="710" cy="120" r="1.5"/>
+    <circle cx="700" cy="160" r="1.6"/><circle cx="520" cy="170" r="1.5"/><circle cx="585" cy="200" r="1.8"/>
+  </g>
+  <!-- Sea through window -->
+  <rect x="492" y="300" width="256" height="118" fill="#0B3D5C"/>
+  <g stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" fill="none">
+    <path d="M492 330 Q540 324 590 330 T690 330 T748 330"/>
+    <path d="M492 360 Q540 354 590 360 T690 360 T748 360"/>
+    <path d="M492 392 Q540 386 590 392 T690 392 T748 392"/>
+  </g>
+  <rect x="628" y="140" width="24" height="165" fill="#F7D97E" opacity="0.25"/>
+  <!-- Cliff through window -->
+  <path d="M492 380 Q560 342 620 372 L748 336 L748 418 L492 418 Z" fill="#06233A"/>
+  <!-- Sheer curtain -->
+  <path d="M470 40 Q452 220 462 430 L500 430 L500 60 Z" fill="#FBF6EA" opacity="0.9"/>
+  <g stroke="#E3D5B8" stroke-width="1.5" opacity="0.8">
+    <path d="M478 46 Q464 220 473 424" fill="none"/>
+    <path d="M488 46 Q477 220 484 426" fill="none"/>
+  </g>
+  <rect x="458" y="330" width="10" height="26" rx="5" fill="#C9A227"/>
+  <!-- Bed -->
+  <rect x="70" y="290" width="320" height="90" rx="6" fill="#2E6E8E"/>
+  <rect x="70" y="372" width="320" height="6" fill="#C9A227"/>
+  <rect x="90" y="270" width="280" height="24" rx="6" fill="#2E6E8E"/>
+  <rect x="90" y="270" width="280" height="5" fill="#C9A227"/>
+  <rect x="95" y="345" width="80" height="46" rx="6" fill="#FBF6EA" stroke="#D9C49B" stroke-width="2"/>
+  <rect x="182" y="345" width="80" height="46" rx="6" fill="#FBF6EA" stroke="#D9C49B" stroke-width="2"/>
+  <rect x="75" y="395" width="310" height="58" rx="8" fill="#FBF6EA"/>
+  <rect x="75" y="428" width="310" height="14" fill="#C9A227"/>
+  <rect x="75" y="453" width="310" height="18" fill="#2E6E8E"/>
+  <line x1="230" y1="395" x2="230" y2="470" stroke="#C9A227" stroke-width="2" opacity="0.6"/>
+  <!-- Side table + lamp -->
+  <rect x="30" y="410" width="40" height="52" rx="3" fill="#8A5A33"/>
+  <rect x="46" y="358" width="8" height="52" fill="#C9A227"/>
+  <path d="M28 358 L72 358 L62 328 L38 328 Z" fill="#F7D97E"/>
+  <circle cx="50" cy="395" r="48" fill="#F7D97E" opacity="0.3"/>
+  <!-- Art above bed -->
+  <g>
+    <rect x="120" y="190" width="80" height="70" fill="#D9C49B" stroke="#C9A227" stroke-width="4"/>
+    <rect x="130" y="200" width="60" height="50" fill="#155E8A"/>
+    <circle cx="160" cy="218" r="12" fill="#F7D97E"/>
+    <rect x="240" y="190" width="80" height="70" fill="#D9C49B" stroke="#C9A227" stroke-width="4"/>
+    <rect x="250" y="200" width="60" height="50" fill="#2E6E8E"/>
+    <path d="M250 250 Q270 225 290 245 Q300 235 310 248 L310 250 Z" fill="#C9A227"/>
+  </g>
+  <!-- Pendant light -->
+  <line x1="400" y1="0" x2="400" y2="58" stroke="#C9A227" stroke-width="2.5"/>
+  <circle cx="400" cy="70" r="18" fill="url(#brGold)"/>
+  <circle cx="400" cy="70" r="52" fill="#F7D97E" opacity="0.25"/>
+  <!-- Brass label -->
+  <rect x="30" y="30" width="170" height="50" rx="4" fill="#C9A227" opacity="0.9"/>
+  <text x="115" y="61" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#06281E">ROOMS</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="rrbg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14808F"/>
+      <stop offset="50%" stop-color="#0B4556"/>
+      <stop offset="100%" stop-color="#06281E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#rrbg)"/>
+  <!-- Low sun over the river -->
+  <circle cx="585" cy="200" r="46" fill="#C9A227" opacity="0.32"/>
+  <!-- Building with veranda -->
+  <g fill="#06281E">
+    <rect x="245" y="245" width="310" height="16" rx="2" opacity="0.2"/>
+    <rect x="255" y="255" width="290" height="150" rx="2" opacity="0.2"/>
+    <rect x="255" y="405" width="290" height="10" opacity="0.2"/>
+    <rect x="250" y="261" width="10" height="144" opacity="0.16"/>
+    <rect x="335" y="261" width="10" height="144" opacity="0.16"/>
+    <rect x="420" y="261" width="10" height="144" opacity="0.16"/>
+    <rect x="505" y="261" width="10" height="144" opacity="0.16"/>
+    <path d="M272 285a18 18 0 0 1 36 0v50h-36Z" opacity="0.16"/>
+    <path d="M442 285a18 18 0 0 1 36 0v50h-36Z" opacity="0.16"/>
+    <path d="M355 330 A26 26 0 0 1 407 330 L407 415 L355 415 Z" opacity="0.22"/>
+  </g>
+  <path d="M355 330 A26 26 0 0 1 407 330 L407 415 L355 415 Z" fill="none" stroke="#C9A227" stroke-width="3" opacity="0.35"/>
+  <!-- River -->
+  <rect x="0" y="440" width="800" height="160" fill="#06281E" opacity="0.4"/>
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#C9A227" stroke-width="2" opacity="0.2"/>
+  <rect x="575" y="440" width="20" height="90" fill="#C9A227" opacity="0.12"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.16">
+    <line x1="120" y1="480" x2="230" y2="480"/>
+    <line x1="170" y1="520" x2="270" y2="520"/>
+    <line x1="460" y1="500" x2="550" y2="500"/>
+    <line x1="120" y1="560" x2="200" y2="560"/>
+    <line x1="620" y1="570" x2="720" y2="570"/>
+  </g>
+  <!-- Reeds -->
+  <g fill="#06281E" opacity="0.2">
+    <ellipse cx="690" cy="430" rx="3" ry="46"/>
+    <ellipse cx="712" cy="436" rx="3" ry="38"/>
+    <ellipse cx="734" cy="428" rx="3" ry="42"/>
+    <ellipse cx="690" cy="382" rx="5" ry="12"/>
+    <ellipse cx="712" cy="396" rx="5" ry="10"/>
+    <ellipse cx="734" cy="384" rx="5" ry="11"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="230" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="145" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">RIVERA RETREAT</text>
+</svg>

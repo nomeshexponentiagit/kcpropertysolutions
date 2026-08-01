@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="cv2" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A5532E"/>
+      <stop offset="50%" stop-color="#7A3B22"/>
+      <stop offset="100%" stop-color="#0F523C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#cv2)"/>
+  <!-- Villa in the background -->
+  <g opacity="0.3" fill="#1B0D07">
+    <rect x="240" y="160" width="320" height="120" rx="2"/>
+    <polygon points="240,160 400,90 560,160"/>
+    <rect x="270" y="190" width="14" height="70"/>
+    <rect x="310" y="190" width="14" height="70"/>
+    <rect x="350" y="190" width="14" height="70"/>
+    <rect x="390" y="190" width="14" height="70"/>
+    <rect x="430" y="190" width="14" height="70"/>
+    <rect x="470" y="190" width="14" height="70"/>
+  </g>
+  <!-- Palms -->
+  <g opacity="0.35" fill="#F2E3C0">
+    <ellipse cx="90" cy="330" rx="3" ry="100"/>
+    <path d="M90 230 l-40 52 36-7 32 40 7-24-23-8 30-46h-7l-13 27-6-27Z"/>
+    <ellipse cx="710" cy="350" rx="3" ry="85"/>
+    <path d="M710 265 l-35 44 31-6 28 35 6-21-20-7 26-40h-6l-11 23-6-23Z"/>
+  </g>
+  <!-- Pool -->
+  <ellipse cx="400" cy="430" rx="270" ry="75" fill="#2E6E7E" opacity="0.55"/>
+  <ellipse cx="400" cy="430" rx="205" ry="55" fill="#9FD4DC" opacity="0.3"/>
+  <!-- Deck -->
+  <rect x="0" y="505" width="800" height="95" fill="#06281E" opacity="0.35"/>
+  <!-- Loungers -->
+  <g opacity="0.55" fill="#F2E3C0">
+    <rect x="130" y="468" width="80" height="10" rx="5"/>
+    <rect x="140" y="478" width="9" height="30"/>
+    <rect x="192" y="478" width="9" height="30"/>
+    <rect x="590" y="468" width="80" height="10" rx="5"/>
+    <rect x="600" y="478" width="9" height="30"/>
+    <rect x="652" y="478" width="9" height="30"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="150" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="105" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">POOL DECK</text>
+</svg>

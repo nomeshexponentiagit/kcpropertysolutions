@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C1219"/>
+      <stop offset="100%" stop-color="#1E2937"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="dusk" cx="0.5" cy="0.35" r="0.45">
+      <stop offset="0%" stop-color="#E3C565" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E3C565" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#dusk)"/>
+  <!-- Church tower in the distance -->
+  <g>
+    <rect x="370" y="130" width="60" height="150" fill="#0E151D"/>
+    <polygon points="370,130 400,92 430,130" fill="#0E151D"/>
+    <rect x="396" y="84" width="8" height="14" fill="#C9A227"/>
+    <line x1="400" y1="78" x2="400" y2="70" stroke="#C9A227" stroke-width="3"/>
+    <circle cx="400" cy="156" r="12" fill="none" stroke="#C9A227" stroke-width="3" opacity="0.8"/>
+    <line x1="388" y1="156" x2="412" y2="156" stroke="#C9A227" stroke-width="2" opacity="0.8"/>
+    <rect x="370" y="280" width="60" height="3" fill="#C9A227" opacity="0.5"/>
+  </g>
+  <!-- Street receding -->
+  <polygon points="0,600 800,600 470,430 330,430" fill="#0B1119"/>
+  <polygon points="60,600 740,600 460,438 340,438" fill="#101820"/>
+  <!-- Shop facades behind left stalls -->
+  <polygon points="0,600 320,440 380,440 160,600" fill="#151F2C"/>
+  <rect x="0" y="400" width="60" height="40" fill="#1B2735"/>
+  <rect x="70" y="408" width="60" height="32" fill="#1B2735"/>
+  <rect x="140" y="416" width="60" height="24" fill="#1B2735"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.45">
+    <line x1="20" y1="440" x2="20" y2="600"/>
+    <line x1="80" y1="440" x2="80" y2="600"/>
+    <line x1="140" y1="440" x2="140" y2="600"/>
+    <line x1="200" y1="440" x2="200" y2="600"/>
+    <line x1="260" y1="440" x2="260" y2="600"/>
+  </g>
+  <rect x="24" y="460" width="32" height="90" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="150" y="460" width="32" height="90" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="36" y="478" width="12" height="8" fill="#E3C565" opacity="0.5"/>
+  <!-- Shop facades behind right stalls -->
+  <polygon points="800,600 480,440 420,440 640,600" fill="#141D2A"/>
+  <rect x="640" y="404" width="60" height="36" fill="#1A2634"/>
+  <rect x="710" y="414" width="60" height="26" fill="#1A2634"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.45">
+    <line x1="480" y1="440" x2="480" y2="600"/>
+    <line x1="540" y1="440" x2="540" y2="600"/>
+    <line x1="600" y1="440" x2="600" y2="600"/>
+    <line x1="660" y1="440" x2="660" y2="600"/>
+    <line x1="720" y1="440" x2="720" y2="600"/>
+  </g>
+  <rect x="492" y="458" width="32" height="92" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="612" y="458" width="32" height="92" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="504" y="476" width="12" height="8" fill="#E3C565" opacity="0.5"/>
+  <!-- Left market stalls -->
+  <g>
+    <rect x="20" y="486" width="150" height="6" fill="#C9A227" opacity="0.75"/>
+    <path d="M20 486 L30 452 L48 452 L20 486Z" fill="#C9A227" opacity="0.75"/>
+    <path d="M48 452 L66 452 L38 486 L20 486Z" fill="#0B1017"/>
+    <path d="M66 452 L84 452 L56 486 L38 486Z" fill="#C9A227" opacity="0.75"/>
+    <path d="M84 452 L102 452 L74 486 L56 486Z" fill="#0B1017"/>
+    <path d="M102 452 L120 452 L92 486 L74 486Z" fill="#C9A227" opacity="0.75"/>
+    <path d="M120 452 L138 452 L110 486 L92 486Z" fill="#0B1017"/>
+    <path d="M138 452 L156 452 L128 486 L110 486Z" fill="#C9A227" opacity="0.75"/>
+    <rect x="34" y="492" width="126" height="16" fill="#1A2430"/>
+    <rect x="48" y="508" width="100" height="24" fill="#151F2C"/>
+    <g fill="#C9A227" opacity="0.55">
+      <rect x="56" y="512" width="10" height="8"/><rect x="72" y="512" width="10" height="8"/>
+      <rect x="88" y="512" width="10" height="8"/><rect x="104" y="512" width="10" height="8"/>
+      <rect x="120" y="512" width="10" height="8"/>
+    </g>
+  </g>
+  <!-- Right market stalls -->
+  <g>
+    <rect x="620" y="488" width="150" height="6" fill="#C9A227" opacity="0.75"/>
+    <path d="M620 488 L634 452 L652 452 L620 488Z" fill="#0B1017"/>
+    <path d="M652 452 L670 452 L642 488 L620 488Z" fill="#C9A227" opacity="0.75"/>
+    <path d="M670 452 L688 452 L660 488 L642 488Z" fill="#0B1017"/>
+    <path d="M688 452 L706 452 L678 488 L660 488Z" fill="#C9A227" opacity="0.75"/>
+    <path d="M706 452 L724 452 L696 488 L678 488Z" fill="#0B1017"/>
+    <path d="M724 452 L742 452 L714 488 L696 488Z" fill="#C9A227" opacity="0.75"/>
+    <path d="M742 452 L760 452 L732 488 L714 488Z" fill="#0B1017"/>
+    <rect x="634" y="494" width="126" height="16" fill="#1A2430"/>
+    <rect x="648" y="510" width="100" height="24" fill="#151F2C"/>
+    <g fill="#C9A227" opacity="0.55">
+      <rect x="656" y="514" width="10" height="8"/><rect x="672" y="514" width="10" height="8"/>
+      <rect x="688" y="514" width="10" height="8"/><rect x="704" y="514" width="10" height="8"/>
+      <rect x="720" y="514" width="10" height="8"/>
+    </g>
+  </g>
+  <!-- Central stall closer to camera -->
+  <g>
+    <rect x="330" y="470" width="140" height="6" fill="#C9A227" opacity="0.8"/>
+    <path d="M330 470 L342 434 L360 434 L330 470Z" fill="#C9A227" opacity="0.8"/>
+    <path d="M360 434 L378 434 L348 470 L330 470Z" fill="#0B1017"/>
+    <path d="M378 434 L396 434 L366 470 L348 470Z" fill="#C9A227" opacity="0.8"/>
+    <path d="M396 434 L414 434 L384 470 L366 470Z" fill="#0B1017"/>
+    <path d="M414 434 L432 434 L402 470 L384 470Z" fill="#C9A227" opacity="0.8"/>
+    <path d="M432 434 L450 434 L420 470 L402 470Z" fill="#0B1017"/>
+    <path d="M450 434 L468 434 L438 470 L420 470Z" fill="#C9A227" opacity="0.8"/>
+    <rect x="344" y="476" width="116" height="18" fill="#1A2430"/>
+    <rect x="360" y="494" width="86" height="30" fill="#151F2C"/>
+    <rect x="376" y="500" width="54" height="8" fill="#E3C565" opacity="0.4"/>
+  </g>
+  <!-- Crowd silhouettes -->
+  <g fill="#060A0E" opacity="0.85">
+    <circle cx="290" cy="520" r="7"/><path d="M282 527 Q290 522 298 527 L297 552 L283 552Z"/>
+    <circle cx="316" cy="512" r="6"/><path d="M309 518 Q316 514 323 518 L322 540 L310 540Z"/>
+    <circle cx="486" cy="516" r="7"/><path d="M478 523 Q486 518 494 523 L493 548 L479 548Z"/>
+    <circle cx="512" cy="524" r="6"/><path d="M505 530 Q512 526 519 530 L518 550 L506 550Z"/>
+    <circle cx="412" cy="560" r="8"/><path d="M403 568 Q412 562 421 568 L420 596 L404 596Z"/>
+  </g>
+  <!-- Strings of bulbs -->
+  <path d="M0 250 Q400 290 800 240" stroke="#C9A227" stroke-width="1.5" opacity="0.6" fill="none"/>
+  <g fill="#E3C565">
+    <circle cx="70" cy="258" r="4"/><circle cx="160" cy="271" r="4"/><circle cx="250" cy="280" r="4"/>
+    <circle cx="340" cy="285" r="4"/><circle cx="430" cy="286" r="4"/><circle cx="520" cy="282" r="4"/>
+    <circle cx="610" cy="274" r="4"/><circle cx="700" cy="261" r="4"/>
+  </g>
+  <path d="M120 320 Q400 352 680 310" stroke="#C9A227" stroke-width="1.5" opacity="0.45" fill="none"/>
+  <g fill="#E3C565" opacity="0.85">
+    <circle cx="200" cy="334" r="3"/><circle cx="300" cy="341" r="3"/><circle cx="400" cy="343" r="3"/>
+    <circle cx="500" cy="340" r="3"/><circle cx="600" cy="331" r="3"/>
+  </g>
+  <!-- Road dashes -->
+  <g stroke="#E3C565" stroke-width="2.5" opacity="0.3" fill="none">
+    <line x1="400" y1="470" x2="400" y2="506"/>
+    <line x1="400" y1="532" x2="400" y2="568"/>
+  </g>
+  <!-- Trees -->
+  <g>
+    <rect x="60" y="340" width="5" height="90" fill="#1A3B2E"/>
+    <circle cx="62" cy="318" r="28" fill="#1B4034"/>
+    <circle cx="36" cy="332" r="16" fill="#1B4034"/>
+    <circle cx="90" cy="334" r="15" fill="#1B4034"/>
+    <rect x="732" y="348" width="5" height="82" fill="#1A3B2E"/>
+    <circle cx="734" cy="328" r="26" fill="#1B4034"/>
+    <circle cx="710" cy="340" r="14" fill="#1B4034"/>
+    <circle cx="760" cy="342" r="14" fill="#1B4034"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="170" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="115" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#0B1017">STREET VIEW</text>
+</svg>

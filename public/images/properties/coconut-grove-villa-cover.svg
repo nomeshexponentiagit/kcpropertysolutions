@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="cvbg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7A3B22"/>
+      <stop offset="45%" stop-color="#A5532E"/>
+      <stop offset="100%" stop-color="#0F523C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#cvbg)"/>
+  <!-- Sun -->
+  <circle cx="620" cy="130" r="70" fill="#F2E3C0" opacity="0.25"/>
+  <!-- Ground -->
+  <rect x="0" y="500" width="800" height="100" fill="#06281E" opacity="0.25"/>
+  <!-- Pool -->
+  <ellipse cx="430" cy="470" rx="160" ry="36" fill="#2E6E7E" opacity="0.5"/>
+  <ellipse cx="430" cy="470" rx="115" ry="25" fill="#8FC8CE" opacity="0.35"/>
+  <!-- Villa silhouette: tropical modern blocks with sloped accent roof -->
+  <g opacity="0.35" fill="#1B0D07">
+    <rect x="290" y="270" width="280" height="180" rx="3"/>
+    <rect x="570" y="300" width="110" height="150" rx="3"/>
+    <polygon points="290,270 350,205 430,205 490,270"/>
+    <rect x="570" y="300" width="110" height="28"/>
+    <rect x="310" y="300" width="16" height="120"/>
+    <rect x="340" y="300" width="16" height="120"/>
+    <rect x="370" y="300" width="16" height="120"/>
+    <rect x="400" y="300" width="16" height="120"/>
+    <path d="M470 420 v-80 a35 35 0 0 1 70 0 v80Z"/>
+    <path d="M300 450 v-60 a25 25 0 0 1 50 0 v60Z"/>
+  </g>
+  <!-- Palms -->
+  <g opacity="0.3" fill="#F2E3C0">
+    <ellipse cx="140" cy="360" rx="3" ry="110"/>
+    <path d="M140 250 l-45 55 40-8 35 45 8-28-26-9 33-50h-8l-16 32-8-32Z"/>
+    <ellipse cx="720" cy="330" rx="3" ry="95"/>
+    <path d="M720 235 l-40 50 36-7 30 40 7-25-23-8 29-45h-7l-14 28-7-28Z"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="210" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="135" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">TROPICAL VILLA</text>
+</svg>

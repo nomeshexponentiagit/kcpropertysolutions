@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D131B"/>
+      <stop offset="100%" stop-color="#1E2B3D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.4">
+      <stop offset="0%" stop-color="#E3C565" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E3C565" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <!-- Sun on the horizon -->
+  <circle cx="400" cy="250" r="54" fill="url(#gold)" opacity="0.55"/>
+  <!-- Sidewalk ground plane -->
+  <polygon points="0,600 800,600 800,520 0,520" fill="#0B1119"/>
+  <polygon points="40,600 760,600 520,400 280,400" fill="#111A25"/>
+  <polygon points="100,600 700,600 470,410 330,410" fill="#141E2A" opacity="0.5"/>
+  <!-- The complex in the distance (centre) -->
+  <rect x="340" y="120" width="120" height="110" fill="#233243"/>
+  <rect x="352" y="132" width="96" height="40" fill="#E3C565" opacity="0.25"/>
+  <rect x="352" y="178" width="96" height="40" fill="#E3C565" opacity="0.2"/>
+  <rect x="340" y="108" width="120" height="12" fill="url(#gold)"/>
+  <rect x="340" y="230" width="120" height="170" fill="#182332"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.55">
+    <line x1="340" y1="230" x2="460" y2="230"/>
+    <line x1="340" y1="400" x2="460" y2="400"/>
+  </g>
+  <g stroke="#C9A227" stroke-width="1.5" opacity="0.45">
+    <line x1="380" y1="230" x2="380" y2="400"/>
+    <line x1="420" y1="230" x2="420" y2="400"/>
+  </g>
+  <rect x="352" y="256" width="24" height="18" fill="#E3C565" opacity="0.5"/>
+  <rect x="424" y="290" width="24" height="18" fill="#E3C565" opacity="0.45"/>
+  <rect x="380" y="336" width="24" height="18" fill="#E3C565" opacity="0.55"/>
+  <!-- Left building row -->
+  <polygon points="0,520 320,408 320,600 0,600" fill="#161F2C"/>
+  <rect x="0" y="356" width="80" height="52" fill="#1B2735"/>
+  <rect x="90" y="368" width="80" height="40" fill="#1B2735"/>
+  <rect x="180" y="380" width="80" height="28" fill="#1B2735"/>
+  <rect x="0" y="356" width="260" height="10" fill="#0B1017"/>
+  <rect x="0" y="356" width="260" height="3" fill="url(#gold)" opacity="0.6"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.5">
+    <line x1="10" y1="408" x2="10" y2="600"/>
+    <line x1="80" y1="408" x2="80" y2="600"/>
+    <line x1="160" y1="408" x2="160" y2="600"/>
+    <line x1="240" y1="408" x2="240" y2="600"/>
+  </g>
+  <rect x="24" y="430" width="40" height="120" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="176" y="438" width="40" height="112" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="40" y="452" width="16" height="10" fill="#E3C565" opacity="0.5"/>
+  <!-- Right building row -->
+  <polygon points="800,520 480,408 480,600 800,600" fill="#141D2A"/>
+  <rect x="600" y="360" width="80" height="48" fill="#1A2634"/>
+  <rect x="690" y="372" width="80" height="36" fill="#1A2634"/>
+  <rect x="540" y="408" width="260" height="10" fill="#0B1017"/>
+  <rect x="540" y="408" width="260" height="3" fill="url(#gold)" opacity="0.6"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.5">
+    <line x1="560" y1="418" x2="560" y2="600"/>
+    <line x1="640" y1="418" x2="640" y2="600"/>
+    <line x1="720" y1="418" x2="720" y2="600"/>
+  </g>
+  <rect x="576" y="440" width="48" height="112" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="664" y="432" width="48" height="120" fill="#0D141D" stroke="#C9A227" stroke-width="1.5"/>
+  <rect x="588" y="456" width="16" height="10" fill="#E3C565" opacity="0.5"/>
+  <!-- Road -->
+  <rect x="0" y="520" width="800" height="80" fill="#090E15"/>
+  <polygon points="330,410 470,410 560,560 240,560" fill="#0D141D"/>
+  <g stroke="#E3C565" stroke-width="2.5" opacity="0.35" fill="none">
+    <line x1="400" y1="418" x2="400" y2="452"/>
+    <line x1="400" y1="480" x2="400" y2="514"/>
+    <line x1="400" y1="542" x2="400" y2="576"/>
+  </g>
+  <!-- Street lamps -->
+  <g>
+    <rect x="330" y="280" width="3" height="130" fill="#C9A227"/>
+    <circle cx="331" cy="278" r="6" fill="#E3C565"/>
+    <circle cx="331" cy="278" r="14" fill="#E3C565" opacity="0.18"/>
+    <rect x="468" y="288" width="3" height="120" fill="#C9A227"/>
+    <circle cx="469" cy="286" r="6" fill="#E3C565"/>
+    <circle cx="469" cy="286" r="14" fill="#E3C565" opacity="0.18"/>
+  </g>
+  <!-- Parked scooters -->
+  <g fill="#0A0F16" opacity="0.9">
+    <rect x="560" y="500" width="26" height="10" rx="4"/>
+    <circle cx="566" cy="512" r="4"/>
+    <circle cx="580" cy="512" r="4"/>
+    <rect x="596" y="502" width="26" height="10" rx="4"/>
+    <circle cx="602" cy="514" r="4"/>
+    <circle cx="616" cy="514" r="4"/>
+  </g>
+  <!-- Bunting across the street -->
+  <path d="M20 210 Q400 240 780 190" stroke="#C9A227" stroke-width="2" opacity="0.7" fill="none"/>
+  <g fill="#C9A227" opacity="0.7">
+    <path d="M80 220 l10 16 -10 3 -10 -3Z"/>
+    <path d="M150 227 l10 16 -10 3 -10 -3Z"/>
+    <path d="M220 233 l10 16 -10 3 -10 -3Z"/>
+    <path d="M290 237 l10 16 -10 3 -10 -3Z"/>
+    <path d="M360 239 l10 16 -10 3 -10 -3Z"/>
+    <path d="M430 238 l10 16 -10 3 -10 -3Z"/>
+    <path d="M500 235 l10 16 -10 3 -10 -3Z"/>
+    <path d="M570 230 l10 16 -10 3 -10 -3Z"/>
+    <path d="M640 224 l10 16 -10 3 -10 -3Z"/>
+    <path d="M710 217 l10 16 -10 3 -10 -3Z"/>
+  </g>
+  <!-- Trees -->
+  <g>
+    <rect x="92" y="330" width="5" height="80" fill="#1A3B2E"/>
+    <circle cx="94" cy="310" r="26" fill="#1B4034"/>
+    <circle cx="72" cy="322" r="16" fill="#1B4034"/>
+    <circle cx="118" cy="324" r="15" fill="#1B4034"/>
+    <rect x="708" y="336" width="5" height="74" fill="#1A3B2E"/>
+    <circle cx="710" cy="318" r="24" fill="#1B4034"/>
+    <circle cx="688" cy="330" r="14" fill="#1B4034"/>
+    <circle cx="734" cy="332" r="14" fill="#1B4034"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="170" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="115" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#0B1017">STREET VIEW</text>
+</svg>

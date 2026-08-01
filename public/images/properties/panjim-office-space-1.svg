@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+    <linearGradient id="wsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C2A3C"/>
+      <stop offset="100%" stop-color="#0E141D"/>
+    </linearGradient>
+    <radialGradient id="pend" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#E3C565" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E3C565" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Ceiling -->
+  <polygon points="0,0 800,0 680,130 120,130" fill="#0F151E"/>
+  <!-- Floor -->
+  <polygon points="0,600 800,600 680,420 120,420" fill="#1A2430"/>
+  <polygon points="160,600 640,600 560,430 240,430" fill="#1E2936"/>
+  <!-- Back wall -->
+  <rect x="120" y="130" width="560" height="290" fill="#182230"/>
+  <!-- Window wall (right) with city view -->
+  <rect x="560" y="130" width="240" height="290" fill="url(#wsky)"/>
+  <g stroke="#C9A227" stroke-width="2.5" opacity="0.5">
+    <line x1="620" y1="130" x2="620" y2="420"/>
+    <line x1="680" y1="130" x2="680" y2="420"/>
+    <line x1="740" y1="130" x2="740" y2="420"/>
+    <line x1="800" y1="130" x2="800" y2="420"/>
+  </g>
+  <g stroke="#C9A227" stroke-width="1.5" opacity="0.35">
+    <line x1="560" y1="210" x2="800" y2="210"/>
+    <line x1="560" y1="290" x2="800" y2="290"/>
+    <line x1="560" y1="370" x2="800" y2="370"/>
+  </g>
+  <!-- Skyline and river beyond the window -->
+  <g fill="#0B1119" opacity="0.9">
+    <rect x="572" y="320" width="18" height="60"/>
+    <rect x="596" y="290" width="18" height="90"/>
+    <rect x="704" y="300" width="18" height="80"/>
+    <rect x="728" y="260" width="18" height="120"/>
+    <rect x="752" y="330" width="18" height="50"/>
+  </g>
+  <rect x="560" y="370" width="240" height="8" fill="#C9A227" opacity="0.5"/>
+  <rect x="572" y="382" width="176" height="8" fill="#E3C565" opacity="0.4"/>
+  <circle cx="740" cy="170" r="26" fill="#E3C565" opacity="0.35"/>
+  <!-- Meeting room (back-left, glass box) -->
+  <g>
+    <rect x="140" y="150" width="200" height="130" fill="#101820" stroke="#C9A227" stroke-width="2.5" opacity="0.85"/>
+    <line x1="140" y1="215" x2="340" y2="215" stroke="#C9A227" stroke-width="2" opacity="0.6"/>
+    <line x1="310" y1="150" x2="310" y2="280" stroke="#C9A227" stroke-width="2" opacity="0.6"/>
+    <!-- Meeting table and chairs -->
+    <rect x="180" y="230" width="120" height="8" fill="#0B1017"/>
+    <rect x="180" y="238" width="120" height="30" fill="#111A25"/>
+    <rect x="180" y="238" width="120" height="3" fill="#C9A227" opacity="0.7"/>
+    <g fill="#060A0E" opacity="0.9">
+      <circle cx="200" cy="218" r="5"/><path d="M195 223 Q200 220 205 223 L204 230 L196 230Z"/>
+      <circle cx="280" cy="218" r="5"/><path d="M275 223 Q280 220 285 223 L284 230 L276 230Z"/>
+    </g>
+    <circle cx="336" cy="216" r="4" fill="#C9A227"/>
+  </g>
+  <!-- Pantry (back-right) -->
+  <g>
+    <rect x="420" y="180" width="110" height="70" fill="#111A25"/>
+    <rect x="420" y="180" width="110" height="70" stroke="#C9A227" stroke-width="2" opacity="0.5" fill="none"/>
+    <line x1="420" y1="210" x2="530" y2="210" stroke="#C9A227" stroke-width="2" opacity="0.5"/>
+    <rect x="428" y="188" width="14" height="16" fill="#E3C565" opacity="0.5"/>
+    <rect x="448" y="188" width="14" height="16" fill="#E3C565" opacity="0.4"/>
+    <!-- Counter and stools -->
+    <rect x="420" y="252" width="110" height="12" fill="#0B1017"/>
+    <rect x="420" y="264" width="110" height="30" fill="#111A25"/>
+    <rect x="420" y="252" width="110" height="3" fill="#C9A227" opacity="0.7"/>
+    <rect x="452" y="294" width="14" height="26" fill="#141C26"/>
+    <rect x="486" y="294" width="14" height="26" fill="#141C26"/>
+    <circle cx="459" cy="292" r="8" fill="#C9A227" opacity="0.4"/>
+  </g>
+  <!-- Desk rows -->
+  <g>
+    <!-- Row 1 -->
+    <rect x="140" y="330" width="300" height="12" fill="#0B1017"/>
+    <rect x="140" y="342" width="300" height="52" fill="#151F2B"/>
+    <rect x="140" y="330" width="300" height="3" fill="#C9A227" opacity="0.6"/>
+    <g fill="#060A0E" opacity="0.95">
+      <rect x="160" y="352" width="40" height="28" rx="3"/>
+      <rect x="164" y="356" width="32" height="18" rx="2" fill="#243447" opacity="0.9"/>
+      <rect x="222" y="352" width="40" height="28" rx="3"/>
+      <rect x="226" y="356" width="32" height="18" rx="2" fill="#243447" opacity="0.9"/>
+      <rect x="284" y="352" width="40" height="28" rx="3"/>
+      <rect x="288" y="356" width="32" height="18" rx="2" fill="#243447" opacity="0.9"/>
+      <rect x="346" y="352" width="40" height="28" rx="3"/>
+      <rect x="350" y="356" width="32" height="18" rx="2" fill="#243447" opacity="0.9"/>
+    </g>
+    <!-- Monitors glowing -->
+    <g fill="#E3C565">
+      <rect x="166" y="358" width="26" height="12" opacity="0.35"/>
+      <rect x="290" y="358" width="26" height="12" opacity="0.4"/>
+    </g>
+    <!-- Seated figures -->
+    <g fill="#060A0E" opacity="0.9">
+      <circle cx="196" cy="326" r="6"/><path d="M190 332 Q196 328 202 332 L201 346 L191 346Z"/>
+      <circle cx="320" cy="326" r="6"/><path d="M314 332 Q320 328 326 332 L325 346 L315 346Z"/>
+      <circle cx="258" cy="326" r="6"/><path d="M252 332 Q258 328 264 332 L263 346 L253 346Z"/>
+    </g>
+  </g>
+  <!-- Row 2 (recessed) -->
+  <g>
+    <rect x="240" y="440" width="280" height="12" fill="#0B1017"/>
+    <rect x="240" y="452" width="280" height="60" fill="#151F2B"/>
+    <rect x="240" y="440" width="280" height="3" fill="#C9A227" opacity="0.6"/>
+    <g fill="#060A0E" opacity="0.95">
+      <rect x="260" y="466" width="44" height="32" rx="3"/>
+      <rect x="324" y="466" width="44" height="32" rx="3"/>
+      <rect x="388" y="466" width="44" height="32" rx="3"/>
+      <rect x="452" y="466" width="44" height="32" rx="3"/>
+    </g>
+    <g fill="#E3C565">
+      <rect x="266" y="472" width="30" height="14" opacity="0.3"/>
+      <rect x="394" y="472" width="30" height="14" opacity="0.35"/>
+    </g>
+    <g fill="#060A0E" opacity="0.9">
+      <circle cx="304" cy="436" r="6"/><path d="M298 442 Q304 438 310 442 L309 456 L299 456Z"/>
+      <circle cx="432" cy="436" r="6"/><path d="M426 442 Q432 438 438 442 L437 456 L427 456Z"/>
+    </g>
+  </g>
+  <!-- Linear pendant lights -->
+  <g>
+    <rect x="140" y="58" width="60" height="6" rx="3" fill="url(#gold)"/>
+    <line x1="170" y1="58" x2="170" y2="96" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="140" y="96" width="60" height="10" rx="4" fill="url(#gold)"/>
+    <circle cx="170" cy="110" r="18" fill="url(#pend)"/>
+    <rect x="360" y="58" width="60" height="6" rx="3" fill="url(#gold)"/>
+    <line x1="390" y1="58" x2="390" y2="96" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="360" y="96" width="60" height="10" rx="4" fill="url(#gold)"/>
+    <circle cx="390" cy="110" r="18" fill="url(#pend)"/>
+    <rect x="580" y="58" width="60" height="6" rx="3" fill="url(#gold)"/>
+    <line x1="610" y1="58" x2="610" y2="96" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="580" y="96" width="60" height="10" rx="4" fill="url(#gold)"/>
+    <circle cx="610" cy="110" r="18" fill="url(#pend)"/>
+  </g>
+  <!-- Potted plant -->
+  <g>
+    <rect x="84" y="400" width="26" height="24" fill="#C9A227" opacity="0.7"/>
+    <g fill="#1B4034">
+      <path d="M97 400 C82 388 76 378 86 368 C96 380 98 390 97 400Z"/>
+      <path d="M97 400 C112 388 118 378 108 368 C98 380 96 390 97 400Z"/>
+      <path d="M97 400 C97 382 97 372 97 362 C97 374 97 386 97 400Z"/>
+    </g>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="140" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="100" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#0B1017">INTERIOR</text>
+</svg>

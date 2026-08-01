@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1017"/>
+      <stop offset="50%" stop-color="#141E2B"/>
+      <stop offset="100%" stop-color="#233246"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.2" r="0.65">
+      <stop offset="0%" stop-color="#E3C565" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E3C565" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="26" patternUnits="userSpaceOnUse">
+      <rect width="36" height="26" fill="#C9A227" opacity="0.14"/>
+      <rect x="1" y="1" width="15" height="11" fill="#E3C565" opacity="0.55"/>
+      <rect x="20" y="14" width="15" height="11" fill="#E3C565" opacity="0.28"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <circle cx="620" cy="150" r="85" fill="url(#gold)" opacity="0.4"/>
+  <circle cx="620" cy="150" r="48" fill="#E3C565" opacity="0.65"/>
+  <!-- Birds -->
+  <g stroke="#E3C565" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M120 120 Q128 112 136 120 Q144 112 152 120"/>
+    <path d="M170 92 Q176 86 182 92 Q188 86 194 92"/>
+  </g>
+  <!-- Building complex: three angular blocks -->
+  <g>
+    <!-- Left block (G+2, lift tower) -->
+    <rect x="170" y="150" width="160" height="320" fill="#1B2735"/>
+    <rect x="170" y="150" width="160" height="320" fill="url(#grid)"/>
+    <rect x="170" y="150" width="160" height="8" fill="url(#gold)" opacity="0.9"/>
+    <!-- Lift shaft -->
+    <rect x="178" y="162" width="14" height="300" fill="#0B1017"/>
+    <rect x="178" y="162" width="14" height="300" stroke="#C9A227" stroke-width="1.5" opacity="0.6" fill="none"/>
+    <rect x="182" y="240" width="6" height="10" fill="#E3C565" opacity="0.8"/>
+    <!-- Middle block -->
+    <rect x="330" y="175" width="190" height="295" fill="#1E2B3A"/>
+    <rect x="330" y="175" width="190" height="295" fill="url(#grid)"/>
+    <rect x="330" y="175" width="190" height="8" fill="url(#gold)" opacity="0.9"/>
+    <!-- Right block (set back) -->
+    <rect x="520" y="210" width="110" height="260" fill="#182331"/>
+    <rect x="520" y="210" width="110" height="260" fill="url(#grid)"/>
+    <rect x="520" y="210" width="110" height="8" fill="url(#gold)" opacity="0.9"/>
+    <!-- Rooftop AC units on right block -->
+    <rect x="532" y="196" width="26" height="14" fill="#0B1017" stroke="#C9A227" stroke-width="1" opacity="0.8"/>
+    <rect x="564" y="196" width="26" height="14" fill="#0B1017" stroke="#C9A227" stroke-width="1" opacity="0.8"/>
+    <rect x="598" y="202" width="24" height="8" fill="#0B1017" stroke="#C9A227" stroke-width="1" opacity="0.8"/>
+    <!-- Ground floor storefront band -->
+    <rect x="170" y="390" width="460" height="80" fill="#0D141D"/>
+    <g stroke="#C9A227" stroke-width="2" opacity="0.7">
+      <line x1="170" y1="390" x2="630" y2="390"/>
+      <line x1="170" y1="470" x2="630" y2="470"/>
+    </g>
+    <g stroke="#C9A227" stroke-width="1.5" opacity="0.45">
+      <line x1="218" y1="390" x2="218" y2="470"/>
+      <line x1="266" y1="390" x2="266" y2="470"/>
+      <line x1="314" y1="390" x2="314" y2="470"/>
+      <line x1="456" y1="390" x2="456" y2="470"/>
+      <line x1="504" y1="390" x2="504" y2="470"/>
+      <line x1="552" y1="390" x2="552" y2="470"/>
+      <line x1="600" y1="390" x2="600" y2="470"/>
+    </g>
+    <rect x="314" y="394" width="28" height="72" fill="#1E2B3A" opacity="0.8"/>
+    <!-- Main entrance with brass canopy -->
+    <rect x="360" y="378" width="130" height="14" fill="url(#gold)"/>
+    <rect x="384" y="392" width="30" height="78" fill="#060A0E"/>
+    <rect x="424" y="392" width="30" height="78" fill="#060A0E"/>
+    <rect x="378" y="392" width="42" height="78" stroke="#C9A227" stroke-width="3" fill="none"/>
+    <rect x="418" y="392" width="42" height="78" stroke="#C9A227" stroke-width="3" fill="none"/>
+    <!-- Basement parking ramp -->
+    <rect x="644" y="438" width="76" height="32" rx="2" fill="#070B10"/>
+    <rect x="644" y="456" width="76" height="4" fill="#E3C565" opacity="0.7"/>
+    <rect x="652" y="444" width="10" height="4" fill="#E3C565" opacity="0.5"/>
+    <rect x="668" y="444" width="10" height="4" fill="#E3C565" opacity="0.5"/>
+    <rect x="684" y="444" width="10" height="4" fill="#E3C565" opacity="0.5"/>
+    <line x1="648" y1="432" x2="648" y2="470" stroke="#C9A227" stroke-width="2" opacity="0.7"/>
+    <rect x="640" y="428" width="8" height="8" fill="#C9A227" opacity="0.7"/>
+  </g>
+  <!-- Street -->
+  <rect x="0" y="470" width="800" height="130" fill="#0A0F16"/>
+  <rect x="0" y="470" width="800" height="6" fill="#C9A227" opacity="0.35"/>
+  <g fill="#E3C565" opacity="0.4">
+    <rect x="120" y="524" width="70" height="4"/>
+    <rect x="290" y="524" width="70" height="4"/>
+    <rect x="460" y="524" width="70" height="4"/>
+    <rect x="630" y="524" width="70" height="4"/>
+  </g>
+  <!-- Street lamps -->
+  <g>
+    <rect x="136" y="360" width="3" height="110" fill="#C9A227"/>
+    <circle cx="137" cy="358" r="7" fill="#E3C565"/>
+    <circle cx="137" cy="358" r="16" fill="#E3C565" opacity="0.2"/>
+    <rect x="656" y="380" width="3" height="90" fill="#C9A227"/>
+    <circle cx="657" cy="378" r="7" fill="#E3C565"/>
+    <circle cx="657" cy="378" r="16" fill="#E3C565" opacity="0.2"/>
+  </g>
+  <!-- Palms -->
+  <g opacity="0.95">
+    <rect x="86" y="340" width="6" height="130" fill="#1A3B2E"/>
+    <g fill="#1B4034">
+      <path d="M89 340 C60 320 40 330 34 344 C52 334 74 336 89 340Z"/>
+      <path d="M89 340 C120 318 142 328 148 342 C130 332 108 334 89 340Z"/>
+      <path d="M89 340 C70 312 62 296 70 286 C76 300 82 316 89 340Z"/>
+      <path d="M89 340 C108 312 116 296 108 286 C102 300 96 316 89 340Z"/>
+      <path d="M89 340 C89 310 89 296 89 288 C89 300 89 314 89 340Z"/>
+    </g>
+    <rect x="740" y="360" width="5" height="110" fill="#1A3B2E"/>
+    <g fill="#1B4034">
+      <path d="M742 360 C722 348 708 354 704 362 C716 356 730 358 742 360Z"/>
+      <path d="M742 360 C762 348 776 354 780 362 C768 356 754 358 742 360Z"/>
+      <path d="M742 360 C742 338 742 328 742 322 C742 330 742 340 742 360Z"/>
+    </g>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="290" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="175" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0B1017">CALANGUTE COMMERCIAL COMPLEX</text>
+</svg>

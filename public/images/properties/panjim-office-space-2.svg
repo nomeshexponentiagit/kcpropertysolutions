@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C1219"/>
+      <stop offset="100%" stop-color="#182230"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Mandovi river (top right) -->
+  <path d="M420 0 L520 0 L620 220 L560 220 Z" fill="#0E2733" opacity="0.85"/>
+  <path d="M430 60 Q470 52 510 60" stroke="#7FD1C8" stroke-width="2" opacity="0.3" fill="none"/>
+  <path d="M470 110 Q510 102 550 110" stroke="#7FD1C8" stroke-width="2" opacity="0.25" fill="none"/>
+  <!-- Bridge across the river -->
+  <line x1="480" y1="0" x2="600" y2="200" stroke="#C9A227" stroke-width="3" opacity="0.6"/>
+  <g stroke="#C9A227" stroke-width="3" opacity="0.5">
+    <line x1="500" y1="44" x2="516" y2="20"/>
+    <line x1="534" y1="96" x2="550" y2="72"/>
+    <line x1="568" y1="148" x2="584" y2="124"/>
+  </g>
+  <!-- Street grid -->
+  <rect x="0" y="150" width="800" height="26" fill="#0B1119"/>
+  <rect x="0" y="430" width="800" height="26" fill="#0B1119"/>
+  <rect x="360" y="150" width="26" height="306" fill="#0B1119"/>
+  <rect x="620" y="150" width="26" height="306" fill="#0B1119"/>
+  <g fill="#E3C565" opacity="0.3">
+    <rect x="120" y="160" width="40" height="4"/>
+    <rect x="300" y="160" width="40" height="4"/>
+    <rect x="480" y="160" width="40" height="4"/>
+    <rect x="120" y="440" width="40" height="4"/>
+    <rect x="300" y="440" width="40" height="4"/>
+    <rect x="480" y="440" width="40" height="4"/>
+  </g>
+  <!-- Surrounding buildings (varied roof tones) -->
+  <g>
+    <rect x="60" y="90" width="70" height="60" fill="#141D2A"/>
+    <rect x="72" y="90" width="70" height="60" fill="#0E151D" opacity="0.5"/>
+    <rect x="140" y="60" width="90" height="90" fill="#182330"/>
+    <rect x="160" y="70" width="10" height="10" fill="#C9A227" opacity="0.5"/>
+    <rect x="180" y="70" width="10" height="10" fill="#C9A227" opacity="0.35"/>
+    <rect x="60" y="200" width="80" height="90" fill="#151F2C"/>
+    <rect x="70" y="210" width="10" height="10" fill="#C9A227" opacity="0.4"/>
+    <rect x="90" y="210" width="10" height="10" fill="#C9A227" opacity="0.5"/>
+    <rect x="60" y="330" width="60" height="100" fill="#131C28"/>
+    <rect x="80" y="340" width="10" height="10" fill="#C9A227" opacity="0.4"/>
+    <rect x="190" y="250" width="70" height="60" fill="#161F2C"/>
+    <rect x="690" y="90" width="80" height="60" fill="#141D2A"/>
+    <rect x="710" y="100" width="10" height="10" fill="#C9A227" opacity="0.45"/>
+    <rect x="690" y="200" width="60" height="80" fill="#182330"/>
+    <rect x="720" y="330" width="70" height="100" fill="#151F2C"/>
+    <rect x="735" y="340" width="10" height="10" fill="#C9A227" opacity="0.4"/>
+    <!-- Shadows -->
+    <rect x="76" y="96" width="70" height="60" fill="#05080C" opacity="0.5"/>
+    <rect x="156" y="66" width="90" height="90" fill="#05080C" opacity="0.5"/>
+    <rect x="76" y="206" width="80" height="90" fill="#05080C" opacity="0.5"/>
+    <rect x="76" y="336" width="60" height="100" fill="#05080C" opacity="0.5"/>
+    <rect x="706" y="96" width="80" height="60" fill="#05080C" opacity="0.5"/>
+    <rect x="706" y="206" width="60" height="80" fill="#05080C" opacity="0.5"/>
+    <rect x="736" y="336" width="70" height="100" fill="#05080C" opacity="0.5"/>
+  </g>
+  <!-- Subject building footprint (main block + terrace) -->
+  <g>
+    <rect x="120" y="176" width="240" height="254" fill="#1D2938"/>
+    <rect x="120" y="176" width="240" height="254" stroke="#C9A227" stroke-width="2.5" opacity="0.6" fill="none"/>
+    <!-- Lightwell -->
+    <rect x="170" y="226" width="60" height="60" fill="#0B1119" stroke="#C9A227" stroke-width="2" opacity="0.7"/>
+    <!-- Rooftop terrace strips -->
+    <rect x="120" y="176" width="240" height="12" fill="url(#gold)" opacity="0.85"/>
+    <rect x="120" y="396" width="240" height="8" fill="#C9A227" opacity="0.5"/>
+    <!-- AC units grid -->
+    <g fill="#0B1119" stroke="#C9A227" stroke-width="1.5">
+      <rect x="260" y="200" width="28" height="18"/>
+      <rect x="296" y="200" width="28" height="18"/>
+      <rect x="332" y="200" width="18" height="18"/>
+      <rect x="260" y="320" width="28" height="18"/>
+      <rect x="296" y="320" width="28" height="18"/>
+    </g>
+    <!-- Stairwell block -->
+    <rect x="260" y="240" width="80" height="60" fill="#141D2A" stroke="#C9A227" stroke-width="2" opacity="0.7"/>
+    <rect x="286" y="252" width="28" height="8" fill="#E3C565" opacity="0.5"/>
+    <!-- Rooftop lounge furniture -->
+    <rect x="140" y="316" width="26" height="10" fill="#C9A227" opacity="0.55"/>
+    <rect x="140" y="344" width="26" height="10" fill="#C9A227" opacity="0.45"/>
+    <circle cx="158" cy="336" r="14" fill="#0B1119" opacity="0.4"/>
+    <!-- Antenna -->
+    <line x1="300" y1="176" x2="300" y2="130" stroke="#C9A227" stroke-width="2.5"/>
+    <line x1="300" y1="138" x2="314" y2="130" stroke="#C9A227" stroke-width="2"/>
+    <line x1="300" y1="146" x2="286" y2="138" stroke="#C9A227" stroke-width="2"/>
+  </g>
+  <!-- Parking lot with 4 slots -->
+  <g>
+    <rect x="386" y="176" width="234" height="100" fill="#0F161F" stroke="#C9A227" stroke-width="2" opacity="0.7"/>
+    <g stroke="#C9A227" stroke-width="2.5" opacity="0.8">
+      <line x1="410" y1="176" x2="410" y2="276"/>
+      <line x1="470" y1="176" x2="470" y2="276"/>
+      <line x1="530" y1="176" x2="530" y2="276"/>
+      <line x1="590" y1="176" x2="590" y2="276"/>
+      <line x1="386" y1="226" x2="620" y2="226"/>
+    </g>
+    <!-- Two parked cars -->
+    <g>
+      <rect x="416" y="184" width="48" height="38" rx="6" fill="#1A2533"/>
+      <rect x="422" y="190" width="36" height="14" rx="4" fill="#243447"/>
+      <circle cx="428" cy="226" r="6" fill="#0B1017"/>
+      <circle cx="452" cy="226" r="6" fill="#0B1017"/>
+      <rect x="536" y="184" width="48" height="38" rx="6" fill="#1A2533"/>
+      <rect x="542" y="190" width="36" height="14" rx="4" fill="#243447"/>
+      <circle cx="548" cy="226" r="6" fill="#0B1017"/>
+      <circle cx="572" cy="226" r="6" fill="#0B1017"/>
+    </g>
+  </g>
+  <!-- Green pocket -->
+  <g>
+    <rect x="386" y="330" width="100" height="100" fill="#13241C"/>
+    <circle cx="420" cy="370" r="18" fill="#1B4034"/>
+    <circle cx="452" cy="386" r="14" fill="#1B4034"/>
+    <circle cx="438" cy="352" r="12" fill="#1B4034"/>
+    <circle cx="408" cy="402" r="10" fill="#1B4034"/>
+  </g>
+  <!-- Ground-level plaza of the building -->
+  <rect x="120" y="430" width="240" height="26" fill="#141D2A"/>
+  <rect x="120" y="430" width="240" height="26" stroke="#C9A227" stroke-width="2" opacity="0.5" fill="none"/>
+  <rect x="220" y="438" width="40" height="12" fill="#0B1017" stroke="#C9A227" stroke-width="1.5"/>
+  <!-- Street trees -->
+  <g>
+    <circle cx="40" cy="300" r="16" fill="#1B4034"/>
+    <circle cx="40" cy="300" r="16" fill="#05080C" opacity="0.4"/>
+    <circle cx="760" cy="300" r="16" fill="#1B4034"/>
+    <circle cx="760" cy="300" r="16" fill="#05080C" opacity="0.4"/>
+    <circle cx="668" cy="176" r="12" fill="#1B4034"/>
+    <circle cx="344" cy="160" r="12" fill="#1B4034"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="120" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="90" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#0B1017">AERIAL</text>
+</svg>

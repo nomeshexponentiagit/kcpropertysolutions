@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="prop" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#2E7A4C"/>
+      <stop offset="100%" stop-color="#1C5C3A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#123F28"/>
+  <!-- Property boundary (aerial) -->
+  <rect x="60" y="50" width="680" height="500" rx="40" fill="url(#prop)"/>
+  <rect x="86" y="76" width="628" height="448" rx="28" fill="none" stroke="#4CA36B" stroke-width="3" opacity="0.5" stroke-dasharray="14 10"/>
+  <!-- Jungle canopy seen from above -->
+  <g fill="#0B3D2C" opacity="0.85">
+    <circle cx="150" cy="150" r="40"/>
+    <circle cx="240" cy="190" r="30"/>
+    <circle cx="620" cy="140" r="45"/>
+    <circle cx="690" cy="240" r="32"/>
+    <circle cx="140" cy="330" r="36"/>
+    <circle cx="220" cy="430" r="42"/>
+    <circle cx="600" cy="400" r="38"/>
+    <circle cx="670" cy="480" r="28"/>
+    <circle cx="300" cy="110" r="26"/>
+    <circle cx="540" cy="110" r="24"/>
+  </g>
+  <!-- Eco cottage rooftops (seen from above) -->
+  <g>
+    <rect x="360" y="200" width="90" height="70" rx="6" fill="#4CA36B"/>
+    <line x1="405" y1="200" x2="405" y2="270" stroke="#1C5C3A" stroke-width="4"/>
+    <rect x="480" y="200" width="90" height="70" rx="6" fill="#4CA36B"/>
+    <line x1="525" y1="200" x2="525" y2="270" stroke="#1C5C3A" stroke-width="4"/>
+    <rect x="420" y="310" width="90" height="70" rx="6" fill="#4CA36B"/>
+    <line x1="465" y1="310" x2="465" y2="380" stroke="#1C5C3A" stroke-width="4"/>
+  </g>
+  <!-- Circular natural pool -->
+  <circle cx="250" cy="260" r="55" fill="#5EC9D2"/>
+  <circle cx="250" cy="260" r="55" fill="none" stroke="#A8E6EA" stroke-width="4" opacity="0.6"/>
+  <circle cx="250" cy="260" r="18" fill="#2E7A4C" opacity="0.85"/>
+  <!-- Winding trail -->
+  <path d="M330 270 C 380 300 340 360 380 400 C 420 440 460 400 500 430 C 540 460 560 500 600 520"
+        stroke="#E4C97F" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.75" stroke-dasharray="16 10"/>
+  <!-- Organic farm plots -->
+  <g>
+    <rect x="560" y="520" width="70" height="46" rx="4" fill="#8A6420" opacity="0.7"/>
+    <rect x="640" y="520" width="70" height="46" rx="4" fill="#6E4E16" opacity="0.7"/>
+    <g stroke="#E4C97F" stroke-width="2" opacity="0.6">
+      <line x1="560" y1="537" x2="630" y2="537"/>
+      <line x1="560" y1="553" x2="630" y2="553"/>
+      <line x1="640" y1="537" x2="710" y2="537"/>
+      <line x1="640" y1="553" x2="710" y2="553"/>
+    </g>
+  </g>
+  <!-- Entrance -->
+  <rect x="110" y="486" width="60" height="34" rx="4" fill="#E4C97F"/>
+  <rect x="125" y="498" width="30" height="10" rx="3" fill="#8A6420"/>
+  <!-- Compass rose -->
+  <g stroke="#E4C97F" stroke-width="3" opacity="0.8">
+    <line x1="700" y1="80" x2="700" y2="110"/>
+    <line x1="685" y1="95" x2="700" y2="80"/>
+    <line x1="715" y1="95" x2="700" y2="80"/>
+  </g>
+  <!-- Brass label -->
+  <rect x="30" y="520" width="180" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="120" y="552" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#06281E" letter-spacing="2">AERIAL VIEW</text>
+</svg>

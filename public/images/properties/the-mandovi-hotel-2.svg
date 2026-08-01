@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="mrSky" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#155E8A"/>
+      <stop offset="42%" stop-color="#2E9DBF"/>
+      <stop offset="66%" stop-color="#E8A25E"/>
+      <stop offset="100%" stop-color="#F7C87E"/>
+    </linearGradient>
+    <linearGradient id="mrWater" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0B3D5C"/>
+      <stop offset="100%" stop-color="#06233A"/>
+    </linearGradient>
+    <linearGradient id="mrGold" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#E8C766"/>
+      <stop offset="55%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#8F6F14"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#mrSky)"/>
+  <!-- Sun -->
+  <circle cx="620" cy="238" r="52" fill="#F9B93B" opacity="0.95"/>
+  <circle cx="620" cy="238" r="92" fill="#F9B93B" opacity="0.25"/>
+  <!-- Birds -->
+  <g stroke="#0B3D5C" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M180 160 Q190 153 200 160 Q210 153 220 160"/>
+    <path d="M225 178 Q235 171 245 178 Q255 171 265 178"/>
+  </g>
+  <!-- City skyline -->
+  <g fill="#0B3D5C">
+    <rect x="40" y="380" width="70" height="60"/>
+    <rect x="120" y="350" width="40" height="90"/>
+    <rect x="120" y="330" width="40" height="20"/>
+    <path d="M140 330 L120 330 L120 300 L132 312 L140 300 L140 330 Z"/>
+    <rect x="170" y="385" width="80" height="55"/>
+    <rect x="260" y="365" width="60" height="75"/>
+    <rect x="470" y="370" width="90" height="70"/>
+    <rect x="570" y="385" width="70" height="55"/>
+    <rect x="650" y="360" width="60" height="80"/>
+  </g>
+  <!-- Bridge -->
+  <rect x="200" y="384" width="360" height="7" fill="#0B3D5C"/>
+  <rect x="246" y="334" width="10" height="50" fill="#0B3D5C"/>
+  <rect x="504" y="334" width="10" height="50" fill="#0B3D5C"/>
+  <g stroke="#C9A227" stroke-width="1.5" opacity="0.7" fill="none">
+    <line x1="251" y1="334" x2="200" y2="384"/><line x1="251" y1="334" x2="380" y2="384"/>
+    <line x1="509" y1="334" x2="420" y2="384"/><line x1="509" y1="334" x2="560" y2="384"/>
+  </g>
+  <!-- River -->
+  <rect x="0" y="440" width="800" height="120" fill="url(#mrWater)"/>
+  <g opacity="0.12" stroke="#C9A227" stroke-width="2" fill="none">
+    <path d="M0 460 Q100 450 200 460 T400 460 T600 460 T800 460"/>
+    <path d="M0 482 Q100 472 200 482 T400 482 T600 482 T800 482"/>
+    <path d="M0 505 Q100 495 200 505 T400 505 T600 505 T800 505"/>
+    <path d="M0 528 Q100 518 200 528 T400 528 T600 528 T800 528"/>
+  </g>
+  <!-- Sun reflection on water -->
+  <rect x="596" y="448" width="48" height="110" fill="#F9B93B" opacity="0.2"/>
+  <!-- Boat -->
+  <rect x="296" y="502" width="52" height="8" rx="4" fill="#0B3D5C" stroke="#C9A227" stroke-width="1.5"/>
+  <path d="M304 502 L322 502 L313 484 Z" fill="#C9A227" opacity="0.9"/>
+  <!-- Rooftop deck -->
+  <rect x="0" y="560" width="800" height="40" fill="#2E2A22"/>
+  <rect x="0" y="560" width="800" height="5" fill="#C9A227"/>
+  <g stroke="#C9A227" stroke-width="4" opacity="0.8">
+    <line x1="0" y1="530" x2="800" y2="530"/>
+    <line x1="0" y1="550" x2="800" y2="550"/>
+  </g>
+  <g fill="#C9A227">
+    <rect x="20" y="532" width="7" height="24"/><rect x="90" y="532" width="7" height="24"/>
+    <rect x="160" y="532" width="7" height="24"/><rect x="230" y="532" width="7" height="24"/>
+    <rect x="300" y="532" width="7" height="24"/><rect x="370" y="532" width="7" height="24"/>
+    <rect x="440" y="532" width="7" height="24"/><rect x="510" y="532" width="7" height="24"/>
+    <rect x="580" y="532" width="7" height="24"/><rect x="650" y="532" width="7" height="24"/>
+    <rect x="720" y="532" width="7" height="24"/><rect x="790" y="532" width="7" height="24"/>
+  </g>
+  <!-- Parasol table left -->
+  <line x1="140" y1="470" x2="140" y2="556" stroke="#6B4A2B" stroke-width="4"/>
+  <path d="M68 470 Q140 424 212 470 Z" fill="#E85D5D"/>
+  <g stroke="#FFFFFF" stroke-width="3" opacity="0.85" fill="none">
+    <path d="M92 468 Q112 452 140 448"/>
+    <path d="M140 448 Q168 452 188 468"/>
+  </g>
+  <ellipse cx="140" cy="558" rx="30" ry="9" fill="url(#mrGold)"/>
+  <!-- Parasol table right -->
+  <line x1="660" y1="470" x2="660" y2="556" stroke="#6B4A2B" stroke-width="4"/>
+  <path d="M588 470 Q660 424 732 470 Z" fill="#2E9DBF"/>
+  <g stroke="#FFFFFF" stroke-width="3" opacity="0.85" fill="none">
+    <path d="M612 468 Q632 452 660 448"/>
+    <path d="M660 448 Q688 452 708 468"/>
+  </g>
+  <ellipse cx="660" cy="558" rx="30" ry="9" fill="url(#mrGold)"/>
+  <!-- Lounge chairs -->
+  <g>
+    <rect x="390" y="546" width="60" height="12" rx="4" fill="#C9A227"/>
+    <rect x="404" y="534" width="32" height="14" rx="3" fill="#E85D5D"/>
+    <rect x="460" y="546" width="60" height="12" rx="4" fill="#C9A227"/>
+    <rect x="474" y="534" width="32" height="14" rx="3" fill="#E85D5D"/>
+  </g>
+  <!-- Brass label -->
+  <rect x="30" y="30" width="270" height="50" rx="4" fill="#C9A227" opacity="0.9"/>
+  <text x="165" y="61" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#06281E">ROOFTOP VIEW</text>
+</svg>

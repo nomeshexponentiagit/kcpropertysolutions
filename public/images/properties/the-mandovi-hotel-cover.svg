@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="mhSky" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A2E4E"/>
+      <stop offset="45%" stop-color="#155E8A"/>
+      <stop offset="70%" stop-color="#2E9DBF"/>
+      <stop offset="100%" stop-color="#7FC4D8"/>
+    </linearGradient>
+    <linearGradient id="mhWater" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0B3D5C"/>
+      <stop offset="100%" stop-color="#06233A"/>
+    </linearGradient>
+    <linearGradient id="mhBldg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#F5EBD8"/>
+      <stop offset="100%" stop-color="#D9C49B"/>
+    </linearGradient>
+    <linearGradient id="mhGold" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#E8C766"/>
+      <stop offset="55%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#8F6F14"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#mhSky)"/>
+  <!-- Sun glow -->
+  <circle cx="120" cy="130" r="70" fill="#F7D97E" opacity="0.25"/>
+  <!-- Clouds -->
+  <g fill="#FFFFFF" opacity="0.15">
+    <ellipse cx="560" cy="90" rx="90" ry="18"/>
+    <ellipse cx="640" cy="120" rx="70" ry="14"/>
+    <ellipse cx="360" cy="60" rx="60" ry="12"/>
+  </g>
+  <!-- Birds -->
+  <g stroke="#0B3D5C" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M500 150 Q510 143 520 150 Q530 143 540 150"/>
+    <path d="M545 168 Q555 161 565 168 Q575 161 585 168"/>
+  </g>
+  <!-- Side skyline towers -->
+  <g>
+    <rect x="70" y="210" width="100" height="230" fill="#0B3D5C" opacity="0.9"/>
+    <g fill="#2E6E8E" opacity="0.85">
+      <rect x="88" y="230" width="18" height="24"/><rect x="148" y="230" width="18" height="24"/>
+      <rect x="88" y="270" width="18" height="24"/><rect x="148" y="270" width="18" height="24"/>
+      <rect x="88" y="310" width="18" height="24"/><rect x="148" y="310" width="18" height="24"/>
+      <rect x="88" y="350" width="18" height="24"/><rect x="148" y="350" width="18" height="24"/>
+      <rect x="88" y="390" width="18" height="24"/><rect x="148" y="390" width="18" height="24"/>
+    </g>
+    <rect x="630" y="250" width="100" height="190" fill="#0B3D5C" opacity="0.9"/>
+    <g fill="#2E6E8E" opacity="0.85">
+      <rect x="648" y="270" width="18" height="24"/><rect x="708" y="270" width="18" height="24"/>
+      <rect x="648" y="310" width="18" height="24"/><rect x="708" y="310" width="18" height="24"/>
+      <rect x="648" y="350" width="18" height="24"/><rect x="708" y="350" width="18" height="24"/>
+      <rect x="648" y="390" width="18" height="24"/><rect x="708" y="390" width="18" height="24"/>
+    </g>
+  </g>
+  <!-- Rooftop penthouse -->
+  <rect x="360" y="46" width="80" height="24" fill="#E8D5A8" stroke="#C9A227" stroke-width="2"/>
+  <g fill="#2E6E8E">
+    <rect x="374" y="52" width="12" height="14"/>
+    <rect x="394" y="52" width="12" height="14"/>
+    <rect x="414" y="52" width="12" height="14"/>
+  </g>
+  <rect x="200" y="70" width="400" height="14" fill="#E8D5A8"/>
+  <!-- Main building -->
+  <rect x="200" y="84" width="400" height="356" fill="url(#mhBldg)"/>
+  <rect x="200" y="80" width="400" height="4" fill="#C9A227"/>
+  <rect x="198" y="84" width="5" height="356" fill="#C9A227"/>
+  <rect x="597" y="84" width="5" height="356" fill="#C9A227"/>
+  <rect x="200" y="438" width="400" height="4" fill="#C9A227"/>
+  <!-- Window rows (6 floors x 7 windows) -->
+  <g>
+    <g stroke="#C9A227" stroke-width="1.5">
+      <rect x="245" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="110" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="110" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="291" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="110" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="295" y="110" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="337" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="341" y="110" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="341" y="110" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="383" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="387" y="110" width="26" height="34" rx="2" fill="#2E6E8E"/><rect x="387" y="110" width="26" height="9" fill="#4A90B0"/>
+      <rect x="429" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="433" y="110" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="433" y="110" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="475" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="110" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="479" y="110" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="521" y="105" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="110" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="525" y="110" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="245" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="160" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="160" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="291" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="160" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="295" y="160" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="337" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="341" y="160" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="341" y="160" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="383" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="387" y="160" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="387" y="160" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="429" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="433" y="160" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="433" y="160" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="475" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="160" width="26" height="34" rx="2" fill="#2E6E8E"/><rect x="479" y="160" width="26" height="9" fill="#4A90B0"/>
+      <rect x="521" y="155" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="160" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="525" y="160" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="245" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="210" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="210" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="291" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="210" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="295" y="210" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="337" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="341" y="210" width="26" height="34" rx="2" fill="#2E6E8E"/><rect x="341" y="210" width="26" height="9" fill="#4A90B0"/>
+      <rect x="383" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="387" y="210" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="387" y="210" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="429" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="433" y="210" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="433" y="210" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="475" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="210" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="479" y="210" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="521" y="205" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="210" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="525" y="210" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="245" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="260" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="260" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="291" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="260" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="295" y="260" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="337" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="341" y="260" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="341" y="260" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="383" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="387" y="260" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="387" y="260" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="429" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="433" y="260" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="433" y="260" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="475" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="260" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="479" y="260" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="521" y="255" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="260" width="26" height="34" rx="2" fill="#2E6E8E"/><rect x="525" y="260" width="26" height="9" fill="#4A90B0"/>
+      <rect x="245" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="310" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="310" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="291" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="310" width="26" height="34" rx="2" fill="#2E6E8E"/><rect x="295" y="310" width="26" height="9" fill="#4A90B0"/>
+      <rect x="337" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="341" y="310" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="341" y="310" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="383" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="387" y="310" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="387" y="310" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="429" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="433" y="310" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="433" y="310" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="475" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="310" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="479" y="310" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="521" y="305" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="310" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="525" y="310" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="245" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="360" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="291" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="295" y="360" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="337" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="341" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="341" y="360" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="383" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="387" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="387" y="360" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="429" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="433" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="433" y="360" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="475" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="479" y="360" width="26" height="9" fill="#FFF3C4"/>
+      <rect x="521" y="355" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="360" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="525" y="360" width="26" height="9" fill="#FFF3C4"/>
+    </g>
+  </g>
+  <!-- Ground floor windows -->
+  <g stroke="#C9A227" stroke-width="1.5">
+    <rect x="245" y="392" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="249" y="397" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="249" y="397" width="26" height="9" fill="#FFF3C4"/>
+    <rect x="291" y="392" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="295" y="397" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="295" y="397" width="26" height="9" fill="#FFF3C4"/>
+    <rect x="475" y="392" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="479" y="397" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="479" y="397" width="26" height="9" fill="#FFF3C4"/>
+    <rect x="521" y="392" width="34" height="44" rx="3" fill="#0B3D5C"/><rect x="525" y="397" width="26" height="34" rx="2" fill="#F7D97E"/><rect x="525" y="397" width="26" height="9" fill="#FFF3C4"/>
+  </g>
+  <!-- Grand entrance -->
+  <path d="M352 440 L352 398 A48 46 0 0 1 448 398 L448 440 Z" fill="#0B3D5C" stroke="#C9A227" stroke-width="4"/>
+  <line x1="400" y1="352" x2="400" y2="440" stroke="#C9A227" stroke-width="2.5"/>
+  <rect x="344" y="380" width="10" height="60" fill="url(#mhGold)"/>
+  <rect x="446" y="380" width="10" height="60" fill="url(#mhGold)"/>
+  <rect x="322" y="428" width="156" height="12" rx="6" fill="url(#mhGold)"/>
+  <rect x="366" y="352" width="68" height="22" rx="3" fill="#0B3D5C" stroke="#C9A227" stroke-width="1.5"/>
+  <text x="400" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="bold" fill="#C9A227">MANDOVI</text>
+  <!-- Street -->
+  <rect x="0" y="440" width="800" height="20" fill="#1B2B3A"/>
+  <g fill="#C9A227" opacity="0.5">
+    <circle cx="60" cy="450" r="2.5"/><circle cx="130" cy="450" r="2.5"/><circle cx="660" cy="450" r="2.5"/><circle cx="730" cy="450" r="2.5"/>
+  </g>
+  <!-- Mandovi River -->
+  <rect x="0" y="460" width="800" height="140" fill="url(#mhWater)"/>
+  <g opacity="0.09" stroke="#C9A227" stroke-width="2" fill="none">
+    <path d="M0 478 Q100 466 200 478 T400 478 T600 478 T800 478"/>
+    <path d="M0 500 Q100 488 200 500 T400 500 T600 500 T800 500"/>
+    <path d="M0 522 Q100 510 200 522 T400 522 T600 522 T800 522"/>
+    <path d="M0 546 Q100 534 200 546 T400 546 T600 546 T800 546"/>
+    <path d="M0 572 Q100 560 200 572 T400 572 T600 572 T800 572"/>
+  </g>
+  <!-- Gold light reflections in the water -->
+  <g fill="#C9A227" opacity="0.10">
+    <rect x="245" y="470" width="34" height="110"/><rect x="291" y="470" width="34" height="110"/>
+    <rect x="337" y="470" width="34" height="110"/><rect x="383" y="470" width="34" height="110"/>
+    <rect x="429" y="470" width="34" height="110"/><rect x="475" y="470" width="34" height="110"/>
+    <rect x="521" y="470" width="34" height="110"/>
+  </g>
+  <!-- Boat on the river -->
+  <rect x="596" y="546" width="48" height="7" rx="3.5" fill="#0B3D5C" stroke="#C9A227" stroke-width="1.5"/>
+  <path d="M602 546 L624 546 L613 528 Z" fill="#C9A227" opacity="0.8"/>
+  <!-- Palm trees -->
+  <g stroke-linecap="round">
+    <path d="M95 460 Q100 400 108 340" stroke="#6B4A2B" stroke-width="9" fill="none"/>
+    <path d="M108 340 Q70 310 60 268 M108 340 Q120 300 140 278 M108 340 Q90 340 74 318 M108 340 Q142 330 158 308 M108 340 Q110 296 128 262" stroke="#0B5E3B" stroke-width="6" fill="none"/>
+    <path d="M705 460 Q700 400 692 340" stroke="#6B4A2B" stroke-width="9" fill="none"/>
+    <path d="M692 340 Q730 310 740 268 M692 340 Q680 300 660 278 M692 340 Q710 340 726 318 M692 340 Q658 330 642 308 M692 340 Q690 296 672 262" stroke="#0B5E3B" stroke-width="6" fill="none"/>
+  </g>
+  <!-- Brass label -->
+  <rect x="30" y="520" width="330" height="50" rx="4" fill="#C9A227" opacity="0.9"/>
+  <text x="195" y="551" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#06281E">THE MANDOVI HOTEL</text>
+</svg>

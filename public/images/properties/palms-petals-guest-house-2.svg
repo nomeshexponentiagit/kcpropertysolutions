@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs><linearGradient id="ppg2" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#13674A"/><stop offset="100%" stop-color="#0F523C"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#ppg2)"/>
+  <!-- Fountain -->
+  <g opacity="0.14" stroke="#C9A227" stroke-width="2" fill="none">
+    <circle cx="170" cy="350" r="28"/>
+    <circle cx="170" cy="350" r="12"/>
+    <path d="M170 338v-14M158 344l-8-8M182 344l8-8"/>
+  </g>
+  <!-- Garden cafe umbrella and table -->
+  <g opacity="0.16" fill="#06281E">
+    <path d="M400 428l-70-90h140Z"/>
+    <rect x="396" y="338" width="8" height="24"/>
+    <rect x="395" y="428" width="10" height="42"/>
+    <ellipse cx="400" cy="426" rx="30" ry="8"/>
+  </g>
+  <!-- Hedge -->
+  <rect x="100" y="400" width="600" height="40" rx="20" fill="#C9A227" opacity="0.12"/>
+  <!-- Flower beds -->
+  <g fill="#C9A227" opacity="0.2">
+    <ellipse cx="170" cy="480" rx="16" ry="7"/>
+    <ellipse cx="170" cy="466" rx="7" ry="16"/>
+    <circle cx="170" cy="473" r="3"/>
+    <ellipse cx="630" cy="480" rx="16" ry="7"/>
+    <ellipse cx="630" cy="466" rx="7" ry="16"/>
+    <circle cx="630" cy="473" r="3"/>
+    <ellipse cx="200" cy="530" rx="12" ry="5"/>
+    <ellipse cx="200" cy="520" rx="5" ry="12"/>
+    <circle cx="200" cy="525" r="2.5"/>
+    <ellipse cx="600" cy="530" rx="12" ry="5"/>
+    <ellipse cx="600" cy="520" rx="5" ry="12"/>
+    <circle cx="600" cy="525" r="2.5"/>
+  </g>
+  <!-- Stepping stones -->
+  <g fill="#C9A227" opacity="0.18">
+    <ellipse cx="400" cy="470" rx="34" ry="10"/>
+    <ellipse cx="400" cy="515" rx="34" ry="10"/>
+    <ellipse cx="400" cy="560" rx="34" ry="10"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="130" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="95" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">GARDEN</text>
+</svg>

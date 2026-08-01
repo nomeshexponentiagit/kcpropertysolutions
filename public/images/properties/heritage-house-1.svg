@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="hh1" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1F4E6B"/>
+      <stop offset="100%" stop-color="#0E2B3F"/>
+    </linearGradient>
+    <pattern id="tiles" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#2E6E8C"/>
+      <rect x="3" y="3" width="24" height="24" fill="#4E8FAD"/>
+      <circle cx="15" cy="15" r="6" fill="#BFE0EC"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#hh1)"/>
+  <!-- Tile wall -->
+  <rect x="0" y="0" width="800" height="400" fill="url(#tiles)" opacity="0.55"/>
+  <!-- Floor -->
+  <rect x="0" y="470" width="800" height="130" fill="#1F4E6B" opacity="0.55"/>
+  <!-- Arched doorway frame -->
+  <g stroke="#E8D5A8" fill="none" stroke-width="6" opacity="0.7">
+    <path d="M240 470 v-210 a160 160 0 0 1 320 0 v210Z"/>
+  </g>
+  <path d="M258 470 v-200 a142 142 0 0 1 284 0 v200Z" fill="#E8D5A8" opacity="0.15"/>
+  <!-- Chandelier -->
+  <g opacity="0.6" stroke="#C9A227" stroke-width="2">
+    <line x1="400" y1="40" x2="400" y2="105"/>
+    <path d="M355 105 h90"/>
+    <line x1="362" y1="105" x2="362" y2="135"/>
+    <line x1="380" y1="105" x2="380" y2="125"/>
+    <line x1="420" y1="105" x2="420" y2="125"/>
+    <line x1="438" y1="105" x2="438" y2="135"/>
+  </g>
+  <circle cx="362" cy="140" r="6" fill="#C9A227" opacity="0.6"/>
+  <circle cx="438" cy="140" r="6" fill="#C9A227" opacity="0.6"/>
+  <!-- Label -->
+  <rect x="330" y="520" width="140" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">INTERIOR</text>
+</svg>

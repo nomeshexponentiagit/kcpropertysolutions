@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D131B"/>
+      <stop offset="55%" stop-color="#182330"/>
+      <stop offset="100%" stop-color="#243246"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.5" cy="0.75" r="0.45">
+      <stop offset="0%" stop-color="#E3C565" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#E3C565" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#warm)"/>
+  <!-- String lights across the top -->
+  <path d="M40 170 Q400 200 760 170" stroke="#C9A227" stroke-width="1.5" opacity="0.7" fill="none"/>
+  <g fill="#E3C565" opacity="0.9">
+    <circle cx="80" cy="176" r="4"/><circle cx="140" cy="182" r="4"/><circle cx="200" cy="187" r="4"/>
+    <circle cx="260" cy="191" r="4"/><circle cx="320" cy="194" r="4"/><circle cx="380" cy="195" r="4"/>
+    <circle cx="440" cy="194" r="4"/><circle cx="500" cy="191" r="4"/><circle cx="560" cy="187" r="4"/>
+    <circle cx="620" cy="182" r="4"/><circle cx="680" cy="176" r="4"/><circle cx="740" cy="171" r="4"/>
+  </g>
+  <!-- Flanking shops (shutters down) -->
+  <g>
+    <rect x="70" y="200" width="210" height="270" fill="#151F2C"/>
+    <rect x="70" y="200" width="210" height="8" fill="url(#gold)" opacity="0.8"/>
+    <rect x="82" y="214" width="186" height="26" fill="#0B1017"/>
+    <g stroke="#C9A227" stroke-width="2" opacity="0.55">
+      <line x1="82" y1="250" x2="268" y2="250"/>
+      <line x1="82" y1="280" x2="268" y2="280"/>
+      <line x1="82" y1="310" x2="268" y2="310"/>
+      <line x1="82" y1="340" x2="268" y2="340"/>
+      <line x1="82" y1="370" x2="268" y2="370"/>
+      <line x1="82" y1="400" x2="268" y2="400"/>
+    </g>
+    <rect x="82" y="404" width="186" height="50" fill="#0D141D"/>
+    <rect x="520" y="200" width="210" height="270" fill="#141D2A"/>
+    <rect x="520" y="200" width="210" height="8" fill="url(#gold)" opacity="0.8"/>
+    <rect x="532" y="214" width="186" height="26" fill="#0B1017"/>
+    <g stroke="#C9A227" stroke-width="2" opacity="0.55">
+      <line x1="532" y1="250" x2="718" y2="250"/>
+      <line x1="532" y1="280" x2="718" y2="280"/>
+      <line x1="532" y1="310" x2="718" y2="310"/>
+      <line x1="532" y1="340" x2="718" y2="340"/>
+      <line x1="532" y1="370" x2="718" y2="370"/>
+      <line x1="532" y1="400" x2="718" y2="400"/>
+    </g>
+    <rect x="532" y="404" width="186" height="50" fill="#0D141D"/>
+  </g>
+  <!-- Subject shop: Mapusa Market Shop -->
+  <g>
+    <rect x="270" y="186" width="260" height="14" fill="url(#gold)"/>
+    <rect x="278" y="206" width="244" height="30" fill="#0B1017" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="400" y="226" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#E3C565">MAPUSA MARKET</text>
+    <!-- Mezzanine storage window -->
+    <rect x="380" y="250" width="56" height="34" fill="#E3C565" opacity="0.75"/>
+    <rect x="380" y="250" width="56" height="34" stroke="#C9A227" stroke-width="2.5" fill="none"/>
+    <line x1="408" y1="250" x2="408" y2="284" stroke="#C9A227" stroke-width="2"/>
+    <line x1="380" y1="267" x2="436" y2="267" stroke="#C9A227" stroke-width="2"/>
+    <!-- Upper wall window -->
+    <rect x="300" y="296" width="72" height="44" fill="#E3C565" opacity="0.55"/>
+    <rect x="428" y="296" width="72" height="44" fill="#E3C565" opacity="0.4"/>
+    <!-- Striped awning -->
+    <g>
+      <rect x="266" y="360" width="268" height="32"/>
+      <path d="M266 360 h33.5 v32 h-33.5Z" fill="#C9A227"/>
+      <path d="M299.5 360 h33.5 v32 h-33.5Z" fill="#0B1017"/>
+      <path d="M333 360 h33.5 v32 h-33.5Z" fill="#C9A227"/>
+      <path d="M366.5 360 h33.5 v32 h-33.5Z" fill="#0B1017"/>
+      <path d="M400 360 h33.5 v32 h-33.5Z" fill="#C9A227"/>
+      <path d="M433.5 360 h33.5 v32 h-33.5Z" fill="#0B1017"/>
+      <path d="M467 360 h33.5 v32 h-33.5Z" fill="#C9A227"/>
+      <path d="M500.5 360 h33.5 v32 h-33.5Z" fill="#0B1017"/>
+      <rect x="266" y="360" width="268" height="4" fill="#E3C565" opacity="0.8"/>
+    </g>
+    <!-- Interior glow with goods -->
+    <rect x="276" y="392" width="248" height="40" fill="#E3C565" opacity="0.5"/>
+    <g fill="#0B1017" opacity="0.75">
+      <rect x="292" y="400" width="30" height="22"/>
+      <rect x="332" y="404" width="22" height="18"/>
+      <rect x="448" y="398" width="34" height="26"/>
+      <rect x="486" y="406" width="22" height="16"/>
+    </g>
+    <!-- Rolling shutter rolled up -->
+    <rect x="272" y="428" width="256" height="16" rx="8" fill="url(#gold)"/>
+    <rect x="276" y="444" width="248" height="26" fill="#0E141D"/>
+    <g stroke="#C9A227" stroke-width="1.5" opacity="0.5">
+      <line x1="276" y1="452" x2="524" y2="452"/>
+      <line x1="276" y1="462" x2="524" y2="462"/>
+    </g>
+    <!-- Support columns -->
+    <rect x="270" y="186" width="10" height="284" fill="#0B1017" opacity="0.6"/>
+    <rect x="520" y="186" width="10" height="284" fill="#0B1017" opacity="0.6"/>
+  </g>
+  <!-- Sidewalk -->
+  <rect x="0" y="470" width="800" height="56" fill="#111A25"/>
+  <rect x="0" y="470" width="800" height="3" fill="#C9A227" opacity="0.4"/>
+  <!-- Market stalls -->
+  <g>
+    <rect x="96" y="470" width="120" height="5" fill="#C9A227" opacity="0.8"/>
+    <path d="M96 470 L102 442 L118 442 L96 470Z" fill="#C9A227" opacity="0.7"/>
+    <path d="M118 442 L134 442 L110 470 L96 470Z" fill="#0B1017"/>
+    <path d="M134 442 L150 442 L126 470 L110 470Z" fill="#C9A227" opacity="0.7"/>
+    <path d="M150 442 L166 442 L142 470 L126 470Z" fill="#0B1017"/>
+    <path d="M166 442 L182 442 L158 470 L142 470Z" fill="#C9A227" opacity="0.7"/>
+    <path d="M182 442 L198 442 L174 470 L158 470Z" fill="#0B1017"/>
+    <path d="M198 442 L214 442 L190 470 L174 470Z" fill="#C9A227" opacity="0.7"/>
+    <rect x="106" y="475" width="104" height="16" fill="#1A2430"/>
+    <g fill="#C9A227" opacity="0.6">
+      <rect x="112" y="478" width="12" height="8"/>
+      <rect x="130" y="478" width="12" height="8"/>
+      <rect x="148" y="478" width="12" height="8"/>
+      <rect x="166" y="478" width="12" height="8"/>
+      <rect x="184" y="478" width="12" height="8"/>
+    </g>
+    <rect x="580" y="472" width="120" height="5" fill="#C9A227" opacity="0.8"/>
+    <path d="M580 472 L588 446 L604 446 L580 472Z" fill="#0B1017"/>
+    <path d="M604 446 L620 446 L596 472 L580 472Z" fill="#C9A227" opacity="0.7"/>
+    <path d="M620 446 L636 446 L612 472 L596 472Z" fill="#0B1017"/>
+    <path d="M636 446 L652 446 L628 472 L612 472Z" fill="#C9A227" opacity="0.7"/>
+    <path d="M652 446 L668 446 L644 472 L628 472Z" fill="#0B1017"/>
+    <path d="M668 446 L684 446 L660 472 L644 472Z" fill="#C9A227" opacity="0.7"/>
+    <path d="M684 446 L700 446 L676 472 L660 472Z" fill="#0B1017"/>
+    <rect x="590" y="477" width="104" height="16" fill="#1A2430"/>
+    <g fill="#C9A227" opacity="0.6">
+      <rect x="596" y="480" width="12" height="8"/>
+      <rect x="614" y="480" width="12" height="8"/>
+      <rect x="632" y="480" width="12" height="8"/>
+      <rect x="650" y="480" width="12" height="8"/>
+      <rect x="668" y="480" width="12" height="8"/>
+    </g>
+  </g>
+  <!-- People -->
+  <g fill="#060A0E" opacity="0.85">
+    <circle cx="352" cy="500" r="6"/><path d="M345 506 Q352 502 359 506 L358 526 L346 526Z"/>
+    <circle cx="440" cy="498" r="6"/><path d="M433 504 Q440 500 447 504 L446 524 L434 524Z"/>
+    <circle cx="512" cy="504" r="6"/><path d="M505 510 Q512 506 519 510 L518 530 L506 530Z"/>
+  </g>
+  <!-- Road -->
+  <rect x="0" y="526" width="800" height="74" fill="#090E15"/>
+  <g fill="#E3C565" opacity="0.35">
+    <rect x="140" y="562" width="80" height="4"/>
+    <rect x="360" y="562" width="80" height="4"/>
+    <rect x="580" y="562" width="80" height="4"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="250" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="155" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0B1017">MAPUSA MARKET SHOP</text>
+</svg>

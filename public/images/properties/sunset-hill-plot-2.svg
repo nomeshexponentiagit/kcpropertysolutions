@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="sh2" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F523C"/>
+      <stop offset="50%" stop-color="#1B6B4F"/>
+      <stop offset="100%" stop-color="#239063"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sh2)"/>
+  <!-- Sea -->
+  <rect x="0" y="380" width="800" height="220" fill="#06281E" opacity="0.5"/>
+  <!-- Horizon -->
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#C9A227" stroke-width="1.5" opacity="0.25"/>
+  <!-- Waves -->
+  <g opacity="0.16" stroke="#C9A227" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M0 420 Q100 408 200 420 T400 420 T600 420 T800 420"/>
+    <path d="M0 450 Q100 438 200 450 T400 450 T600 450 T800 450"/>
+    <path d="M0 480 Q100 468 200 480 T400 480 T600 480 T800 480"/>
+    <path d="M0 510 Q100 498 200 510 T400 510 T600 510 T800 510"/>
+  </g>
+  <!-- Sun on the horizon -->
+  <circle cx="540" cy="392" r="36" fill="#C9A227" opacity="0.45"/>
+  <!-- Palms on the headland -->
+  <g opacity="0.15">
+    <g transform="translate(90,290) scale(1)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(200,320) scale(0.8)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(680,300) scale(1)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(745,330) scale(0.7)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+  <!-- Compass rose -->
+  <g opacity="0.2" stroke="#C9A227" stroke-width="1.5" transform="translate(100,90)">
+    <line x1="0" y1="-30" x2="0" y2="30"/>
+    <line x1="-30" y1="0" x2="30" y2="0"/>
+    <polygon points="0,-30 5,-10 0,-15 -5,-10" fill="#C9A227"/>
+    <text x="0" y="-35" text-anchor="middle" font-size="10" fill="#C9A227" font-family="sans-serif">N</text>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="170" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="115" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#FFFFFF">AERIAL VIEW</text>
+</svg>

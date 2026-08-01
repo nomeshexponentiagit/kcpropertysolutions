@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="hh2" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8A4A2E"/>
+      <stop offset="55%" stop-color="#B5502F"/>
+      <stop offset="100%" stop-color="#E0C896"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#hh2)"/>
+  <!-- Courtyard floor -->
+  <rect x="0" y="430" width="800" height="170" fill="#E0C896" opacity="0.5"/>
+  <!-- Arcade arches and columns -->
+  <g fill="#2E1A12" opacity="0.35">
+    <path d="M40 430 v-110 a110 110 0 0 1 220 0 v110Z"/>
+    <rect x="260" y="250" width="40" height="180"/>
+    <path d="M300 430 v-110 a110 110 0 0 1 220 0 v110Z"/>
+    <rect x="520" y="250" width="40" height="180"/>
+    <path d="M560 430 v-110 a110 110 0 0 1 220 0 v110Z"/>
+  </g>
+  <!-- Wall and balcao above the arcade -->
+  <g opacity="0.3" fill="#2E1A12">
+    <rect x="0" y="158" width="800" height="52"/>
+    <rect x="0" y="148" width="800" height="10"/>
+  </g>
+  <!-- Fountain -->
+  <ellipse cx="400" cy="470" rx="60" ry="15" fill="#2E6E7E" opacity="0.6"/>
+  <ellipse cx="400" cy="470" rx="34" ry="8" fill="#9FD4DC" opacity="0.5"/>
+  <line x1="400" y1="470" x2="400" y2="445" stroke="#9FD4DC" stroke-width="3" opacity="0.6"/>
+  <circle cx="400" cy="441" r="4" fill="#9FD4DC" opacity="0.6"/>
+  <!-- Potted topiaries -->
+  <g opacity="0.4" fill="#2E1A12">
+    <rect x="116" y="440" width="8" height="30"/>
+    <circle cx="120" cy="430" r="20"/>
+    <rect x="676" y="440" width="8" height="30"/>
+    <circle cx="680" cy="430" r="20"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="180" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="120" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">GARDEN VIEW</text>
+</svg>

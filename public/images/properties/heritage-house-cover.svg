@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="hhbg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E0C896"/>
+      <stop offset="50%" stop-color="#C98B5E"/>
+      <stop offset="100%" stop-color="#8A4A2E"/>
+    </linearGradient>
+    <pattern id="azulejo" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#2E5E8C"/>
+      <path d="M12 0V24M0 12H24" stroke="#E8D5A8" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#hhbg)"/>
+  <!-- Sun -->
+  <circle cx="170" cy="140" r="62" fill="#FBF0D9" opacity="0.4"/>
+  <!-- Palm accent -->
+  <g opacity="0.3" fill="#2E1A12">
+    <ellipse cx="740" cy="360" rx="3" ry="90"/>
+    <path d="M740 270 l-38 48 34-7 30 38 7-23-22-8 28-43h-7l-13 26-6-26Z"/>
+  </g>
+  <!-- Mansion body -->
+  <g opacity="0.32" fill="#2E1A12">
+    <rect x="170" y="230" width="460" height="240" rx="2"/>
+    <polygon points="150,230 400,130 650,230"/>
+    <!-- upper arched windows -->
+    <path d="M205 340 v-60 a22 22 0 0 1 44 0 v60Z"/>
+    <path d="M295 340 v-60 a22 22 0 0 1 44 0 v60Z"/>
+    <path d="M385 340 v-60 a22 22 0 0 1 44 0 v60Z"/>
+    <path d="M475 340 v-60 a22 22 0 0 1 44 0 v60Z"/>
+    <path d="M565 340 v-60 a22 22 0 0 1 44 0 v60Z"/>
+    <!-- balcao -->
+    <rect x="200" y="352" width="400" height="5"/>
+    <rect x="240" y="364" width="4" height="14"/>
+    <rect x="320" y="364" width="4" height="14"/>
+    <rect x="400" y="364" width="4" height="14"/>
+    <rect x="480" y="364" width="4" height="14"/>
+    <rect x="560" y="364" width="4" height="14"/>
+  </g>
+  <!-- Azulejo band -->
+  <rect x="190" y="420" width="420" height="24" fill="url(#azulejo)" opacity="0.5"/>
+  <!-- Ground floor door and windows -->
+  <g opacity="0.35" fill="#2E1A12">
+    <path d="M380 470 v-60 a28 28 0 0 1 56 0 v60Z"/>
+    <path d="M215 470 v-50 a20 20 0 0 1 40 0 v50Z"/>
+    <path d="M545 470 v-50 a20 20 0 0 1 40 0 v50Z"/>
+  </g>
+  <!-- Ground -->
+  <rect x="0" y="470" width="800" height="130" fill="#2E1A12" opacity="0.15"/>
+  <!-- Label -->
+  <rect x="30" y="520" width="230" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="145" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">HERITAGE MANSION</text>
+</svg>

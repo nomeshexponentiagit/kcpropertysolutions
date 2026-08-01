@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="seaa" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#2E86AB"/>
+      <stop offset="100%" stop-color="#0F2E45"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#F2D9A0" opacity="0.35"/>
+  <rect width="800" height="600" fill="#3A2815"/>
+  <!-- Aerial cliff body with terraces stepping toward the sea -->
+  <path d="M0 0 L 470 0 L 430 130 L 530 150 L 500 290 L 590 320 L 560 480 L 800 480 L 800 600 L 0 600 Z" fill="#6E4E33"/>
+  <!-- Terrace steps (angular, seen from above) -->
+  <path d="M0 0 L 470 0 L 430 130 L 530 150 L 500 290 L 590 320 L 560 480 L 0 480 Z" fill="#7A5A3C"/>
+  <path d="M60 0 L 400 0 L 370 100 L 470 120 L 445 240 L 530 265 L 505 400 L 60 400 Z" fill="#8A6A48"/>
+  <path d="M120 0 L 330 0 L 305 70 L 400 88 L 380 185 L 460 205 L 440 320 L 120 320 Z" fill="#9A7A54"/>
+  <!-- Sea (bottom-right) -->
+  <path d="M560 480 L 800 480 L 800 600 L 560 600 Z" fill="url(#seaa)"/>
+  <path d="M600 510 q 22 -10 44 0 q 22 -10 44 0" stroke="#7FB6CC" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M640 555 q 24 -10 48 0 q 24 -10 48 0" stroke="#7FB6CC" stroke-width="3" fill="none" opacity="0.45"/>
+  <!-- Cliff-edge pool -->
+  <rect x="180" y="300" width="150" height="70" rx="8" fill="#5EC9D2"/>
+  <rect x="180" y="300" width="150" height="70" rx="8" fill="none" stroke="#A8E6EA" stroke-width="4" opacity="0.7"/>
+  <line x1="255" y1="300" x2="255" y2="370" stroke="#A8E6EA" stroke-width="3" opacity="0.6"/>
+  <!-- Event lawn -->
+  <rect x="330" y="60" width="170" height="110" rx="10" fill="#6E9A4C"/>
+  <path d="M330 110 Q 380 130 430 100 T 500 118" stroke="#4A7A32" stroke-width="4" fill="none" opacity="0.7"/>
+  <!-- Building blocks with dark roofs -->
+  <g fill="#2A1A12">
+    <rect x="60" y="120" width="130" height="80" rx="6"/>
+    <rect x="240" y="180" width="110" height="70" rx="6"/>
+    <rect x="90" y="240" width="120" height="80" rx="6"/>
+    <rect x="280" y="40" width="90" height="60" rx="6"/>
+  </g>
+  <g fill="#E8C56A" opacity="0.9">
+    <rect x="80" y="140" width="10" height="8" rx="2"/>
+    <rect x="110" y="140" width="10" height="8" rx="2"/>
+    <rect x="260" y="198" width="10" height="8" rx="2"/>
+    <rect x="110" y="260" width="10" height="8" rx="2"/>
+    <rect x="300" y="56" width="10" height="8" rx="2"/>
+  </g>
+  <!-- Winding drive -->
+  <path d="M120 480 C 160 430 100 380 160 330 C 220 280 200 230 250 190 C 290 158 260 120 300 100"
+        stroke="#E4C97F" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <!-- Palm grove dots -->
+  <g fill="#2E7A4C" opacity="0.9">
+    <circle cx="560" cy="380" r="14"/>
+    <circle cx="600" cy="400" r="11"/>
+    <circle cx="530" cy="430" r="13"/>
+    <circle cx="590" cy="450" r="10"/>
+    <circle cx="640" cy="420" r="12"/>
+  </g>
+  <!-- Sun shadow direction marker -->
+  <g stroke="#FFD9A0" stroke-width="4" opacity="0.55">
+    <line x1="470" y1="470" x2="520" y2="470"/>
+  </g>
+  <!-- Brass label -->
+  <rect x="30" y="520" width="180" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="120" y="552" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#06281E" letter-spacing="2">AERIAL VIEW</text>
+</svg>

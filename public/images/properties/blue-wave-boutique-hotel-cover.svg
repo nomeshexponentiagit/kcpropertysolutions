@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bwSky" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7FC4D8"/>
+      <stop offset="100%" stop-color="#E6F4F8"/>
+    </linearGradient>
+    <linearGradient id="bwSea" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#1B6E9B"/>
+      <stop offset="100%" stop-color="#0A5C8A"/>
+    </linearGradient>
+    <linearGradient id="bwGold" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#E8C766"/>
+      <stop offset="55%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#8F6F14"/>
+    </linearGradient>
+    <linearGradient id="bwGlass" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#BFE6F2"/>
+      <stop offset="100%" stop-color="#6FB4D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bwSky)"/>
+  <!-- Sun -->
+  <circle cx="680" cy="150" r="45" fill="#F7D97E" opacity="0.95"/>
+  <circle cx="680" cy="150" r="75" fill="#F7D97E" opacity="0.2"/>
+  <!-- Soft clouds -->
+  <g fill="#FFFFFF" opacity="0.4">
+    <ellipse cx="200" cy="90" rx="80" ry="16"/>
+    <ellipse cx="300" cy="70" rx="55" ry="12"/>
+    <ellipse cx="520" cy="110" rx="65" ry="13"/>
+  </g>
+  <!-- Birds -->
+  <g stroke="#155E8A" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M340 160 Q350 153 360 160 Q370 153 380 160"/>
+    <path d="M385 180 Q395 173 405 180 Q415 173 425 180"/>
+  </g>
+  <!-- Ocean -->
+  <rect x="0" y="440" width="800" height="160" fill="url(#bwSea)"/>
+  <g stroke="#FFFFFF" stroke-width="2" opacity="0.35" fill="none">
+    <path d="M0 470 Q60 462 120 470 T240 470 T360 470 T480 470 T600 470 T720 470"/>
+    <path d="M0 500 Q60 492 120 500 T240 500 T360 500 T480 500 T600 500 T720 500"/>
+    <path d="M0 535 Q60 527 120 535 T240 535 T360 535 T480 535 T600 535 T720 535"/>
+  </g>
+  <!-- Sun streak on water -->
+  <rect x="640" y="448" width="80" height="150" fill="#F7D97E" opacity="0.15"/>
+  <!-- Cliff with vegetation -->
+  <path d="M560 600 L560 470 Q600 428 642 448 L720 362 Q758 330 800 342 L800 600 Z" fill="#0B3D5C"/>
+  <g fill="#155E8A">
+    <circle cx="600" cy="450" r="16"/><circle cx="640" cy="432" r="14"/><circle cx="690" cy="384" r="12"/><circle cx="740" cy="356" r="13"/>
+  </g>
+  <!-- Infinity pool -->
+  <rect x="190" y="470" width="340" height="70" rx="6" fill="#4FC3E8" opacity="0.9"/>
+  <rect x="188" y="466" width="344" height="4" fill="#C9A227"/>
+  <g stroke="#FFFFFF" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M210 486 Q240 480 270 486 T330 486 T390 486 T450 486 T510 486"/>
+    <path d="M210 508 Q240 502 270 508 T330 508 T390 508 T450 508 T510 508"/>
+  </g>
+  <ellipse cx="360" cy="540" rx="180" ry="10" fill="#FFFFFF" opacity="0.35"/>
+  <!-- Lower block -->
+  <rect x="180" y="300" width="380" height="140" fill="#F5EBD8"/>
+  <rect x="180" y="432" width="380" height="8" fill="#C9A227"/>
+  <rect x="176" y="300" width="6" height="140" fill="#C9A227"/>
+  <rect x="558" y="300" width="6" height="140" fill="#C9A227"/>
+  <!-- Glass panels lower floor -->
+  <g stroke="#C9A227" stroke-width="2.5">
+    <rect x="205" y="316" width="58" height="96" fill="url(#bwGlass)"/>
+    <rect x="271" y="316" width="58" height="96" fill="url(#bwGlass)"/>
+    <rect x="337" y="316" width="58" height="96" fill="url(#bwGlass)"/>
+    <rect x="403" y="316" width="58" height="96" fill="url(#bwGlass)"/>
+    <rect x="469" y="316" width="58" height="96" fill="url(#bwGlass)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="1.5" opacity="0.8">
+    <line x1="234" y1="316" x2="234" y2="412"/><line x1="300" y1="316" x2="300" y2="412"/>
+    <line x1="366" y1="316" x2="366" y2="412"/><line x1="432" y1="316" x2="432" y2="412"/>
+    <line x1="498" y1="316" x2="498" y2="412"/>
+  </g>
+  <!-- Entrance -->
+  <rect x="348" y="368" width="44" height="72" rx="4" fill="#0B3D5C" stroke="#C9A227" stroke-width="3"/>
+  <line x1="370" y1="372" x2="370" y2="436" stroke="#C9A227" stroke-width="2"/>
+  <rect x="330" y="356" width="80" height="12" rx="4" fill="url(#bwGold)"/>
+  <rect x="343" y="380" width="8" height="60" fill="url(#bwGold)"/>
+  <rect x="389" y="380" width="8" height="60" fill="url(#bwGold)"/>
+  <!-- Upper curved block -->
+  <path d="M210 300 L210 178 Q210 150 238 150 L502 150 Q530 150 530 178 L530 300 Z" fill="#F5EBD8"/>
+  <rect x="210" y="292" width="320" height="8" fill="#C9A227"/>
+  <path d="M210 178 Q210 150 238 150 L502 150 Q530 150 530 178" stroke="#C9A227" stroke-width="4" fill="none"/>
+  <!-- Upper windows -->
+  <g stroke="#C9A227" stroke-width="2">
+    <rect x="242" y="172" width="56" height="42" fill="url(#bwGlass)"/>
+    <rect x="308" y="172" width="56" height="42" fill="url(#bwGlass)"/>
+    <rect x="374" y="172" width="56" height="42" fill="url(#bwGlass)"/>
+    <rect x="440" y="172" width="56" height="42" fill="url(#bwGlass)"/>
+  </g>
+  <!-- Balconies -->
+  <g>
+    <rect x="222" y="220" width="100" height="44" fill="#FFFFFF" stroke="#C9A227" stroke-width="2"/>
+    <rect x="222" y="264" width="100" height="5" fill="#C9A227"/>
+    <rect x="334" y="220" width="100" height="44" fill="#FFFFFF" stroke="#C9A227" stroke-width="2"/>
+    <rect x="334" y="264" width="100" height="5" fill="#C9A227"/>
+    <rect x="446" y="220" width="70" height="44" fill="#FFFFFF" stroke="#C9A227" stroke-width="2"/>
+    <rect x="446" y="264" width="70" height="5" fill="#C9A227"/>
+  </g>
+  <!-- Rooftop fin -->
+  <rect x="394" y="118" width="12" height="32" rx="3" fill="url(#bwGold)"/>
+  <!-- Palm left -->
+  <g stroke-linecap="round">
+    <path d="M110 470 Q115 400 122 340" stroke="#6B4A2B" stroke-width="9" fill="none"/>
+    <path d="M122 340 Q84 310 74 268 M122 340 Q134 300 154 278 M122 340 Q104 340 88 318 M122 340 Q156 330 172 308 M122 340 Q124 296 142 262" stroke="#0B5E3B" stroke-width="6" fill="none"/>
+  </g>
+  <!-- Brass label -->
+  <rect x="30" y="520" width="360" height="50" rx="4" fill="#C9A227" opacity="0.9"/>
+  <text x="210" y="551" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">BLUE WAVE BOUTIQUE HOTEL</text>
+</svg>

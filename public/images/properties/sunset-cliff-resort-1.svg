@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5A2E5C"/>
+      <stop offset="50%" stop-color="#B4522A"/>
+      <stop offset="100%" stop-color="#F2B36E"/>
+    </linearGradient>
+    <linearGradient id="poolw" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7FD3E8"/>
+      <stop offset="100%" stop-color="#2E86AB"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#B98A2F"/>
+      <stop offset="100%" stop-color="#7A5A1C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#gold)"/>
+  <!-- Sun -->
+  <circle cx="200" cy="290" r="70" fill="#FFE3B0" opacity="0.45"/>
+  <circle cx="200" cy="290" r="38" fill="#FFE3B0"/>
+  <!-- Sea -->
+  <path d="M0 330 L 800 330 L 800 460 L 0 460 Z" fill="#1E4E6B"/>
+  <path d="M0 350 q 30 -12 60 0 q 30 -12 60 0" stroke="#7FB6CC" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M480 380 q 28 -11 56 0 q 28 -11 56 0" stroke="#7FB6CC" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M120 420 q 24 -10 48 0 q 24 -10 48 0" stroke="#7FB6CC" stroke-width="2" fill="none" opacity="0.45"/>
+  <!-- Cliff top deck -->
+  <path d="M0 460 L 800 460 L 800 600 L 0 600 Z" fill="#3A2815"/>
+  <rect x="0" y="460" width="800" height="34" fill="url(#deck)"/>
+  <g stroke="#6E4E16" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="477" x2="800" y2="477"/>
+    <line x1="0" y1="494" x2="800" y2="494"/>
+  </g>
+  <!-- Infinity pool -->
+  <rect x="0" y="300" width="460" height="160" rx="10" fill="url(#poolw)"/>
+  <!-- Spill edge -->
+  <rect x="0" y="442" width="460" height="18" fill="#A8E6EA"/>
+  <g stroke="#EAF9FB" stroke-width="3" opacity="0.8">
+    <line x1="40" y1="446" x2="70" y2="446"/>
+    <line x1="140" y1="450" x2="180" y2="450"/>
+    <line x1="260" y1="446" x2="290" y2="446"/>
+    <line x1="360" y1="452" x2="400" y2="452"/>
+  </g>
+  <!-- Glass railing along pool edge -->
+  <line x1="0" y1="330" x2="460" y2="330" stroke="#EAF9FB" stroke-width="4" opacity="0.85"/>
+  <g stroke="#EAF9FB" stroke-width="3" opacity="0.6">
+    <line x1="80" y1="330" x2="80" y2="352"/>
+    <line x1="180" y1="330" x2="180" y2="352"/>
+    <line x1="280" y1="330" x2="280" y2="352"/>
+    <line x1="380" y1="330" x2="380" y2="352"/>
+  </g>
+  <!-- Loungers on the deck -->
+  <g>
+    <path d="M520 508 l 0 56 l 6 24 l 40 0 l 6 -24 l 0 -56 Z" fill="#E4C97F"/>
+    <path d="M520 530 l 52 0" stroke="#8A6420" stroke-width="3"/>
+    <path d="M578 498 l 0 74" stroke="#7A5A1C" stroke-width="3"/>
+    <path d="M552 498 A 26 9 0 0 1 604 498 Z" fill="#8E3B2E"/>
+    <path d="M552 498 A 26 9 0 0 1 604 498" fill="none" stroke="#F2D9A0" stroke-width="2"/>
+  </g>
+  <g>
+    <path d="M640 528 l 0 52 l 6 22 l 38 0 l 6 -22 l 0 -52 Z" fill="#E4C97F"/>
+    <path d="M640 548 l 50 0" stroke="#8A6420" stroke-width="3"/>
+    <path d="M676 518 l 0 70" stroke="#7A5A1C" stroke-width="3"/>
+    <path d="M652 518 A 24 8 0 0 1 700 518 Z" fill="#2E86AB"/>
+    <path d="M652 518 A 24 8 0 0 1 700 518" fill="none" stroke="#EAF9FB" stroke-width="2"/>
+  </g>
+  <g>
+    <path d="M740 520 l 0 52 l 6 22 l 40 0 l 6 -22 l 0 -52 Z" fill="#E4C97F"/>
+    <path d="M740 540 l 52 0" stroke="#8A6420" stroke-width="3"/>
+    <path d="M780 510 l 0 70" stroke="#7A5A1C" stroke-width="3"/>
+    <path d="M756 510 A 24 8 0 0 1 804 510 Z" fill="#B4522A"/>
+    <path d="M756 510 A 24 8 0 0 1 804 510" fill="none" stroke="#F2D9A0" stroke-width="2"/>
+  </g>
+  <!-- Brass label -->
+  <rect x="540" y="370" width="180" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="630" y="401" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#06281E" letter-spacing="2">POOL DECK</text>
+</svg>

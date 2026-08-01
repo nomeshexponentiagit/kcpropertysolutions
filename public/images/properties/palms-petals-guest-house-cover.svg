@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="ppbg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E94A8"/>
+      <stop offset="45%" stop-color="#13586E"/>
+      <stop offset="100%" stop-color="#06281E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#ppbg)"/>
+  <!-- Sun -->
+  <circle cx="655" cy="125" r="55" fill="#C9A227" opacity="0.28"/>
+  <!-- Palm trees -->
+  <g opacity="0.16" fill="#06281E">
+    <ellipse cx="105" cy="430" rx="4" ry="140"/>
+    <path d="M105 290l-72 68 72-12 52 56 12-36-40-12 54-70-13-3-27 46-12-52Z"/>
+    <ellipse cx="695" cy="440" rx="4" ry="130"/>
+    <path d="M695 310l-62 62 62-10 46 50 11-31-35-11 48-62-11-3-24 43-10-46Z"/>
+  </g>
+  <!-- Guest house: 3 storeys, arched windows, veranda band, grand arched entrance -->
+  <g fill="#06281E">
+    <rect x="222" y="176" width="356" height="18" rx="2" opacity="0.18"/>
+    <rect x="230" y="190" width="340" height="260" rx="2" opacity="0.18"/>
+    <rect x="230" y="336" width="340" height="12" opacity="0.15"/>
+    <g opacity="0.16">
+      <path d="M252 214a20 20 0 0 1 40 0v52h-40Z"/>
+      <path d="M312 214a20 20 0 0 1 40 0v52h-40Z"/>
+      <path d="M448 214a20 20 0 0 1 40 0v52h-40Z"/>
+      <path d="M508 214a20 20 0 0 1 40 0v52h-40Z"/>
+      <path d="M272 300a20 20 0 0 1 40 0v36h-40Z"/>
+      <path d="M488 300a20 20 0 0 1 40 0v36h-40Z"/>
+    </g>
+    <path d="M364 336 A36 36 0 0 1 436 336 L436 450 L364 450 Z" opacity="0.2"/>
+  </g>
+  <path d="M364 336 A36 36 0 0 1 436 336 L436 450 L364 450 Z" fill="none" stroke="#C9A227" stroke-width="3" opacity="0.35"/>
+  <!-- Garden path -->
+  <polygon points="368,450 432,450 470,560 330,560" fill="#C9A227" opacity="0.08"/>
+  <!-- Flower strip (petals) -->
+  <g fill="#C9A227" opacity="0.22">
+    <ellipse cx="170" cy="500" rx="14" ry="6"/>
+    <ellipse cx="170" cy="488" rx="6" ry="14"/>
+    <circle cx="170" cy="494" r="3"/>
+    <ellipse cx="640" cy="520" rx="14" ry="6"/>
+    <ellipse cx="640" cy="508" rx="6" ry="14"/>
+    <circle cx="640" cy="514" r="3"/>
+    <ellipse cx="590" cy="560" rx="12" ry="5"/>
+    <ellipse cx="590" cy="550" rx="5" ry="12"/>
+    <circle cx="590" cy="555" r="2.5"/>
+    <ellipse cx="220" cy="555" rx="12" ry="5"/>
+    <ellipse cx="220" cy="545" rx="5" ry="12"/>
+    <circle cx="220" cy="550" r="2.5"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="215" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="137" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#06281E">PALMS &amp; PETALS</text>
+</svg>

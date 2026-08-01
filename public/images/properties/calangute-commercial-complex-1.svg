@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E141D"/>
+      <stop offset="100%" stop-color="#1B2736"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3C565"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+    <pattern id="fgl" width="40" height="55" patternUnits="userSpaceOnUse">
+      <rect width="40" height="55" fill="#C9A227" opacity="0.15"/>
+      <rect x="2" y="2" width="17" height="12" fill="#E3C565" opacity="0.62"/>
+      <rect x="21" y="30" width="17" height="12" fill="#E3C565" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Evening glow behind facade -->
+  <circle cx="400" cy="150" r="140" fill="#E3C565" opacity="0.14"/>
+  <!-- Facade: main wall with setback top floor -->
+  <rect x="150" y="80" width="500" height="110" fill="#202E3E"/>
+  <rect x="150" y="80" width="500" height="110" fill="url(#fgl)"/>
+  <rect x="120" y="190" width="560" height="120" fill="#1C2938"/>
+  <rect x="120" y="190" width="560" height="120" fill="url(#fgl)"/>
+  <rect x="120" y="310" width="560" height="160" fill="#182332"/>
+  <rect x="120" y="310" width="560" height="160" fill="url(#fgl)"/>
+  <!-- Cornice and parapet -->
+  <rect x="120" y="66" width="560" height="14" fill="url(#gold)"/>
+  <rect x="130" y="80" width="540" height="6" fill="url(#gold)" opacity="0.5"/>
+  <rect x="100" y="180" width="600" height="10" fill="#0B1017"/>
+  <rect x="100" y="180" width="600" height="3" fill="url(#gold)" opacity="0.6"/>
+  <rect x="100" y="300" width="600" height="10" fill="#0B1017"/>
+  <rect x="100" y="300" width="600" height="3" fill="url(#gold)" opacity="0.6"/>
+  <!-- Vertical mullions -->
+  <g stroke="#C9A227" stroke-width="1.5" opacity="0.3">
+    <line x1="200" y1="80" x2="200" y2="310"/>
+    <line x1="280" y1="80" x2="280" y2="310"/>
+    <line x1="360" y1="80" x2="360" y2="310"/>
+    <line x1="440" y1="80" x2="440" y2="310"/>
+    <line x1="520" y1="80" x2="520" y2="310"/>
+    <line x1="600" y1="80" x2="600" y2="310"/>
+  </g>
+  <!-- Signage band -->
+  <rect x="140" y="314" width="520" height="30" fill="#0B1017"/>
+  <rect x="140" y="314" width="520" height="30" stroke="#C9A227" stroke-width="1.5" fill="none"/>
+  <text x="400" y="334" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#E3C565">CALANGUTE COMMERCIAL</text>
+  <!-- Ground storefront -->
+  <rect x="120" y="344" width="560" height="126" fill="#0D141D"/>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.6">
+    <line x1="120" y1="344" x2="680" y2="344"/>
+    <line x1="120" y1="470" x2="680" y2="470"/>
+  </g>
+  <g stroke="#C9A227" stroke-width="2" opacity="0.5">
+    <line x1="200" y1="344" x2="200" y2="470"/>
+    <line x1="280" y1="344" x2="280" y2="470"/>
+    <line x1="440" y1="344" x2="440" y2="470"/>
+    <line x1="520" y1="344" x2="520" y2="470"/>
+    <line x1="600" y1="344" x2="600" y2="470"/>
+  </g>
+  <!-- Two entrances -->
+  <rect x="300" y="358" width="44" height="112" fill="#060A0E" stroke="#C9A227" stroke-width="3"/>
+  <rect x="356" y="358" width="44" height="112" fill="#060A0E" stroke="#C9A227" stroke-width="3"/>
+  <rect x="376" y="414" width="8" height="8" rx="4" fill="#C9A227"/>
+  <rect x="320" y="414" width="8" height="8" rx="4" fill="#C9A227"/>
+  <!-- Lit interior strips behind shop windows -->
+  <rect x="130" y="360" width="60" height="16" fill="#E3C565" opacity="0.55"/>
+  <rect x="212" y="420" width="56" height="16" fill="#E3C565" opacity="0.4"/>
+  <rect x="454" y="370" width="56" height="16" fill="#E3C565" opacity="0.5"/>
+  <rect x="612" y="430" width="56" height="16" fill="#E3C565" opacity="0.45"/>
+  <!-- Light pools on sidewalk -->
+  <ellipse cx="400" cy="492" rx="180" ry="16" fill="#E3C565" opacity="0.12"/>
+  <!-- Planters -->
+  <g>
+    <rect x="104" y="452" width="34" height="20" fill="#C9A227" opacity="0.75"/>
+    <g fill="#1B4034">
+      <path d="M112 452 C100 440 96 432 104 424 C112 434 114 442 112 452Z"/>
+      <path d="M130 452 C142 440 146 432 138 424 C130 434 128 442 130 452Z"/>
+      <path d="M121 452 C121 436 121 428 121 422 C121 430 121 440 121 452Z"/>
+    </g>
+    <rect x="662" y="452" width="34" height="20" fill="#C9A227" opacity="0.75"/>
+    <g fill="#1B4034">
+      <path d="M670 452 C658 440 654 432 662 424 C670 434 672 442 670 452Z"/>
+      <path d="M688 452 C700 440 704 432 696 424 C688 434 686 442 688 452Z"/>
+      <path d="M679 452 C679 436 679 428 679 422 C679 430 679 440 679 452Z"/>
+    </g>
+  </g>
+  <!-- Pedestrians -->
+  <g fill="#060A0E" opacity="0.85">
+    <circle cx="395" cy="478" r="6"/><path d="M388 484 Q395 480 402 484 L401 504 L389 504Z"/>
+    <circle cx="432" cy="476" r="6"/><path d="M425 482 Q432 478 439 482 L438 502 L426 502Z"/>
+    <circle cx="468" cy="479" r="6"/><path d="M461 485 Q468 481 475 485 L474 505 L462 505Z"/>
+  </g>
+  <!-- Sidewalk and road -->
+  <rect x="0" y="470" width="800" height="46" fill="#101820"/>
+  <rect x="0" y="470" width="800" height="3" fill="#C9A227" opacity="0.4"/>
+  <rect x="0" y="516" width="800" height="84" fill="#0A0F16"/>
+  <g fill="#E3C565" opacity="0.35">
+    <rect x="140" y="556" width="80" height="4"/>
+    <rect x="360" y="556" width="80" height="4"/>
+    <rect x="580" y="556" width="80" height="4"/>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="130" height="50" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="95" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#0B1017">FAÇADE</text>
+</svg>

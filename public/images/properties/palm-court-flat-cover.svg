@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="pcbg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="50%" stop-color="#13674A"/>
+      <stop offset="100%" stop-color="#1E8A5F" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="pcbld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E4E3C"/>
+      <stop offset="100%" stop-color="#06281E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#pcbg)"/>
+  <!-- Sky glow -->
+  <circle cx="600" cy="150" r="70" fill="#C9A227" opacity="0.25"/>
+  <circle cx="600" cy="150" r="40" fill="#E3C565" opacity="0.45"/>
+  <!-- Compact 4-storey building -->
+  <g fill="url(#pcbld)">
+    <rect x="330" y="200" width="220" height="290" rx="2"/>
+  </g>
+  <rect x="322" y="188" width="236" height="16" fill="#C9A227" opacity="0.75"/>
+  <!-- Balcony grid, two per floor -->
+  <g stroke="#C9A227" stroke-width="2" opacity="0.8" fill="none">
+    <rect x="346" y="224" width="78" height="48" rx="2"/>
+    <rect x="436" y="224" width="78" height="48" rx="2"/>
+    <rect x="346" y="292" width="78" height="48" rx="2"/>
+    <rect x="436" y="292" width="78" height="48" rx="2"/>
+    <rect x="346" y="360" width="78" height="48" rx="2"/>
+    <rect x="436" y="360" width="78" height="48" rx="2"/>
+    <rect x="346" y="428" width="78" height="28" rx="2"/>
+    <rect x="436" y="428" width="78" height="28" rx="2"/>
+  </g>
+  <g stroke="#C9A227" stroke-width="1.2" opacity="0.55">
+    <line x1="386" y1="224" x2="386" y2="272"/><line x1="476" y1="224" x2="476" y2="272"/>
+    <line x1="386" y1="292" x2="386" y2="340"/><line x1="476" y1="292" x2="476" y2="340"/>
+    <line x1="386" y1="360" x2="386" y2="408"/><line x1="476" y1="360" x2="476" y2="408"/>
+  </g>
+  <!-- Balcony pots with flowers -->
+  <g>
+    <rect x="350" y="264" width="14" height="16" fill="#8B5A2B"/>
+    <circle cx="357" cy="260" r="7" fill="#C0563B"/>
+    <rect x="452" y="264" width="14" height="16" fill="#8B5A2B"/>
+    <circle cx="459" cy="260" r="7" fill="#E3C565"/>
+    <rect x="350" y="332" width="14" height="16" fill="#8B5A2B"/>
+    <circle cx="357" cy="328" r="7" fill="#C0563B"/>
+  </g>
+  <!-- Entrance -->
+  <rect x="392" y="448" width="46" height="42" rx="4" fill="#C9A227" opacity="0.65"/>
+  <!-- Trees flanking -->
+  <g>
+    <rect x="190" y="360" width="9" height="130" rx="4" fill="#0A3527"/>
+    <g fill="#13674A">
+      <circle cx="195" cy="330" r="38"/>
+      <circle cx="172" cy="348" r="24"/>
+      <circle cx="220" cy="346" r="26"/>
+    </g>
+  </g>
+  <g>
+    <rect x="620" y="380" width="8" height="110" rx="4" fill="#0A3527"/>
+    <g fill="#13674A">
+      <circle cx="624" cy="356" r="32"/>
+      <circle cx="604" cy="372" r="20"/>
+      <circle cx="646" cy="370" r="22"/>
+    </g>
+  </g>
+  <!-- Neighbour buildings, low rise -->
+  <g fill="#0A3527" opacity="0.55">
+    <rect x="40" y="420" width="120" height="70" rx="2"/>
+    <rect x="640" y="430" width="110" height="60" rx="2"/>
+  </g>
+  <g stroke="#C9A227" stroke-width="1.5" opacity="0.4" fill="none">
+    <rect x="56" y="434" width="26" height="20"/><rect x="96" y="434" width="26" height="20"/><rect x="56" y="460" width="26" height="20"/><rect x="96" y="460" width="26" height="20"/>
+  </g>
+  <!-- Ground -->
+  <rect x="0" y="490" width="800" height="110" fill="#0A3527" opacity="0.9"/>
+  <!-- Label -->
+  <rect x="30" y="520" width="220" height="50" rx="4" fill="#C9A227" opacity="0.9"/>
+  <text x="140" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#06281E">PALM COURT FLAT</text>
+</svg>

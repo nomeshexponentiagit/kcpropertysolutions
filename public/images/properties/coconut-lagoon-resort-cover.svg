@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A3528"/>
+      <stop offset="40%" stop-color="#12674A"/>
+      <stop offset="72%" stop-color="#0F4E66"/>
+      <stop offset="100%" stop-color="#1F7F9C"/>
+    </linearGradient>
+    <linearGradient id="lag" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D4557"/>
+      <stop offset="50%" stop-color="#38A9B9"/>
+      <stop offset="100%" stop-color="#0D4557"/>
+    </linearGradient>
+    <g id="palmD">
+      <path d="M0 0 C 4 45 -6 90 2 130" stroke="#06281E" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M0 0 C -12 -22 -36 -40 -60 -40 C -46 -18 -22 -8 0 0 Z" fill="#06281E"/>
+      <path d="M0 0 C 2 -24 10 -46 28 -56 C 20 -32 8 -14 0 0 Z" fill="#06281E"/>
+      <path d="M0 0 C 14 -20 34 -34 58 -28 C 38 -12 18 -6 0 0 Z" fill="#06281E"/>
+      <path d="M0 0 C -8 -18 -18 -32 -26 -48 C -4 -34 4 -16 0 0 Z" fill="#06281E"/>
+      <path d="M0 0 C 10 -14 20 -22 30 -26 C 22 -8 10 -2 0 0 Z" fill="#06281E"/>
+    </g>
+    <g id="cotS">
+      <rect x="-14" y="40" width="8" height="34" fill="#06281E" opacity="0.85"/>
+      <rect x="-4" y="46" width="8" height="34" fill="#06281E" opacity="0.85"/>
+      <rect x="6" y="46" width="8" height="34" fill="#06281E" opacity="0.85"/>
+      <rect x="-24" y="0" width="48" height="44" rx="4" fill="#06281E" opacity="0.9"/>
+      <path d="M-32 0 L0 -26 L32 0 Q0 7 -32 0 Z" fill="#2E8B67" opacity="0.95"/>
+      <circle cx="-9" cy="20" r="6" fill="#C9A227" opacity="0.8"/>
+      <circle cx="9" cy="20" r="6" fill="#C9A227" opacity="0.8"/>
+      <rect x="-7" y="26" width="14" height="18" rx="7" fill="#0A3528"/>
+    </g>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <!-- Distant coconut ridge -->
+  <path d="M0 330 Q 160 295 320 322 T 640 315 T 800 330 L 800 600 L 0 600 Z" fill="#09301F" opacity="0.55"/>
+  <!-- Curved lagoon -->
+  <path d="M0 432 C 170 384 310 500 490 470 C 630 446 710 424 800 452 L 800 600 L 0 600 Z" fill="url(#lag)"/>
+  <path d="M0 470 C 180 428 340 536 520 502 C 640 478 722 462 800 488" stroke="#A8E6EA" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M0 505 C 190 466 350 564 540 534 C 660 514 732 500 800 520" stroke="#A8E6EA" stroke-width="2" fill="none" opacity="0.4"/>
+  <ellipse cx="470" cy="522" rx="90" ry="12" fill="#7FD3D8" opacity="0.25"/>
+  <!-- Scattered stilt cottages over the water -->
+  <use href="#cotS" transform="translate(150 356) scale(1.1)"/>
+  <use href="#cotS" transform="translate(262 372) scale(0.85)"/>
+  <use href="#cotS" transform="translate(430 404) scale(1.25)"/>
+  <use href="#cotS" transform="translate(570 372) scale(0.9)"/>
+  <use href="#cotS" transform="translate(665 390) scale(1.05)"/>
+  <!-- Palm clusters framing the scene -->
+  <use href="#palmD" transform="translate(60 430) scale(1.15)"/>
+  <use href="#palmD" transform="translate(115 448) scale(0.8)"/>
+  <use href="#palmD" transform="translate(730 400) scale(1.2)"/>
+  <use href="#palmD" transform="translate(775 432) scale(0.7)"/>
+  <!-- Birds -->
+  <path d="M520 180 q 8 -8 16 0 q 8 -8 16 0" stroke="#06281E" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M560 205 q 6 -6 12 0 q 6 -6 12 0" stroke="#06281E" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Brass label -->
+  <rect x="30" y="516" width="258" height="56" rx="4" fill="#C9A227" opacity="0.92"/>
+  <text x="159" y="551" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#06281E" letter-spacing="1.5">COCONUT LAGOON RESORT</text>
+</svg>

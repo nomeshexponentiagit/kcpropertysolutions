@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="rl2" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F523C"/>
+      <stop offset="50%" stop-color="#1B6B4F"/>
+      <stop offset="100%" stop-color="#239063"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#rl2)"/>
+  <!-- River -->
+  <g opacity="0.14" stroke="#C9A227" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M0 455 Q100 440 200 455 T400 455 T600 455 T800 455"/>
+    <path d="M0 485 Q100 470 200 485 T400 485 T600 485 T800 485"/>
+    <path d="M0 515 Q100 500 200 515 T400 515 T600 515 T800 515"/>
+    <path d="M0 545 Q100 530 200 545 T400 545 T600 545 T800 545"/>
+  </g>
+  <!-- Bridge -->
+  <g opacity="0.15" fill="#C9A227">
+    <rect x="380" y="470" width="90" height="9"/>
+    <rect x="396" y="479" width="6" height="40"/>
+    <rect x="448" y="479" width="6" height="40"/>
+  </g>
+  <!-- Faint plot marker -->
+  <rect x="310" y="180" width="180" height="130" fill="none" stroke="#C9A227" stroke-width="2" stroke-dasharray="12,5" opacity="0.25"/>
+  <!-- Palms -->
+  <g opacity="0.15">
+    <g transform="translate(90,300) scale(0.95)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(190,330) scale(0.75)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(420,340) scale(1.1)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(560,300) scale(0.85)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(690,320) scale(0.95)">
+      <ellipse cx="0" cy="55" rx="3" ry="55" fill="#C9A227"/>
+      <path d="M0 0 C-30 -38, -70 -38, -92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C30 -38, 70 -38, 92 -2" fill="none" stroke="#C9A227" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 0 C-18 -55, -42 -58, -55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C18 -55, 42 -58, 55 -32" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -68, 6 -68, 0 -28" fill="none" stroke="#C9A227" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+  <!-- Compass rose -->
+  <g opacity="0.2" stroke="#C9A227" stroke-width="1.5" transform="translate(665,100)">
+    <line x1="0" y1="-30" x2="0" y2="30"/>
+    <line x1="-30" y1="0" x2="30" y2="0"/>
+    <polygon points="0,-30 5,-10 0,-15 -5,-10" fill="#C9A227"/>
+    <text x="0" y="-35" text-anchor="middle" font-size="10" fill="#C9A227" font-family="sans-serif">N</text>
+  </g>
+  <!-- Label -->
+  <rect x="30" y="520" width="170" height="50" rx="4" fill="#C9A227" opacity="0.85"/>
+  <text x="115" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#FFFFFF">AERIAL VIEW</text>
+</svg>
