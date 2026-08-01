@@ -29,7 +29,7 @@ gallery:
   - "/images/properties/coconut-grove-villa-2.svg"
 locationUrl: "https://maps.google.com/?q=Morjim+Goa"
 contactAgent: "Rohan Naik"
-contactPhone: "+91 98221 12345"
+contactPhone: "+91 9049708271"
 published: 2026-08-01
 ---
 

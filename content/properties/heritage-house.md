@@ -29,7 +29,7 @@ gallery:
   - "/images/properties/heritage-house-2.svg"
 locationUrl: "https://maps.google.com/?q=Fontainhas+Panjim+Goa"
 contactAgent: "Priya Sharma"
-contactPhone: "+91 98221 12345"
+contactPhone: "+91 9049708271"
 published: 2026-08-01
 ---
 

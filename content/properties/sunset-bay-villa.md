@@ -29,7 +29,7 @@ gallery:
   - "/images/properties/sunset-bay-3.svg"
 locationUrl: "https://maps.google.com/?q=Assagao+Goa"
 contactAgent: "Rohan Naik"
-contactPhone: "+91 98221 12345"
+contactPhone: "+91 9049708271"
 published: 2026-07-15
 ---
 

@@ -28,7 +28,7 @@ gallery:
   - "/images/properties/ocean-crest-2.svg"
 locationUrl: "https://maps.google.com/?q=Candolim+Goa"
 contactAgent: "Rohan Naik"
-contactPhone: "+91 98221 12345"
+contactPhone: "+91 9049708271"
 published: 2026-07-10
 ---
 
