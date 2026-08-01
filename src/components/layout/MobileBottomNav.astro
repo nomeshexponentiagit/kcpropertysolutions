@@ -1,0 +1,80 @@
+---
+import { site } from '../../lib/site';
+
+const navItems = [
+  { label: 'Home', href: '/', icon: 'home' },
+  { label: 'About', href: '/about', icon: 'about' },
+  { label: 'Projects', href: '/projects', icon: 'projects' },
+  { label: 'Contact', href: '/contact', icon: 'contact' },
+];
+---
+
+<nav
+  class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-sand-200 safe-area-bottom"
+  aria-label="Mobile navigation"
+>
+  <div class="flex items-center justify-around h-16 px-1">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        class="flex flex-col items-center justify-center gap-0.5 min-w-0 flex-1 py-1 text-ink-light/50 hover:text-palm-900 transition-colors"
+        aria-label={item.label}
+      >
+        <span class="w-5 h-5 flex items-center justify-center" aria-hidden="true">
+          {item.icon === 'home' && (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
+              <path d="M9 21V12h6v9"/>
+            </svg>
+          )}
+          {item.icon === 'about' && (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 22c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+            </svg>
+          )}
+          {item.icon === 'projects' && (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          )}
+          {item.icon === 'contact' && (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13"/>
+              <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          )}
+        </span>
+        <span class="text-[10px] font-sans font-medium leading-none">{item.label}</span>
+      </a>
+    ))}
+
+    <!-- WhatsApp CTA -->
+    <a
+      href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent('Hi KC Property Solution! I\'m interested in your properties.')}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex flex-col items-center justify-center gap-0.5 min-w-0 flex-1 py-1 -mt-3"
+      aria-label="Chat on WhatsApp"
+    >
+      <span class="w-11 h-11 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg shadow-[#25D366]/30" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884z"/>
+        </svg>
+      </span>
+      <span class="text-[10px] font-sans font-semibold text-[#25D366] leading-none">WhatsApp</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Spacer to prevent content from being hidden behind bottom nav -->
+<div class="md:hidden h-16" aria-hidden="true"></div>
+
+<style>
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+</style>

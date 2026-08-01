@@ -2,6 +2,7 @@
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
 import WhatsAppButton from '../components/layout/WhatsAppButton.astro';
+import MobileBottomNav from '../components/layout/MobileBottomNav.astro';
 import '../styles/global.css';
 
 export interface Props {
@@ -12,8 +13,8 @@ export interface Props {
 
 const { title, description, ogImage } = Astro.props;
 
-const defaultTitle = 'KC Property Solutions | Plots, Villas, Guest Houses & More in Goa';
-const defaultDesc = 'KC Property Solutions — North Goa\'s trusted real estate consultancy. Buy, sell, and lease premium plots, villas, guest houses, apartments, hotels, and resorts across Goa.';
+const defaultTitle = 'KC Property Solution Goa | Luxury Villas, Resorts, Plots & Commercial Spaces';
+const defaultDesc = 'KC Property Solution Goa — Premium luxury real estate consultant. Curating bespoke residences, boutique hospitality assets, plots, and commercial spaces across North & South Goa.';
 ---
 
 <!doctype html>
@@ -22,7 +23,7 @@ const defaultDesc = 'KC Property Solutions — North Goa\'s trusted real estate 
   <meta charset="utf-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
   <title>{title || defaultTitle}</title>
   <meta name="description" content={description || defaultDesc} />
@@ -31,8 +32,8 @@ const defaultDesc = 'KC Property Solutions — North Goa\'s trusted real estate 
   <meta property="og:title" content={title || defaultTitle} />
   <meta property="og:description" content={description || defaultDesc} />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content={ogImage || '/images/og-cover.jpg'} />
-  <meta property="og:site_name" content="KC Property Solutions" />
+  <meta property="og:image" content={ogImage || '/images/og-cover.svg'} />
+  <meta property="og:site_name" content="KC Property Solution Goa" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -43,10 +44,11 @@ const defaultDesc = 'KC Property Solutions — North Goa\'s trusted real estate 
 </head>
 <body class="flex flex-col min-h-screen antialiased">
   <Header />
-  <main class="flex-1 pt-16 md:pt-20">
+  <main class="flex-1 pt-16 md:pt-20 pb-16 md:pb-0">
     <slot />
   </main>
   <Footer />
   <WhatsAppButton />
+  <MobileBottomNav />
 </body>
 </html>
