@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-  <path d="M8 38V16a16 16 0 0 1 32 0v22" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="24" y="29" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="16" fill="#0B3D2E">KC</text>
-  <path d="M24 14c-2 4-4 8-2 12 1-3 3-5 6-6" stroke="#0B3D2E" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="10" y="18" width="12" height="22" rx="1.5" fill="#0B3D2E" />
+  <path d="M7 18L16 8L25 18Z" fill="#C9A227" />
+  <rect x="13" y="30" width="6" height="10" rx="1" fill="#F7F4EE" />
+  <rect x="14" y="21" width="4" height="4" rx="0.5" fill="#F7F4EE" opacity="0.6" />
 </svg>
